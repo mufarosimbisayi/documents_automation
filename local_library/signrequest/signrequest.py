@@ -144,3 +144,100 @@ def signrequest_documents(emails, template_ids, page_number):
     filtered_results = filter_results(json_response['results'], template_ids, emails)
     return get_specific_data(filtered_results), json_response['next']
 
+
+def create_tags(row, columns):
+    """
+    Creates the prefill tags neccessary for prefilling signrequest documents.
+    
+    Args:
+        row: A dictionary whose values will prepopulate the signrequest documents.
+        columns: A list of dictionary keys.
+        
+    Returns:
+        prefill_tags: A list of dictionaries.
+    """
+    
+    prefill_tags = []
+    for column in columns:
+        tags = {}
+        tags["external_id"] = column
+        tags["text"] = row[column]
+        prefill_tags.append(tags)
+        
+    return prefill_tags
+
+
+
+    
+    
+def send_signrequest(prefill_tags, signers, template_id):
+    """
+    Send a SignRequest using API calls.
+    
+    Args:
+        prefill_tags: A list of dictionaries representing tags to prefil the SignRequest.
+        signers: A list of strings representing the emails of the SignRequest signers.
+        template_id: A string representing the id of the template for the SignRequest.
+        
+    Returns:
+        _: A boolean value with true representing success.
+    """
+    
+    #create data object
+    data = {
+        "template": f'https://wethinkcode.signrequest.com/api/v1/templates/{template_id}/',
+        "signers": signers,
+        "from_email": "no-reply@wethinkcode.co.za",
+        "message": "Please sign this document. \n\n Kind regards, \n\n WeThinkCode_",
+        "subject": "WeThinkCode_ has sent you a SignRequest",
+        "who": "o",
+        "needs_to_sign": "true",
+        "prefill_tags": prefill_tags,
+        # Add other parameters here
+    }
+    
+    #send signrequest through post
+    response = requests.post(
+        "https://wethinkocode.signrequest.com/api/v1/signrequest-quick-create/",
+        headers={"Authorization": "Token c37da7fb557f0208fd1fbf18dc6896a5bff4e9ef"},
+        json=data
+    )
+
+    #create a json response object
+    json_response = json.dumps(response.json(), indent=4)
+
+    #check if signrequest was a success.
+    if response.status_code == 201:
+        print(f"Signer: {signers[0]['email']} , Status: {response.status_code}")
+        return True
+    elif response.status_code == 400:
+        print("Not found.")
+        print("Response: ", json_response)
+    
+    return False
+
+
+def send_bulk_signrequest(target_df, target_columns, template_column):
+    """
+    Sends signrequests in bulk using data from a dataframe to prepopulate the signrequests.
+    
+    Args:
+        target_df: A dataframe containing the data for prepopulation.
+        target_columns: A list representing the dataframe columns to be used for prepopulation.
+        template_column: A string representing the dataframe column containing the template id.
+        
+    Returns:
+        N/A
+    """
+    
+    for index, row in target_df.iterrows():
+        
+        #create prefill tags
+        prefill_tags = create_tags(row, target_columns)
+    
+        #set signers
+        signers = [{"email": row["learner_email"]}]
+    
+        #send signrequest
+        send_signrequest(prefill_tags, signers, row[template_column])
+
