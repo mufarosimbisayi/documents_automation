@@ -42,9 +42,13 @@ def upload_file(file_name, file_path, folder_id):
         _: None
     """
     
+    mime_types = {'docx':'application/vnd.google-apps.document', 'pdf':'application/pdf'}
+    #print(file_path.spit('.')[1])
+    mime_type = mime_types[file_path.split('.')[1]]
+    
     file = drive.CreateFile({
         'title': file_name,
-        'mimeType': 'application/pdf',
+        'mimeType': mime_type,
         'parents': [{
             'kind': 'drive',
             'teamDriveId': '0ALGjY-PCeStEUk9PVA',
