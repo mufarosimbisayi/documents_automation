@@ -241,3 +241,94 @@ def send_bulk_signrequest(target_df, target_columns, template_column):
         #send signrequest
         send_signrequest(prefill_tags, signers, row[template_column])
 
+
+def relevant_keys(target_columns):
+    """
+    Checks that all relevant keys are present.
+    
+    Args:
+        target_columns: All columns of a dataframe.
+        
+    Returns:
+        _: A boolean that indicates that all keys are relevant or not.
+    """
+    
+    if 'template_id' not in target_columns:
+        return False
+    if 'email' not in target_columns:
+        return False
+    if 'signrequest_status' not in target_columns:
+        return False
+    if 'document_url' not in target_columns:
+        return False
+    return True
+
+
+def can_upload(item):
+    '''
+    Uploads files to google drive.
+    
+    Args:
+        item: a json objects from signrequests.
+        
+    Returns:
+        _: a boolean indicating success or failure
+    '''
+    
+    if relevant_keys(item.keys()) and item['signrequest_status'] in ["signed", "signed and downloaded"]:
+        return True
+    return False
+
+
+def get_unique_values(target_df, columns):
+    """
+    Gets all the unique values in a(the) specified column(s).
+    
+    Args:
+        target_df: A datframe containing the values in one or more columns.
+        columns: A string or list of strings representing value containing columns.
+        
+    Returns:
+        _: A list of unique values.
+    """
+    
+    target_columns = list(filter(lambda column: True if column in columns else False ,target_df.columns))
+    return pd.unique(target_df[target_columns].values.ravel('K'))
+
+
+def get_documents_metadata(target_df, template_column, email_column):
+    """
+    Gets API metadata for all signrequests for a particular template.
+    
+    Args:
+        target_df: A dataframe containing the emails and template ids for the signrequests.
+        template_column: A string representing the column name of the target template ids.
+        email_column: A string representing the column name of the email adresses.
+        
+    Returns:
+        0: A non essential return value.
+    """
+    
+    #set variables
+    page_number = 1
+    
+    #get unique template ids and emails
+    emails = get_unique_values(target_df[target_df[f'{template_column}_status'] != 'Saved'], email_column)
+    template_ids = get_unique_values(target_df[target_df[f'{template_column}_status'] != 'Saved'], template_column)
+    
+    
+    #get pages
+    while True:
+        specific_filtered_results, next_page = signrequest_documents(emails, template_ids, page_number)
+        for item in specific_filtered_results:
+            if can_upload(item):
+                if upload_to_gdrive(item['document_url'], template_column, target_df[target_df[email_column] == item['email']].folder_id.values[0]):
+                    target_df.loc[target_df[email_column] == item['email'], f'{template_column}_status'] = 'Saved'
+                else:
+                    print(f"{item['email']} has failed to upload")
+        if next_page:
+            page_number += 1
+        else:
+            break
+
+    return 0
