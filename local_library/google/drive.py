@@ -93,7 +93,10 @@ def upload_to_gdrive(file_link, file_name, folder_id):
     Returns:
         _: A boolean indicating if the file upload was a success or not.
     """
-    
+    file_list = list_files(folder_id)
+    for folder_file in file_list:
+        if folder_file['title'] == file_name:
+            return True
     if not file_link:
         return False
     file_path = download_file(file_link, file_name)
@@ -177,3 +180,4 @@ def share_folder(folder, email):
     permission = folder.auth.service.permissions().insert(
         fileId=folder['id'], body=new_permission, supportsTeamDrives=True).execute(http=folder.http)
         
+

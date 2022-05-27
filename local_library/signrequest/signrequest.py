@@ -1,5 +1,7 @@
 import requests
 import json
+import pandas as pd
+from google.drive import upload_to_gdrive
 
 
 def get_page_metadata(page):
@@ -321,7 +323,7 @@ def get_documents_metadata(target_df, template_column, email_column):
     while True:
         specific_filtered_results, next_page = signrequest_documents(emails, template_ids, page_number)
         for item in specific_filtered_results:
-            if can_upload(item):
+            if can_upload(item) and len(target_df[target_df[email_column] == item['email']]) == 1:
                 if upload_to_gdrive(item['document_url'], template_column, target_df[target_df[email_column] == item['email']].folder_id.values[0]):
                     target_df.loc[target_df[email_column] == item['email'], f'{template_column}_status'] = 'Saved'
                 else:
