@@ -1,0 +1,16 @@
+== Project
+- [] add README
+- [] setup dependencies
+- [] git crypt the secrets
+- [] nuke and provision new secrets
+
+== Business Goals
+
+target: 100 contracts - between students + sponsor + WTC_
+- a pdf
+  - a signrequest document
+  - 1 template
+  - send to 3 people
+    - WTC_
+    - students
+    - sponsor
