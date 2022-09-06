@@ -169,9 +169,6 @@ def create_tags(row, columns):
     return prefill_tags
 
 
-
-    
-    
 def send_signrequest(prefill_tags, signers, template_id):
     """
     Send a SignRequest using API calls.
