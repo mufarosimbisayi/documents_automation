@@ -1,0 +1,219 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BKPF
+        ______________________________________________________________________
+
+
+        BKPF
+          Krátký popis:Hlavièka pro úèetnictví
+          Transparentní tabulka
+          Aktivní verze
+
+
+        Struktura pole
+          Poèet polí: 94
+          Souèet délek polí: 666
+
+        Název pole          K Typ  Délka  Krátký text
+        ____________________________________________________________
+        MANDT               X CLNT      3 Klient
+        BUKRS               X CHAR      4 Úèetní okruh
+        BELNR               X CHAR     10 Èíslo úèetního dokladu
+        GJAHR               X NUMC      4 Fiskální rok
+        BLART                 CHAR      2 Druh dokl.
+        BLDAT                 DATS      8 Datum dokladu
+        BUDAT                 DATS      8 Datum úètování v dokladu
+        MONAT                 NUMC      2 Fiskální mìsíc
+        CPUDT                 DATS      8 Den poøízení úèetního dokladu
+        CPUTM                 TIMS      6 Èas poøízení
+        AEDAT                 DATS      8 Datum poslední zmìny dokladu dle transak
+        UPDDT                 DATS      8 Datum poslední aktualizace dokladu
+        WWERT                 DATS      8 Datum pøepoètu
+        USNAM                 CHAR     12 Jméno uživatele
+        TCODE                 CHAR     20 Kód transakce
+        BVORG                 CHAR     16 Èíslo úèetní operace nad rámec úèetního
+        XBLNR                 CHAR     16 Èíslo referenèního dokladu
+        DBBLG                 CHAR     10 Èís.dokladu trvalého úètování
+        STBLG                 CHAR     10 Èíslo stornovacího dokladu
+        STJAH                 NUMC      4 Fisk.rok stornovacího dokladu
+        BKTXT                 CHAR     25 Text hl.dokl.
+        WAERS                 CUKY      5 Klíè mìny
+        KURSF                 DEC       9 Kurz pøepoètu
+        KZWRS                 CUKY      5 Klíè koncernové mìny
+        KZKRS                 DEC       9 Kurz koncernové mìny
+        BSTAT                 CHAR      1 Status dokladu
+        XNETB                 CHAR      1 Znak: Doklad zaúètován netto ?
+        FRATH                 CURR     13 Neplán.vedl.poøizovací náklady
+        XRUEB                 CHAR      1 Znak: Doklad je úètován do pøedchozího o
+        GLVOR                 CHAR      4 Provoznì-ekonomická operace
+        GRPID                 CHAR     12 Název mapy batch input
+        DOKID                 CHAR     40 Náz.dokum.v archivním systému
+        ARCID                 CHAR     10 ID extraktu hl.dokl.
+        IBLAR                 CHAR      2 Interní druh dokladu k øízení dokladu
+        AWTYP                 CHAR      5 Referenèní operace
+        AWKEY                 CHAR     20 Referenèní klíè
+        FIKRS                 CHAR      4 Finanèní okruh
+        HWAER                 CUKY      5 Firemní mìna
+        HWAE2                 CUKY      5 Klíè druhé firemní mìny
+        HWAE3                 CUKY      5 Klíè tøetí firemní mìny
+        KURS2                 DEC       9 Kurz pøepoètu pro druhou firemní mìnu
+        KURS3                 DEC       9 Kurz pøepoètu pro tøetí firemní mìnu
+        BASW2                 CHAR      1 Výchozí mìna pro pøepoèet mìny
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BKPF
+        ______________________________________________________________________
+
+
+        Název pole          K Typ  Délka  Krátký text
+        ____________________________________________________________
+        BASW3                 CHAR      1 Výchozí mìna pro pøepoèet mìny
+        UMRD2                 CHAR      1 Druh data pøepoètu pro druhou firemní mì
+        UMRD3                 CHAR      1 Druh data pøepoètu pro tøetí firemní mìn
+        XSTOV                 CHAR      1 Znak: Doklad je oznaèen ke stornování
+        STODT                 DATS      8 Plánované datum pro úètování storna
+        XMWST                 CHAR      1 Výpoèet danì automaticky?
+        CURT2                 CHAR      2 Typ druhé firemní mìny
+        CURT3                 CHAR      2 Typ mìny pro tøetí firemní mìnu
+        KUTY2                 CHAR      4 Typ kurzu
+        KUTY3                 CHAR      4 Typ kurzu
+        XSNET                 CHAR      1 Èástky úètù HK jsou èástky netto
+        AUSBK                 CHAR      4 Zdrojový úèetní okruh
+        XUSVR                 CHAR      1 Znak: Danì US byly zmìnìny na detailní ú
+        DUEFL                 CHAR      1 Status pøevzetí dat do násl.release
+        AWSYS                 CHAR     10 Logický systém
+        TXKRS                 DEC       9 Smìnný kurs pro danì
+        LOTKZ                 CHAR     10 Èíslo svazku požadavkù
+        XWVOF                 CHAR      1 Znak: Platba smìnkou odbìratele pøed spl
+        STGRD                 CHAR      2 Dùvod storna nebo zaúètování na opaènou
+        PPNAM                 CHAR     12 Uživatel, který doklad pøedbìžnì poøídil
+        BRNCH                 CHAR      4 Èíslo poboèky
+        NUMPG                 NUMC      3 Poèet stran faktury
+        ADISC                 CHAR      1 Znak: Zadání pøedstavuje diskont.doklad
+        XREF1_HD              CHAR     20 Referenèní klíè _1 interní k hlavièce do
+        XREF2_HD              CHAR     20 Referenèní klíè_2 interní k hlavièce dok
+        XREVERSAL             CHAR      1 Uvádí, zda je doklad stronovací nebo sto
+        REINDAT               DATS      8 Datum pøíchodu faktury
+        APPEND  ABKPF_PSO
+         INCLUDE IBKPF_PSO
+          INCLUDE IVBKPF_PSO
+           PSOTY              CHAR      2 Typ dokladu: Požadavky na platbu
+           PSOAK              CHAR     10 Dùvod
+           PSOKS              CHAR     10 Region
+           PSOSG              CHAR      1 Dùvod pro storno - systém pøíkazù IS-PS
+           PSOFN              CHAR     30 IS-PS: Znak spisu
+           INTFORM            CHAR      4 Úrokový vzorec
+           INTDATE            DATS      8 Datum výpoètu úroku
+          PSOBT               DATS      8 Den úètování
+          PSOZL               CHAR      1 Skuteèné zaúètování
+          PSODT               DATS      8 Datum poslední zmìny
+          PSOTM               TIMS      6 Èas poslední zmìny
+        APPEND  ABKPF_UMB
+         FM_UMART             CHAR      1 Druh pøevodu platby
+        APPEND  BKPF_CARD
+         INCLUDE FCRD_VBKPF
+          CCINS               CHAR      4 Platební karty: Druh karty
+          CCNUM               CHAR     25 Platební karty: Èíslo karty
+        APPEND  BKPF_USFED
+         SSBLK                CHAR      1
+         BATCH                CHAR     10 Znak spojení pro doklady
+         SNAME                CHAR     12 Uživatel
+         SAMPLED              CHAR      1
+         EXCLUDE_FLAG         CHAR      1
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BKPF
+        ______________________________________________________________________
+
+
+        Název pole          K Typ  Délka  Krátký text
+        ____________________________________________________________
+         BLIND                CHAR      1 Znak 'ledger rozpoètu'
+         OFFSET_STATUS        CHAR      2 Status ofsetu treasury
+         OFFSET_REFER_DAT     DATS      8 Datový záznam odeslaný zpìt do Treasury
+         PENRC                CHAR      2 Dùvod opoždìné platby
+        APPEND  JVBKPF
+         KNUMV                CHAR     10 Èíslo podmínky dokladu
+        ____________________________________________________________
+          Pole s referenèními poli:
+            Název pole      referenèní pole
+            FRATH           T001-WAERS
+
+          Pole s konverzními rutinami:
+            Název pole      konverzní rutina
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            DBBLG           ALPHA
+            STBLG           ALPHA
+            STJAH           GJAHR
+            KURSF           EXCRT
+            KZKRS           EXCRT
+            KURS2           EXCRT
+            KURS3           EXCRT
+            AWSYS           ALPHA
+            TXKRS           EXCRT
+            LOTKZ           ALPHA
+            BATCH           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,365 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        REGUH
+          Krátký popis:Data o platbì z platebního programu
+          Transparentní tabulka
+          Aktivní verze
+
+
+        Struktura pole
+          Poèet polí: 164
+          Souèet délek polí: 1950
+
+        Název pole     K Typ  Délka  Krátký text
+        ____________________________________________________________
+        MANDT          X CLNT      3 Klient
+        LAUFD          X DATS      8 Datum spuštìní programu
+        LAUFI          X CHAR      6 Doplòkový identifikaèní atribut
+        XVORL          X CHAR      1 Znak: Pouze bìh návrhu ?
+        ZBUKR          X CHAR      4 Platící úèetní okruh
+        LIFNR          X CHAR     10 Èíslo úètu dodavatele
+        KUNNR          X CHAR     10 Èíslo odbìratele 1
+        EMPFG          X CHAR     16 Zakódování pøíjemce platby
+        VBLNR          X CHAR     10 Èíslo platebního dokladu
+        AVISG            CHAR      1 Dùvod pro tisk avíza
+        WAERS            CUKY      5 Klíè mìny
+        SRTGB            CHAR      4 Pracovní úsek
+        ANRED            CHAR     15 Oslovení
+        NAME1            CHAR     35 Náz. 1
+        NAME2            CHAR     35 Náz. 2
+        NAME3            CHAR     35 Náz. 3
+        NAME4            CHAR     35 Náz. 4
+        PSTLZ            CHAR     10 Poštovní smìrovací èíslo
+        ORT01            CHAR     35 Místo
+        STRAS            CHAR     35 Ulice a èíslo domu
+        PFACH            CHAR     10 Poštovní pøihrádka
+        LAND1            CHAR      3 Klíè státu
+        STCD1            CHAR     16 Daòové èíslo 1
+        WEVWV            CHAR      1 Plánované použití smìnky
+        ZANRE            CHAR     15 Oslovení pøíjemce platby
+        ZNME1            CHAR     35 Jméno pøíjemce platby
+        ZNME2            CHAR     35 Jméno pøíjemce platby
+        ZNME3            CHAR     35 Jméno pøíjemce platby
+        ZNME4            CHAR     35 Jméno pøíjemce platby
+        ZPSTL            CHAR     10 Pošt.smìr.èíslo pøíjemce platby
+        ZORT1            CHAR     35 Místo pøíjemce platby
+        ZSTRA            CHAR     35 Ulice a èíslo domu pøíjemce platby
+        ZPFAC            CHAR     10 Pošt.pøihrádka pøíjemce platby
+        ZLAND            CHAR      3 Klíè státu
+        ZREGI            CHAR      3 Regionální kód pøíjemce platby
+        ZBNKS            CHAR      3 Klíè státu
+        ZBNKN            CHAR     18 Èíslo bankovního úètu pøíjemce platby
+        ZBNKL            CHAR     15 Smìrový kód banky pøíjemce platby
+        ZBKON            CHAR      2 Kontrolní kód banky pøíjemce platby
+        ZBVTY            CHAR      4 Znak bankovního spojení pøíjemce platby
+        ZSWIF            CHAR     11 Kód SWIFT pro mezinárodní platby
+        XEZER            CHAR      1 Znak: Existuje oprávnìní k inkasu ?
+        ZSPRA            LANG      1 Jazykový klíè pøíjemce platby
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        Název pole     K Typ  Délka  Krátký text
+        ____________________________________________________________
+        ZALDT            DATS      8 Datum úètování platebního dokladu
+        RZAWE            CHAR      1 Zpùsob platby pro tuto platbu
+        RUMSK            CHAR      1 Znak zvláštní hlavní knihy platební oper
+        RZUMS            CHAR      1 Znak cílové zvláštní hlavní knihy plateb
+        HKTID            CHAR      5 Krátký klíè pro úètové spojení
+        HBKID            CHAR      5 Krátký klíè pro firemní banku
+        HKTIW            CHAR      5 Krátký klíè spojení úètù pro smìnku
+        HBKIW            CHAR      5 Krátký klíè firem.banky pro smìnku pøi r
+        BVTYP            CHAR      4 Typ banky part.
+        UBKON            CHAR      2 Kontrolní kód banky u našeho bankovního
+        UBKNT            CHAR     18 Èíslo našeho bankovního úètu
+        UBNKS            CHAR      3 Klíè státu banky
+        UBNKL            CHAR     15 Smìrový kód naší banky
+        UBHKT            CHAR     10 Èíslo úètu HK pro náš bankovní úèet / po
+        VALUT            DATS      8 Dat.valuty
+        CRVAL            DATS      8 Datum valuty v bance pøíjemce platby
+        ANFAE            DATS      8 Splatnost u požad.smìneèné platby
+        WEFAE            DATS      8 Datum splatnosti poøizované smìnky
+        RBETR            CURR     13 Èástka ve firemní mìnì
+        RSKON            CURR     13 Celkový úèet platební operace ve firemní
+        RWBTR            CURR     13 Placená èástka v mìnì platby
+        RWSKT            CURR     13 Celkové skonto platební operace v mìnì p
+        RSPE1            CURR     11 Popl.ve formuláøi
+        RSPE2            CURR     11 Popl.ve formuláøi
+        RPOST            DEC       5 Poèet zaplacených položek
+        RTEXT            DEC       5 Poèet øádek textu k zaplaceným položkám
+        RSPM1            CURR     11 Poplatky formuláøe za smìnku s maxim.èás
+        RSPM2            CURR     11 Poplatky formuláøe za smìnku s maxim.èás
+        WEHMX            CURR     13 Maximální èástka na smìnku ve firem.mìnì
+        WEFMX            CURR     13 Maximální èástka na smìnku v mìnì platby
+        WEHRS            CURR     13 Zbytková èástka ve firem.mìnì pro posled
+        WEFRS            CURR     13 Zbytková èástka v mìnì platby pro posled
+        WEAMX            DEC       3 Poèet smìnek s maximální èástkou
+        BUSAB            CHAR      2 Úèetní referent
+        EIKTO            CHAR     12 Naše èíslo úètu u zákazníka nebo odbìrat
+        XINVE            CHAR      1 Znak: Týká se investièního majetku ?
+        WDATE            DATS      8 Datum vystavení smìnky
+        XAEND            CHAR      1 Znak: Návrh platby byl dodateènì zmìnìn
+        ZLSPR            CHAR      1 Klíè pro blokování platby
+        DTAWS            CHAR      2 Klíè instrukce pro výmìnu nosièù dat
+        DTAMS            CHAR      1 Klíè hlášení pro výmìnu nosièù dat
+        KURSF            DEC       9 Kurz pøepoètu
+        ABWAE            CUKY      5 Zúètovací mìna pro pøevody penìz
+        SKVHW            CURR     13 Ztráta skonta ve fir.mìnì
+        SKVFW            CURR     13 Ztráta ze skonta v mìnì platby
+        DSKVH            CURR     13 Hrozící ztráta ze skonta ve firem.mìnì
+        ZPST2            CHAR     10 PSÈ poštovní pøihrádky pøíjemce platby
+        PAYGR            CHAR     20 Pole seskupování pro automatické platby
+        ZBNKY            CHAR     15 Kód banky pøíjemce platby
+        UBNKY            CHAR     15 Kód naší banky
+        PSTL2            CHAR     10 PSÈ poštovní pøihrádky
+        ABSBU            CHAR      4 Odesílající úèetní okruh
+        RBET2            CURR     13 Placená èástka ve druhé firemní mìnì
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        Název pole     K Typ  Délka  Krátký text
+        ____________________________________________________________
+        RBET3            CURR     13 Placená èástka ve tøetí firemní mìnì
+        RSKO2            CURR     13 Celkový úèet platební operace ve druhé f
+        RSKO3            CURR     13 Celkový úèet platební operace ve tøetí f
+        KURS2            DEC       9 Kurz pøepoètu pro druhou firemní mìnu
+        KURS3            DEC       9 Kurz pøepoètu pro tøetí firemní mìnu
+        BKREF            CHAR     20 Referenèní údaj k bank.spojení
+        UZAWE            CHAR      2 Dodatek ke zpùsobu platby
+        ZORT2            CHAR     35 Místní èást z adresy pøíjemce platby
+        ZTLFX            CHAR     31 Èíslo telefaxu pøíjemce platby
+        XSIWE            CHAR      1 Znak: Smìnka na vidìnou
+        ZPFOR            CHAR     35 Místo P.O.Boxu u pøíjemce platby
+        PERNR            NUMC      8 Osobní èíslo
+        SEQNR            CHAR      5 Poøad.èíslo
+        BTZNR            RAW       1 Pøiøazení fin.pøevodù
+        AUSFD            DATS      8 Datum splatnosti placených položek
+        EDIAV            CHAR      1 Status avíza EDI
+        IDOC_NUM_AVIS    NUMC     16 Èíslo IDoc
+        EDIBN            CHAR      1 Status plateb.pøíkazu EDI
+        IDOC_NUM         NUMC     16 Èíslo IDoc
+        ZTELF            CHAR     20 Telefonní èíslo pøíjemce platby
+        ZTELX            CHAR     30 Èíslo telexu pøíjemce platby
+        KOINH            CHAR     60 Jméno majitele úètu
+        DTWS1            NUMC      2 Instrukce 1
+        DTWS2            NUMC      2 Instrukce 2
+        DTWS3            NUMC      2 Instrukce 3
+        DTWS4            NUMC      2 Instrukce 4
+        ZSTC1            CHAR     16 Èíslo danì 1 pøíjemce platby
+        KIDNO            CHAR     30 Reference platby
+        PYORD            CHAR     10 Platební pøíkaz
+        REGIO            CHAR      3 Region (spolkový stát, spolková zemì, pr
+        TEXT             CHAR     29 Textové pole
+        BTYP1            CHAR      1 Typ banky pro bankovní cestu (koresp.ban
+        BNKS1            CHAR      3 Klíè státu banky
+        BNKL1            CHAR     15 Kód banky
+        BNKN1            CHAR     18 Èíslo bank.úètu
+        BKON1            CHAR      2 Kontrolní kód banky
+        BKRF1            CHAR     20 Referenèní údaj k bank.spojení
+        BTYP2            CHAR      1 Typ banky pro bankovní cestu (koresp.ban
+        BNKS2            CHAR      3 Klíè státu banky
+        BNKL2            CHAR     15 Kód banky
+        BNKN2            CHAR     18 Èíslo bank.úètu
+        BKON2            CHAR      2 Kontrolní kód banky
+        BKRF2            CHAR     20 Referenèní údaj k bank.spojení
+        BTYP3            CHAR      1 Typ banky pro bankovní cestu (koresp.ban
+        BNKS3            CHAR      3 Klíè státu banky
+        BNKL3            CHAR     15 Kód banky
+        BNKN3            CHAR     18 Èíslo bank.úètu
+        BKON3            CHAR      2 Kontrolní kód banky
+        BKRF3            CHAR     20 Referenèní údaj k bank.spojení
+        SAKNR            CHAR     10 Èíslo úètu hlavní knihy
+        HKONT            CHAR     10 Úèet hlavní knihy úèetnictví HK
+        ALEBN            CHAR      1 ALE-IDOC status rozdìlení dat platby
+        XKDFB            CHAR      1 Neúètovat kurzové rozdíly
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+        Název pole     K Typ  Délka  Krátký text
+        ____________________________________________________________
+        SRTBP            CHAR      4 Obchodní místo
+        INCLUDE IREGUH_FPM
+         FPM_KEY         CHAR     15 Zøetìzené datum bìhu, ID a navrh.pøíznak
+         GRPNO           INT4     10 Kritérium seskupení plateb
+         SRTF1           CHAR     38 Specifické tøídìní plat.prostø.dle formá
+         SRTF2           CHAR     56 Tøídìní plat.prostø.defin.uživatelem vèe
+         XCORR           CHAR      1 Znak: Korespondence k platbì
+         XAVIS           CHAR      1 Znak: Oddìlené avízo
+         XCOPM           CHAR      1 Platební médium pro obchodního partnera
+        DORIGIN          CHAR      8 Pùvod seskupování
+        RFTTRN           CHAR     20 Kód platby
+        ZADNR            CHAR     10 Èíslo adresy pøíjemce platby
+        ADRNR            CHAR     10 Èíslo adresy
+        ZIBAN            CHAR     34 IBAN pøíjemce platby
+        APPEND  REGUH_FM
+         FM_STATUS       CHAR      1 Status disponibility pro platbu
+        APPEND  REGUH_FMFG
+         FILE_NBR        NUMC      6
+        ____________________________________________________________
+          Pole s referenèními poli:
+            Název pole      referenèní pole
+            RBETR           T001-WAERS
+            RSKON           T001-WAERS
+            RWBTR           REGUH-WAERS
+            RWSKT           REGUH-WAERS
+            RSPE1           T001-WAERS
+            RSPE2           T001-WAERS
+            RSPM1           T001-WAERS
+            RSPM2           T001-WAERS
+            WEHMX           T001-WAERS
+            WEFMX           REGUH-WAERS
+            WEHRS           T001-WAERS
+            WEFRS           REGUH-WAERS
+            SKVHW           T001-WAERS
+            SKVFW           REGUH-WAERS
+            DSKVH           T001-WAERS
+            RBET2           BKPF-HWAE2
+            RBET3           BKPF-HWAE3
+            RSKO2           BKPF-HWAE2
+            RSKO3           BKPF-HWAE3
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                         REGUH
+        ______________________________________________________________________
+
+
+
+          Pole s konverzními rutinami:
+            Název pole      konverzní rutina
+            LIFNR           ALPHA
+            KUNNR           ALPHA
+            VBLNR           ALPHA
+            ZSPRA           ISOLA
+            UBHKT           ALPHA
+            KURSF           EXCRT
+            KURS2           EXCRT
+            KURS3           EXCRT
+            PYORD           ALPHA
+            SAKNR           ALPHA
+            HKONT           ALPHA
+            ZADNR           ALPHA
+            ADRNR           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            5
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

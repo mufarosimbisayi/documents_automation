@@ -1,0 +1,146 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKBE
+        ______________________________________________________________________
+
+
+        EKBE
+          Krátký popis:Historie k nák. dokladu
+          Transparentní tabulka
+          Aktivní verze
+
+
+        Struktura pole
+          Poèet polí: 59
+          Souèet délek polí: 448
+
+        Název pole       K Typ  Délka  Krátký text
+        ____________________________________________________________
+        MANDT            X CLNT      3 Klient
+        EBELN            X CHAR     10 Èíslo nákupního dokladu
+        EBELP            X NUMC      5 Èíslo položky nákupního dokladu
+        ZEKKN            X NUMC      2 Poøadové èíslo pøiøazení úètu
+        VGABE            X CHAR      1 Druh operace - vývoj objednávek
+        GJAHR            X NUMC      4 Rok materiálového dokladu
+        BELNR            X CHAR     10 Èíslo materiálového dokladu
+        BUZEI            X NUMC      4 Položka v mater.dokladu
+        INCLUDE EKBEDATA
+         BEWTP             CHAR      1 Typ vývoje objednávky
+         BWART             CHAR      3 Druh pohybu (vedení zásob)
+         BUDAT             DATS      8 Datum úètování v dokladu
+         MENGE             QUAN     13 Množství
+         BPMNG             QUAN     13 Množství v mìrné jednotce objednací ceny
+         DMBTR             CURR     13 IN Èástka ve firemní mìnì
+         WRBTR             CURR     13 Èástka ve mìnì dokladu
+         WAERS             CUKY      5 Klíè mìny
+         AREWR             CURR     13 Vyrovnávací hodnota na úètu PM/PF ve fir
+         WESBS             QUAN     13 Blok. zásoby pøíjmu materiálu v objedn.
+         BPWES             QUAN     13 Množ. v blok.zás.pø.mat. v MJOC
+         SHKZG             CHAR      1 Znak Má dáti/Dal
+         BWTAR             CHAR     10 Druh ocenìní
+         ELIKZ             CHAR      1 Znak koneèné dodávky
+         XBLNR             CHAR     16 Èíslo referenèního dokladu
+         LFGJA             NUMC      4 Fiskální rok referenèního dokladu
+         LFBNR             CHAR     10 Èíslo referenèního dokladu
+         LFPOS             NUMC      4 Položka  referenèního dokladu
+         GRUND             NUMC      4 Dùvod pohybu
+         CPUDT             DATS      8 Den poøízení úèetního dokladu
+         CPUTM             TIMS      6 Èas poøízení
+         REEWR             CURR     13 Evidovaná hodnota faktury ve firemní mìn
+         EVERE             CHAR      2 Dodržení expedièního pøedpisu
+         REFWR             CURR     13 Evidovaná hodnota faktury v cizí mìnì
+         MATNR             CHAR     18 Èíslo materiálu
+         WERKS             CHAR      4 Závod
+         XWSBR             CHAR      1 Storno PM dovoleno pøi LF navzdory faktu
+         ETENS             NUMC      4 Poøadové èíslo potvrzení objednávky
+         KNUMV             CHAR     10 Èíslo podmínky dokladu
+         MWSKZ             CHAR      2 Znak DPH
+         LSMNG             QUAN     13 Množství v mìrné jednotce z dod.listu
+         LSMEH             UNIT      3 Mìrná jednotka z dodacího listu
+         EMATN             CHAR     18 Èíslo materiálu
+         AREWW             CURR     13 Vyrovnávací hodnota na úètì PM/PF v mìnì
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKBE
+        ______________________________________________________________________
+
+
+        Název pole       K Typ  Délka  Krátký text
+        ____________________________________________________________
+         HSWAE             CUKY      5 Klíè firemní mìny
+         BAMNG             QUAN     13 Množství
+         CHARG             CHAR     10 Èíslo šarže
+         BLDAT             DATS      8 Datum dokladu
+         XWOFF             CHAR      1 Otevøená tvorba hodnot
+         XUNPL             CHAR      1 Neplánované pøiøazení úètu z likvidace f
+         ERNAM             CHAR     12 Jméno referenta, který objekt založil
+         SRVPOS            CHAR     18 Èíslo výkonu
+         PACKNO            NUMC     10 Æíslo paketu výkonu
+         INTROW            NUMC     10 Èíslo øádky výkonu
+         BEKKN             NUMC      2 Èíslo pøiøazení úètu na objednávku
+         LEMIN             CHAR      1 Znak vrácené dodávky
+         AREWB             CURR     13 Vyrovnávací hodnota na úètu PM/PF v mìnì
+         REWRB             CURR     13 Èástka faktury v mìnì objednávky
+         SAPRL             CHAR      4 Release SAP
+        INCLUDE RETURN_DELIVERY
+         ET_UPD            CHAR      1 Metoda aktualizace rozvrženého množství
+        APPEND  /SAPNEA/J_SC_EK
+         J_SC_DIE_COMP_F   CHAR      1
+        ____________________________________________________________
+          Pole s referenèními poli:
+            Název pole      referenèní pole
+            MENGE           EKPO-MEINS
+            BPMNG           EKPO-BPRME
+            DMBTR           T001-WAERS
+            WRBTR           EKBE-WAERS
+            AREWR           T001-WAERS
+            WESBS           EKPO-MEINS
+            BPWES           EKPO-BPRME
+            REEWR           T001-WAERS
+            REFWR           EKBE-WAERS
+            LSMNG           EKBE-LSMEH
+            AREWW           EKBE-WAERS
+            BAMNG           EKPO-LMEIN
+            AREWB           EKKO-WAERS
+            REWRB           EKKO-WAERS
+
+          Pole s konverzními rutinami:
+            Název pole      konverzní rutina
+            EBELN           ALPHA
+            GJAHR           GJAHR
+            BELNR           ALPHA
+            LFGJA           GJAHR
+            LFBNR           ALPHA
+            MATNR           MATN1
+            LSMEH           CUNIT
+            EMATN           MATN1
+            SRVPOS          ALPHA
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,146 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EINA
+        ______________________________________________________________________
+
+
+        EINA
+          Krátký popis:Nák.inf.záznam - všeobecná data
+          Transparentní tabulka
+          Aktivní verze
+
+
+        Struktura pole
+          Poèet polí: 39
+          Souèet délek polí: 354
+
+        Název pole  K Typ  Délka  Krátký text
+        ____________________________________________________________
+        MANDT       X CLNT      3 Klient
+        INFNR       X CHAR     10 Èíslo nákup.informaè.záznamu
+        MATNR         CHAR     18 Èíslo materiálu
+        MATKL         CHAR      9 Skupina materiálu
+        LIFNR         CHAR     10 Èíslo úètu dodavatele
+        LOEKZ         CHAR      1 Nák.infor.záz.: Všeobecná data oznaèena
+        ERDAT         DATS      8 Datum pøipojení záznamu
+        ERNAM         CHAR     12 Jméno referenta, který objekt založil
+        TXZ01         CHAR     40 Krátký text k infonákupu
+        SORTL         CHAR     10 Tøídicí pojem pro inf.záznamy pro neskla
+        MEINS         UNIT      3 Objednací mìrná jednotka
+        UMREZ         DEC       5 Èítaè pro pøepoèet z objednací MJ na zák
+        UMREN         DEC       5 Jmenovatel pro pøepoèet z objednací MJ d
+        IDNLF         CHAR     35 Èíslo materiálu u dodavatele
+        VERKF         CHAR     30 KompetentníPracOdbytuProPøípadDotazy
+        TELF1         CHAR     16 Èíslo telefonu dodavatele
+        MAHN1         DEC       3 Poèet dnù pro první upomínku
+        MAHN2         DEC       3 Poèet dnù pro druhou upomínku
+        MAHN3         DEC       3 Poèet dnù pro tøetí upomínku
+        URZNR         CHAR     10 Èíslo osvìdèení
+        URZDT         DATS      8 Osvìdèení o pùvodu platí do
+        URZLA         CHAR      3 Stát vystavení osvìdèení o pùvodu
+        URZTP         CHAR      1 Typ osvìdèení
+        URZZT         CHAR     16 Èíslo
+        LMEIN         UNIT      3 Základní mìrná jednotka
+        REGIO         CHAR      3 Region (spolkový stát, spolková zemì, pr
+        VABME         CHAR      1 Variabilní objednací MJ aktivní
+        LTSNR         CHAR      6 Dílèí sortiment dodavatele
+        LTSSF         NUMC      5 Èíslo sekvence tøídìní
+        WGLIF         CHAR     18 Skupina materiálu dodavatele
+        RUECK         CHAR      2 Dohoda o zrušení
+        LIFAB         DATS      8 Lze dodat od
+        LIFBI         DATS      8 Lze dodat do
+        KOLIF         CHAR     10 Pøed.dodav.
+        ANZPU         QUAN     13 Poèet bodù
+        PUNEI         UNIT      3 Bodová jednotka
+        RELIF         CHAR      1 Pravidelný dodavatel
+        MFRNR         CHAR     10 Výrobce
+        APPEND  ZAEINA
+         KNTTP        CHAR      1 Typ pøiøazení úètu
+        ____________________________________________________________
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EINA
+        ______________________________________________________________________
+
+
+
+          Pole s referenèními poli:
+            Název pole      referenèní pole
+            ANZPU           EINA-PUNEI
+
+          Pole s konverzními rutinami:
+            Název pole      konverzní rutina
+            INFNR           ALPHA
+            MATNR           MATN1
+            LIFNR           ALPHA
+            MEINS           CUNIT
+            LMEIN           CUNIT
+            KOLIF           ALPHA
+            PUNEI           CUNIT
+            MFRNR           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

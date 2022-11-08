@@ -1,0 +1,219 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RSEG
+        ______________________________________________________________________
+
+
+        RSEG
+          Krátký popis:Položka dokl. - došlá faktura
+          Transparentní tabulka
+          Aktivní verze
+
+
+        Struktura pole
+          Poèet polí: 71
+          Souèet délek polí: 482
+
+        Název pole       K Typ  Délka  Krátký text
+        ____________________________________________________________
+        MANDT            X CLNT      3 Klient
+        BELNR            X CHAR     10 Èíslo úèetního dokladu
+        GJAHR            X NUMC      4 Fiskální rok
+        BUZEI            X NUMC      6 Položka v dokladu faktury
+        EBELN              CHAR     10 Èíslo nákupního dokladu
+        EBELP              NUMC      5 Èíslo položky nákupního dokladu
+        ZEKKN              NUMC      2 Poøadové èíslo pøiøazení úètu
+        MATNR              CHAR     18 Èíslo materiálu
+        BWKEY              CHAR      4 Okruh ocenìní
+        BWTAR              CHAR     10 Druh ocenìní
+        BUKRS              CHAR      4 Úèetní okruh
+        WERKS              CHAR      4 Závod
+        WRBTR              CURR     13 Èástka ve mìnì dokladu
+        SHKZG              CHAR      1 Znak Má dáti/Dal
+        MWSKZ              CHAR      2 Znak DPH
+        TXJCD              CHAR     15 Tax jurisdiction code - pøíslušnost pro
+        MENGE              QUAN     13 Množství
+        BSTME              UNIT      3 Objednací mìrná jednotka
+        BPMNG              QUAN     13 Množství v mìrné jednotce objednací ceny
+        BPRME              UNIT      3 Jednotka u objednací ceny
+        LBKUM              QUAN     13 Celková ocenìná zásoba
+        VRKUM              QUAN     13 Celková ocenìná zásoba v období v úètov.
+        MEINS              UNIT      3 Základní mìrná jednotka
+        PSTYP              CHAR      1 Typ položky v nákupním dokladu
+        KNTTP              CHAR      1 Typ pøiøazení úètu
+        BKLAS              CHAR      4 Tøída ocenìní
+        EREKZ              CHAR      1 Znak koneèné faktury
+        EXKBE              CHAR      1 Aktualizace znaku vývoje objednávky
+        XEKBZ              CHAR      1 Znak: Aktualizace vedl.poøizovacích nákl
+        TBTKZ              CHAR      1 Znak:Násled.úètov. na vrub
+        SPGRP              CHAR      1 Dùv.blokov.:Cena
+        SPGRM              CHAR      1 Dùv.blok.: Množ.
+        SPGRT              CHAR      1 Dùv.blok.: Termín
+        SPGRG              CHAR      1 Dùv.blok:Poèet jedn.uObjCeny
+        SPGRV              CHAR      1 Dùv.blok:Rozpoè.projektu
+        SPGRQ              CHAR      1 Znak: Manuální dùvod blokování
+        SPGRS              CHAR      1 Dùvod blokov.: Výška èástky
+        SPGRC              CHAR      1 Dùvod blok.: Jakost
+        BUSTW              CHAR      4 Úèetní øetìzec hodnot
+        XBLNR              CHAR     16 Èíslo referenèního dokladu
+        XRUEB              CHAR      1 Znak: Doklad je úètován do pøedchozího o
+        BNKAN              CURR     13 Podíl vedlejš.nákladù u hodn.položky
+        KSCHL              CHAR      4 Druh podmínky
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RSEG
+        ______________________________________________________________________
+
+
+        Název pole       K Typ  Délka  Krátký text
+        ____________________________________________________________
+        SALK3              CURR     13 Hodnota celkové ocenìné zásoby
+        VMSAL              CURR     13 Hodnota celkových ocenìných zásob v pøed
+        XLIFO              CHAR      1 LIFO/FIFO-relevantní
+        LFBNR              CHAR     10 Èíslo referenèního dokladu
+        LFGJA              NUMC      4 Fiskální rok souèasného období
+        LFPOS              NUMC      4 Položka  referenèního dokladu
+        MATBF              CHAR     18 Materiál, ve kterém je vedena zásoba
+        RBMNG              QUAN     13 Fakturované množství podle faktury dodav
+        BPRBM              QUAN     13 Faktur.množství podle faktury dodavatele
+        RBWWR              CURR     13 Fakturovaná èástka v mìnì dokladu podle
+        LFEHL              CHAR      1 Druh chyby dodavatele
+        GRICD              CHAR      2 Znak èinnosti pro daò z pøíjmu brutto
+        GRIRG              CHAR      3 Region (spolkový stát, spolková zemì, pr
+        GITYP              CHAR      2 Druh rozdìlení pro daò ze mzdy
+        PACKNO             NUMC     10 Æíslo paketu výkonu
+        INTROW             NUMC     10 Èíslo øádky výkonu
+        SGTXT              CHAR     50 Text položky
+        XSKRL              CHAR      1 Znak: Úèetní øádka není relevant.pro pos
+        KZMEK              CHAR      1 Znak korektury
+        MRMOK              CHAR      1 Znak: Položka faktury se zpracovává
+        STUNR              NUMC      3 Èíslo úrovnì
+        ZAEHK              NUMC      2 Èítaè podmínek
+        STOCK_POSTING      CURR     13 Úètování zásob øádky došlé faktury
+        STOCK_POSTING_PP   CURR     13 Úètování zásob øádky došlé faktury, minu
+        STOCK_POSTING_PY   CURR     13 Úètování zásob øádky došlé faktury, minu
+        WEREC              CHAR      1 Znak vyrovnání pro úètování PM/PF u služ
+        LIFNR              CHAR     10 Èíslo úètu dodavatele
+        FRBNR              CHAR     16 Èíslo nákladního listu u pøíjmu materiál
+        ____________________________________________________________
+          Pole s referenèními poli:
+            Název pole      referenèní pole
+            WRBTR           RBKP-WAERS
+            MENGE           RSEG-BSTME
+            BPMNG           RSEG-BPRME
+            LBKUM           MARA-MEINS
+            VRKUM           MARA-MEINS
+            BNKAN           RBKP-WAERS
+            SALK3           T001-WAERS
+            VMSAL           T001-WAERS
+            RBMNG           RSEG-BSTME
+            BPRBM           RSEG-BPRME
+            RBWWR           RBKP-WAERS
+            STOCK_POSTING   T001-WAERS
+            STOCK_POSTING_PPT001-WAERS
+            STOCK_POSTING_PYT001-WAERS
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RSEG
+        ______________________________________________________________________
+
+
+
+          Pole s konverzními rutinami:
+            Název pole      konverzní rutina
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            EBELN           ALPHA
+            MATNR           MATN1
+            BSTME           CUNIT
+            BPRME           CUNIT
+            MEINS           CUNIT
+            LFBNR           ALPHA
+            LFGJA           GJAHR
+            MATBF           MATN1
+            LIFNR           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

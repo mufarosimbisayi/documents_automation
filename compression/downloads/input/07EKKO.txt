@@ -1,0 +1,219 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKKO
+        ______________________________________________________________________
+
+
+        EKKO
+          Krátký popis:Hlavièka nákup.dokladu
+          Transparentní tabulka
+          Aktivní verze
+
+
+        Struktura pole
+          Poèet polí: 76
+          Souèet délek polí: 517
+
+        Název pole  K Typ  Délka  Krátký text
+        ____________________________________________________________
+        MANDT       X CLNT      3 Klient
+        EBELN       X CHAR     10 Èíslo nákupního dokladu
+        INCLUDE EKKODATA
+         BUKRS        CHAR      4 Úèetní okruh
+         BSTYP        CHAR      1 Typ nákupního dokladu
+         BSART        CHAR      4 Druh nákup.dokladu
+         BSAKZ        CHAR      1 Øídící znak k druhu nákupního dokladu
+         LOEKZ        CHAR      1 Znak výmazu v nákupním dokladu
+         STATU        CHAR      1 Status nákupního dokladu
+         AEDAT        DATS      8 Datum pøipojení záznamu
+         ERNAM        CHAR     12 Jméno referenta, který objekt založil
+         PINCR        NUMC      5 Interval položky
+         LPONR        NUMC      5 Èíslo poslední položky
+         LIFNR        CHAR     10 Èíslo úètu dodavatele
+         SPRAS        LANG      1 Jazykový klíè
+         ZTERM        CHAR      4 Klíè platebních podmínek
+         ZBD1T        DEC       3 Dny skonta
+         ZBD2T        DEC       3 Dny skonta
+         ZBD3T        DEC       3 Dny skonta
+         ZBD1P        DEC       5 Procenta skonta 1
+         ZBD2P        DEC       5 Procenta skonta 2
+         EKORG        CHAR      4 Nákupní organizace
+         EKGRP        CHAR      3 Skupina nákupu
+         WAERS        CUKY      5 Klíè mìny
+         WKURS        DEC       9 Smìnný kurz
+         KUFIX        CHAR      1 Znak: Fixace kurzu
+         BEDAT        DATS      8 Datum nákupního dokladu
+         KDATB        DATS      8 Zaèátek doby platnosti
+         KDATE        DATS      8 Konec platnosti
+         BWBDT        DATS      8 Lhùta výbìr.øízení
+         ANGDT        DATS      8 Lhùta pro odevzdání nabídky
+         BNDDT        DATS      8 Závazná lhùta nabídky
+         GWLDT        DATS      8 Datum záruky
+         AUSNR        CHAR     10 Èíslo vypsané soutìže
+         ANGNR        CHAR     10 Èíslo nabídky
+         IHRAN        DATS      8 Datum podání nabídky
+         IHREZ        CHAR     12 Vaše znaèka
+         VERKF        CHAR     30 Kompetentní prodejce u dodavatele
+         TELF1        CHAR     16 Èíslo telefonu dodavatele
+         LLIEF        CHAR     10 Dodavatel pro dodávku
+         KUNNR        CHAR     10 Èíslo odbìratele 1
+         KONNR        CHAR     10 Èíslo nadøazené smlouvy
+         ABGRU        CHAR      2 Pole se nepoužívá
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKKO
+        ______________________________________________________________________
+
+
+        Název pole  K Typ  Délka  Krátký text
+        ____________________________________________________________
+         AUTLF        CHAR      1 Komplet.dodávka pøedepsaná pro kaž.objed
+         WEAKT        CHAR      1 Znak: Zpráva o pøíjmu materiálu
+         RESWK        CHAR      4 Odevzdávající závod u objednávky pøeprav
+         LBLIF        CHAR     10 Pole se nepoužívá
+         INCO1        CHAR      3 Incoterms èást 1
+         INCO2        CHAR     28 Incoterms èást 2
+         KTWRT        CURR     15 Kumulovaná plánovaná hodnota
+         SUBMI        CHAR     10 Èíslo submise
+         KNUMV        CHAR     10 Èíslo podmínky dokladu
+         KALSM        CHAR      6 Schéma (stanovení ceny, zprávy, pøiøazen
+         STAFO        CHAR      6 Skupina aktualizace pro aktualizaci stat
+         LIFRE        CHAR     10 Odlišný výstavce faktury
+         EXNUM        CHAR     10 Èíslo dat zahr.obchodu v dokladech MM a
+         UNSEZ        CHAR     12 Naše znaèka
+         LOGSY        CHAR     10 Logický systém
+         UPINC        NUMC      5 Interval pro podpoložky
+         STAKO        CHAR      1 Doklad s podmínkami závislými na èase
+         FRGGR        CHAR      2 Skup.uvolnìní
+         FRGSX        CHAR      2 Strategie uvolnìní
+         FRGKE        CHAR      1 Znak uvolnìní: Nákupní doklad
+         FRGZU        CHAR      8 Stav uvolnìní
+         FRGRL        CHAR      1 Uvolnìní neúplné
+         LANDS        CHAR      3 Stát pro daòové pøiznání
+         LPHIS        CHAR      1 Znak pro odvol.plánu dodávek - dokumenta
+         ADRNR        CHAR     10 Èíslo adresy
+         STCEG_L      CHAR      3 Stát identif.èísla danì z pøidané hodnot
+         STCEG        CHAR     20 Identifikaèní èíslo DPH
+         ABSGR        NUMC      2 Dùvod odmítnutí
+         ADDNR        CHAR     10 Èíslo dokladu pro pom.prostø.prodeje
+         KORNR        CHAR      1 Korektura neutrálních rezerv
+         MEMORY       CHAR      1 Objednávka není ještì kompletní
+         PROCSTAT     CHAR      2 Status zpracování nákupního dokladu
+         RLWRT        CURR     15 Celková hodnota pøi uvolnìní
+         REVNO        CHAR      8 Èíslo verze v nákupu
+        INCLUDE CI_EKKODB
+        ____________________________________________________________
+          Pole s referenèními poli:
+            Název pole      referenèní pole
+            .INCLUDE        SPRAS-
+            KTWRT           EKKO-WAERS
+            RLWRT           EKKO-WAERS
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKKO
+        ______________________________________________________________________
+
+
+
+          Pole s konverzními rutinami:
+            Název pole      konverzní rutina
+            EBELN           ALPHA
+            LIFNR           ALPHA
+            SPRAS           ISOLA
+            WKURS           EXCRT
+            AUSNR           ALPHA
+            LLIEF           ALPHA
+            KUNNR           ALPHA
+            KONNR           ALPHA
+            LBLIF           ALPHA
+            STAFO           ALPHA
+            LIFRE           ALPHA
+            LOGSY           ALPHA
+            ADRNR           ALPHA
+            ADDNR           ALPHA
+            REVNO           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

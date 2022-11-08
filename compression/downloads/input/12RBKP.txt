@@ -1,0 +1,292 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+        RBKP
+          Krátký popis:Hlaviè.dokl.- došlá faktura
+          Transparentní tabulka
+          Aktivní verze
+
+
+        Struktura pole
+          Poèet polí: 127
+          Souèet délek polí: 1236
+
+        Název pole  K Typ  Délka  Krátký text
+        ____________________________________________________________
+        MANDT       X CLNT      3 Klient
+        BELNR       X CHAR     10 Èíslo dokladu dokl.faktury
+        GJAHR       X NUMC      4 Fiskální rok
+        BLART         CHAR      2 Druh dokl.
+        BLDAT         DATS      8 Datum dokladu
+        BUDAT         DATS      8 Datum úètování v dokladu
+        USNAM         CHAR     12 Jméno uživatele
+        TCODE         CHAR     20 Kód transakce
+        CPUDT         DATS      8 Den poøízení úèetního dokladu
+        CPUTM         TIMS      6 Èas poøízení
+        VGART         CHAR      2 Druh operace v AG08 (druh inter.dokl.)
+        XBLNR         CHAR     16 Èíslo referenèního dokladu
+        BUKRS         CHAR      4 Úèetní okruh
+        LIFNR         CHAR     10 Odlišný výstavce faktury
+        WAERS         CUKY      5 Klíè mìny
+        KURSF         DEC       9 Kurz pøepoètu
+        RMWWR         CURR     13 Fakturovaná èástka brutto v mìnì dokladu
+        BEZNK         CURR     13 Neplán.vedl.poøizovací náklady
+        WMWST1        CURR     13 Èástka danì ve mìnì dokladu se znaménkem
+        MWSKZ1        CHAR      2 Znak danì
+        WMWST2        CURR     13 Zastar.: Èástka danì v mìnì dokladu - už
+        MWSKZ2        CHAR      2 Zast.: Znak DPH
+        ZTERM         CHAR      4 Klíè platebních podmínek
+        ZBD1T         DEC       3 Dny skonta 1
+        ZBD1P         DEC       5 Procenta skonta 1
+        ZBD2T         DEC       3 Dny skonta 2
+        ZBD2P         DEC       5 Procenta skonta 2
+        ZBD3T         DEC       3 Lhùta pro podmínku netto
+        WSKTO         CURR     13 Èástka skonta v mìnì dokladu
+        XRECH         CHAR      1 Znak: Úètování faktury
+        BKTXT         CHAR     25 Text hl.dokl.
+        SAPRL         CHAR      4 Release SAP
+        LOGSYS        CHAR     10 Logický systém
+        XMWST         CHAR      1 Výpoèet danì automaticky?
+        STBLG         CHAR     10 Èíslo stornovacího dokladu
+        STJAH         NUMC      4 Fiskální rok storn.dokladu
+        MWSKZ_BNK     CHAR      2 Znak DPH
+        TXJCD_BNK     CHAR     15 Tax jurisdiction code - pøíslušnost pro
+        IVTYP         CHAR      1 Pùvod logist. dokladu likvidace faktur
+        XRBTX         CHAR      1 Znak: Více než jeden znak danì
+        REPART        CHAR      1 Znak: Druh likvidace faktur
+        RBSTAT        CHAR      1 Status fakturaèního dokladu
+        KNUMVE        CHAR     10 Podmínka dokladu - vlastní podmínky
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+        Název pole  K Typ  Délka  Krátký text
+        ____________________________________________________________
+        KNUMVL        CHAR     10 Podmínka dokladu - chyba dodavatele
+        ARKUEN        CURR     13 Automatická èástka snížení faktury (nett
+        ARKUEMW       CURR     13 DPH - podíl automatické zredukované èást
+        MAKZN         CURR     13 Manuál.akcept.rozdílová èástka netto
+        MAKZMW        CURR     13 Manuálnì akceptovaná èástka DPH
+        LIEFFN        CURR     13 Chyba dodavatele exkl. DPH
+        LIEFFMW       CURR     13 DPH-podíl chyby dodavatele
+        XAUTAKZ       CHAR      1 Zn. pro automaticky akceptované faktury
+        INCLUDE RBKP_FI
+         ESRNR        CHAR     11 Èíslo úèastníka ESR
+         ESRPZ        CHAR      2 Kontr.èís.ESR
+         ESRRE        CHAR     27 Referenèní èís.ESR
+         QSSHB        CURR     13 Zákl.èástka zdroj.danì
+         QSFBT        CURR     13 Èástka osvoboz.od zdroj.danì(v mìnì dokl
+         QSSKZ        CHAR      2 Znak zdrojové danì
+         DIEKZ        CHAR      1 Znak služeb (zahranièní platba)
+         LANDL        CHAR      3 Stát dodavatele
+         LZBKZ        CHAR      3 Kód centrální banky státu
+         TXKRS        DEC       9 Smìnný kurs pro danì
+         EMPFB        CHAR     10 Pøíjemce platby / plátce
+         BVTYP        CHAR      4 Typ banky part.
+         HBKID        CHAR      5 Krátký klíè pro firemní banku
+         ZUONR        CHAR     18 Èíslo pøiøazení
+         ZLSPR        CHAR      1 Klíè pro blokování platby
+         ZLSCH        CHAR      1 Zpùsob platby
+         ZFBDT        DATS      8 Zákl.datum pro výpoèet splatnosti
+         KIDNO        CHAR     30 Reference platby
+         REBZG        CHAR     10 Odkaz na fakturu: Èíslo ref.dokladu pro
+         REBZJ        NUMC      4 Fiskální rok pøíslušné faktury (u dobrop
+         XINVE        CHAR      1 Znak: Týká se investièního majetku ?
+         EGMLD        CHAR      3 Stát hlásící dodávky zboží v rámci EU
+         XEGDR        CHAR      1 Znak: Trojstranný obchod uvnitø ES ?
+        J_1BNFTYPE    CHAR      2
+        BRNCH         CHAR      4 Èíslo poboèky
+        ERFPR         CHAR     12 Profil poøízení likvidace faktur v logis
+        SECCO         CHAR      4 Sekce zdrojové danì
+        INCLUDE RBKP_1TIME
+         NAME1        CHAR     35 Náz. 1
+         NAME2        CHAR     35 Náz. 2
+         NAME3        CHAR     35 Náz. 3
+         NAME4        CHAR     35 Náz. 4
+         PSTLZ        CHAR     10 Poštovní smìrovací èíslo
+         ORT01        CHAR     35 Místo
+         LAND1        CHAR      3 Klíè státu
+         STRAS        CHAR     35 Ulice a èíslo domu
+         PFACH        CHAR     10 Poštovní pøihrádka
+         PSTL2        CHAR     10 PSÈ poštovní pøihrádky
+         PSKTO        CHAR     16 Èíslo postžir.úètu
+         BANKN        CHAR     18 Èíslo bank.úètu
+         BANKL        CHAR     15 Smìrový kód banky
+         BANKS        CHAR      3 Klíè státu banky
+         STCD1        CHAR     16 Daòové èíslo 1
+         STCD2        CHAR     11 Daòové èíslo 2
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+        Název pole  K Typ  Délka  Krátký text
+        ____________________________________________________________
+         STKZU        CHAR      1 Povinnost DPH
+         STKZA        CHAR      1 Znak: Má obchodní partner povinnost vyro
+         REGIO        CHAR      3 Region (spolkový stát, spolková zemì, pr
+         BKONT        CHAR      2 Kontrolní kód banky
+         DTAWS        CHAR      2 Klíè instrukce pro výmìnu nosièù dat
+         DTAMS        CHAR      1 Klíè hlášení pro výmìnu nosièù dat
+         SPRAS        CHAR      1 Znakové pole délky 1
+         XCPDK        CHAR      1 Znak: Jedná se o úèet CPD ?
+         EMPFG        CHAR     16 Zakódování pøíjemce platby
+         FITYP        CHAR      2 Druh danì
+         STCDT        CHAR      2 Typ daòového èísla
+         STKZN        CHAR      1 Fyzická osoba
+         STCD3        CHAR     18 Daòové èíslo 3
+         STCD4        CHAR     18 Daòové èíslo 4
+         BKREF        CHAR     20 Referenèní údaj k bank.spojení
+         J_1KFREPRE   CHAR     10 Jméno reprezentanta
+         J_1KFTBUS    CHAR     30 Typ transakce
+         J_1KFTIND    CHAR     30 Typ prùmyslu
+         ANRED        CHAR     15 Oslovení
+         STCEG        CHAR     20 Identifikaèní èíslo DPH
+        ERNAME        CHAR     12 Název poøizovatele externím systému
+        REINDAT       DATS      8 Datum pøíchodu faktury
+        UZAWE         CHAR      2 Dodatek ke zpùsobu platby
+        FDLEV         CHAR      2 Úroveò øíz.hotovosti
+        FDTAG         DATS      8 Datum dispozice
+        ZBFIX         CHAR      1 Fixní platební podmínka
+        FRGKZ         CHAR      1 Znak: Uvolnìní je nutné
+        ERFNAM        CHAR     12 Jméno referenta, který objekt zadal
+        BUPLA         CHAR      4 Obchodní místo
+        FILKD         CHAR     10 Èíslo úètu poboèky
+        GSBER         CHAR      4 Pracovní úsek
+        LOTKZ         CHAR     10 Znak spojení pro doklady
+        SGTXT         CHAR     50 Text položky
+        ____________________________________________________________
+          Pole s referenèními poli:
+            Název pole      referenèní pole
+            RMWWR           RBKP-WAERS
+            BEZNK           RBKP-WAERS
+            WMWST1          RBKP-WAERS
+            WMWST2          RBKP-WAERS
+            WSKTO           RBKP-WAERS
+            ARKUEN          RBKP-WAERS
+            ARKUEMW         RBKP-WAERS
+            MAKZN           RBKP-WAERS
+            MAKZMW          RBKP-WAERS
+            LIEFFN          RBKP-WAERS
+            LIEFFMW         RBKP-WAERS
+            QSSHB           RBKP-WAERS
+            QSFBT           RBKP-WAERS
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          RBKP
+        ______________________________________________________________________
+
+
+
+          Pole s konverzními rutinami:
+            Název pole      konverzní rutina
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            LIFNR           ALPHA
+            KURSF           EXCRT
+            LOGSYS          ALPHA
+            STBLG           ALPHA
+            STJAH           GJAHR
+            ESRRE           ALPHA
+            TXKRS           EXCRT
+            EMPFB           ALPHA
+            REBZG           ALPHA
+            REBZJ           GJAHR
+            FILKD           ALPHA
+            LOTKZ           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

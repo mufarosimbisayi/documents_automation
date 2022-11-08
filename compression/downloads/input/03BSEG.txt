@@ -1,0 +1,660 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        BSEG
+          Krátkı popis:Segment dokladu: Úèetnictví
+          Clusterová tabulka z clusteru tabulek RFBLG
+          Aktivní verze
+
+
+        Struktura pole
+          Poèet polí: 306
+          Souèet délek polí: 2298
+
+        Název pole K Typ  Délka  Krátkı text
+        ____________________________________________________________
+        MANDT      X CLNT      3 Klient
+        BUKRS      X CHAR      4 Úèetní okruh
+        BELNR      X CHAR     10 Èíslo úèetního dokladu
+        GJAHR      X NUMC      4 Fiskální rok
+        BUZEI      X NUMC      3 Èíslo úèetní øádky v úèetním dokladu
+        BUZID        CHAR      1 Identifikace úèetní øádky
+        AUGDT        DATS      8 Datum vyrovnání
+        AUGCP        DATS      8 Datum poøízení vyrovnání
+        AUGBL        CHAR     10 Èíslo dokladu o vyrovnání
+        BSCHL        CHAR      2 Úètovací klíè
+        KOART        CHAR      1 DruhÚètu
+        UMSKZ        CHAR      1 Znak zvláštní hlavní knihy
+        UMSKS        CHAR      1 Tøída operací zvlášt.hl.knihy
+        ZUMSK        CHAR      1 Cílovı znak zvláštní hlavní knihy
+        SHKZG        CHAR      1 Znak Má dáti/Dal
+        GSBER        CHAR      4 Pracovní úsek
+        PARGB        CHAR      4 Pracovní úsek obchodního partnera
+        MWSKZ        CHAR      2 Znak DPH
+        QSSKZ        CHAR      2 Znak zdrojové danì
+        DMBTR        CURR     13 IN Èástka ve firemní mìnì
+        WRBTR        CURR     13 Èástka ve mìnì dokladu
+        KZBTR        CURR     13 Pùvodní zredukovaná èástka ve firemní mì
+        PSWBT        CURR     13 Èástka pro aktualizaci v hlavní knize
+        PSWSL        CUKY      5 Aktualizovaná mìna pro obraty na úètu HK
+        TXBHW        CURR     13 Pùvodní èástka základu danì ve firemní m
+        TXBFW        CURR     13 Pùvodní èástka základu danì v mìnì dokla
+        MWSTS        CURR     13 Èástka danì ve firemní mìnì
+        WMWST        CURR     13 Èástka danì v mìnì dokladu
+        HWBAS        CURR     13 Èástka základu danì ve fir.mìnì
+        FWBAS        CURR     13 Èástka základu danì v mìnì dokladu
+        HWZUZ        CURR     13 Rezervní èástka ve firemní mìnì
+        FWZUZ        CURR     13 Dodateèná daò v mìnì dokladu
+        SHZUZ        CHAR      1 Doplnìk MáDáti/Dal pro skonto
+        STEKZ        CHAR      2 Komponenta èísla verze
+        MWART        CHAR      1 Druh danì
+        TXGRP        NUMC      3 Znak skupiny pro øádky daní
+        KTOSL        CHAR      3 Klíè operace
+        QSSHB        CURR     13 Zákl.èástka zdroj.danì
+        KURSR        DEC       9 Zajištìnı kurz
+        GBETR        CURR     13 Èástka se zajištìnım kurzem v cizí mìnì
+        BDIFF        CURR     13 Rozdíl ocenìní
+        BDIF2        CURR     13 Oceòovací rozdíl pro 2. metodu oceòování
+        VALUT        DATS      8 Dat.valuty
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            1
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        Název pole K Typ  Délka  Krátkı text
+        ____________________________________________________________
+        ZUONR        CHAR     18 Èíslo pøiøazení
+        SGTXT        CHAR     50 Text poloky
+        ZINKZ        CHAR      2 Vıjimka z úroèení
+        VBUND        CHAR      6 Èíslo partnerské spoleènosti
+        BEWAR        CHAR      3 Druh pohybu
+        ALTKT        CHAR     10 Èís.úètu koncernu
+        VORGN        CHAR      4 Druh operace pro HK
+        FDLEV        CHAR      2 Úroveò øíz.hotovosti
+        FDGRP        CHAR     10 Dispozièní skupina
+        FDWBT        CURR     13 Dispozièní èástka v mìnì dokladu-popø.mì
+        FDTAG        DATS      8 Datum dispozice
+        FKONT        NUMC      3 Polo.finanèního plánu
+        KOKRS        CHAR      4 Nákladovı okruh
+        KOSTL        CHAR     10 Nákladové støedisko
+        PROJN        CHAR     16 Zastaralé: èíslo projektu : Ji NEPOUÍV
+        AUFNR        CHAR     12 Èíslo zakázky
+        VBELN        CHAR     10 Faktura
+        VBEL2        CHAR     10 Prodej.doklad
+        POSN2        NUMC      6 Poloka prod.dokladu
+        ETEN2        NUMC      4 Èíslo rozvrení
+        ANLN1        CHAR     12 Hlavní èíslo IM
+        ANLN2        CHAR      4 Podèíslo inv.majetku
+        ANBWA        CHAR      3 Druh pohybu IM
+        BZDAT        DATS      8 Refer.datum
+        PERNR        NUMC      8 Osobní èíslo
+        XUMSW        CHAR      1 Znak: Poloka ovlivòující obrat ?
+        XHRES        CHAR      1 Znak: Úèet hlavní knihy je rezidentní ?
+        XKRES        CHAR      1 Znak: Zobrazení jednotl.poloek pomocí ú
+        XOPVW        CHAR      1 Znak: Správa otevøenıch poloek ?
+        XCPDD        CHAR      1 Znak: Adresa a údaje banky jsou nastaven
+        XSKST        CHAR      1 Znak: Statistické úètování na nákladové
+        XSAUF        CHAR      1 Znak: Úètování na zakázku je statistické
+        XSPRO        CHAR      1 Znak: Úètování na projekt je statistické
+        XSERG        CHAR      1 Znak: Úètování do vısledku je statistick
+        XFAKT        CHAR      1 Znak: Provedena aktualizace faktury ?
+        XUMAN        CHAR      1 Znak: Pøeúètování ze zálohy ?
+        XANET        CHAR      1 Znak: Záloha úètovaná netto ?
+        XSKRL        CHAR      1 Znak: Úèetní øádka není relevant.pro pos
+        XINVE        CHAR      1 Znak: Tıká se investièního majetku ?
+        XPANZ        CHAR      1 Zobrazení poloky
+        XAUTO        CHAR      1 Znak: Automaticky vygenerovaná poloka
+        XNCOP        CHAR      1 Znak: Poloky nelze kopírovat ?
+        XZAHL        CHAR      1 Znak: Jedná se o platební operaci ?
+        SAKNR        CHAR     10 Èíslo úètu hlavní knihy
+        HKONT        CHAR     10 Úèet hlavní knihy úèetnictví HK
+        KUNNR        CHAR     10 Èíslo odbìratele 1
+        LIFNR        CHAR     10 Èíslo úètu dodavatele
+        FILKD        CHAR     10 Èíslo úètu poboèky
+        XBILK        CHAR      1 Znak: Jedná se o rozvahovı úèet ?
+        GVTYP        CHAR      2 Typ vısled.úètu
+        HZUON        CHAR     18 Pøiøazovací èíslo pro úèty ZHK
+        ZFBDT        DATS      8 Zákl.datum pro vıpoèet splatnosti
+        ZTERM        CHAR      4 Klíè platebních podmínek
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            2
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        Název pole K Typ  Délka  Krátkı text
+        ____________________________________________________________
+        ZBD1T        DEC       3 Dny skonta 1
+        ZBD2T        DEC       3 Dny skonta 2
+        ZBD3T        DEC       3 Lhùta pro podmínku netto
+        ZBD1P        DEC       5 Procenta skonta 1
+        ZBD2P        DEC       5 Procenta skonta 2
+        SKFBT        CURR     13 Skontovatelná èástka v mìnì dokladu
+        SKNTO        CURR     13 Èástka skonta ve firem.mìnì
+        WSKTO        CURR     13 Èástka skonta v mìnì dokladu
+        ZLSCH        CHAR      1 Zpùsob platby
+        ZLSPR        CHAR      1 Klíè pro blokování platby
+        ZBFIX        CHAR      1 Fixní platební podmínka
+        HBKID        CHAR      5 Krátkı klíè pro firemní banku
+        BVTYP        CHAR      4 Typ banky part.
+        NEBTR        CURR     13 Èástka platby netto
+        MWSK1        CHAR      2 Znak danì pro rozdìlení
+        DMBT1        CURR     13 Èástka ve firemní mìnì pro rozdìlení dan
+        WRBT1        CURR     13 Èástka v cizí mìnì pro rozdìlení daní
+        MWSK2        CHAR      2 Znak danì pro rozdìlení
+        DMBT2        CURR     13 Èástka ve firemní mìnì pro rozdìlení dan
+        WRBT2        CURR     13 Èástka v cizí mìnì pro rozdìlení daní
+        MWSK3        CHAR      2 Znak danì pro rozdìlení
+        DMBT3        CURR     13 Èástka ve firemní mìnì pro rozdìlení dan
+        WRBT3        CURR     13 Èástka v cizí mìnì pro rozdìlení daní
+        REBZG        CHAR     10 Èíslo dokladu faktury, k ní patøí daná
+        REBZJ        NUMC      4 Fiskální rok pøíslušné faktury (u dobrop
+        REBZZ        NUMC      3 Úèetní poloka v pøíslušné faktuøe
+        REBZT        CHAR      1 Druh násled.dokladu
+        ZOLLT        CHAR      8 Èís.celní sazby
+        ZOLLD        DATS      8 Celní dat.
+        LZBKZ        CHAR      3 Kód centrální banky státu
+        LANDL        CHAR      3 Stát dodavatele
+        DIEKZ        CHAR      1 Znak slueb (zahranièní platba)
+        SAMNR        NUMC      8 Èíslo seznamu faktur
+        ABPER        ACCP      6 Zúètovací období
+        VRSKZ        CHAR      1 Znak pojištìní
+        VRSDT        DATS      8 Datum pojištìní
+        DISBN        CHAR     10 Èíslo dokladu o pouití smìnky (doklad o
+        DISBJ        NUMC      4 Fiskální rok dokladu pouití smìnky
+        DISBZ        NUMC      3 Úèetní øádka v dokladu o pouití smìnky
+        WVERW        CHAR      1 Druh pouití smìnky
+        ANFBN        CHAR     10 Èís.dokl.poadavku smìneèné platby
+        ANFBJ        NUMC      4 Fisk.rok dokladu poadavku smìneèné plat
+        ANFBU        CHAR      4 Úè.okruh, v nìm je zaúètován poadavek
+        ANFAE        DATS      8 Splatnost u poad.smìneèné platby
+        BLNBT        CURR     13 Základní èástka pro urèení preferenèní è
+        BLNKZ        CHAR      2 (zastar.) Znak dotace pro stanovení zkrá
+        BLNPZ        DEC       7 Procentuál.sazba pref.
+        MSCHL        CHAR      1 Klíè upomínání
+        MANSP        CHAR      1 BlokUpomín
+        MADAT        DATS      8 Datum poslední upomínky
+        MANST        NUMC      1 Stupeò upomínání
+        MABER        CHAR      2 Oblast upomínání
+        ESRNR        CHAR     11 Èíslo úèastníka ESR
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            3
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        Název pole K Typ  Délka  Krátkı text
+        ____________________________________________________________
+        ESRRE        CHAR     27 Referenèní èís.ESR
+        ESRPZ        CHAR      2 Kontr.èís.ESR
+        KLIBT        CURR     13 Èástka pro kontrolu úvìru
+        QSZNR        CHAR     10 Èíslo osvìdèení o osvobození od zdrojové
+        QBSHB        CURR     13 Èástka zdrojové danì (ve mìnì dokladu)
+        QSFBT        CURR     13 Èástka osvoboz.od zdroj.danì(v mìnì dokl
+        NAVHW        CURR     13 Neodèitatelná vstupní DPH (ve firemní mì
+        NAVFW        CURR     13 Neodèitatelná vstupní DPH (ve mìnì dokla
+        MATNR        CHAR     18 Èíslo materiálu
+        WERKS        CHAR      4 Závod
+        MENGE        QUAN     13 Mnoství
+        MEINS        UNIT      3 Základní mìrná jednotka
+        ERFMG        QUAN     13 Mnoství v mìrné jednotce zadávaného mno
+        ERFME        UNIT      3 Mìrná jednotka zad.mnoství
+        BPMNG        QUAN     13 Mnoství v mìrné jednotce objednací ceny
+        BPRME        UNIT      3 Jednotka u objednací ceny
+        EBELN        CHAR     10 Èíslo nákupního dokladu
+        EBELP        NUMC      5 Èíslo poloky nákupního dokladu
+        ZEKKN        NUMC      2 Poøadové èíslo pøiøazení úètu
+        ELIKZ        CHAR      1 Znak koneèné dodávky
+        VPRSV        CHAR      1 Znak øízení ceny
+        PEINH        DEC       5 Poèet jednotek v cenì
+        BWKEY        CHAR      4 Okruh ocenìní
+        BWTAR        CHAR     10 Druh ocenìní
+        BUSTW        CHAR      4 Úèetní øetìzec hodnot
+        REWRT        CURR     13 Evidovaná hodnota faktury ve firemní mìn
+        REWWR        CURR     13 Evidovaná hodnota faktury v cizí mìnì
+        BONFB        CURR     13 Èástka s moností bonusu ve fir.mìnì
+        BUALT        CURR     13 Úèetní èástka v alternativním øízení cen
+        PSALT        CHAR      1 Alternativní øízení cen
+        NPREI        CURR     11 Nová cena
+        TBTKZ        CHAR      1 Znak:Násled.úètov. na vrub
+        SPGRP        CHAR      1 Dùv.blokov.:Cena
+        SPGRM        CHAR      1 Dùv.blok.: Mno.
+        SPGRT        CHAR      1 Dùv.blok.: Termín
+        SPGRG        CHAR      1 Dùv.blok:Poèet jedn.uObjCeny
+        SPGRV        CHAR      1 Dùv.blok:Rozpoè.projektu
+        SPGRQ        CHAR      1 Znak: Manuální dùvod blokování
+        STCEG        CHAR     20 Identifikaèní èíslo DPH
+        EGBLD        CHAR      3 Stát urèení pro dodávku zboí
+        EGLLD        CHAR      3 Stát dodavatele u dod.zboí
+        RSTGR        CHAR      3 Dùvod rozdílu pøi platbách
+        RYACQ        CHAR      4 Rok pøírùstku
+        RPACQ        NUMC      3 Období pøírùstku
+        RDIFF        CURR     13 Realizovanı kurzovı zisk / ztráta
+        RDIF2        CURR     13 Realizovanı kurzovı rozdíl pro druhou fi
+        PRCTR        CHAR     10 Profit centrum
+        XHKOM        CHAR      1 Znak: Úèet hlavní knihy pøiøazen manuáln
+        VNAME        CHAR      6 Joint Venture
+        RECID        CHAR      2 Typ nákladù
+        EGRUP        CHAR      3 Skupina kapitálovıch úèastí
+        VPTNR        CHAR     10 Zák. èíslo partnera
+        VERTT        CHAR      1 Dr.smlouvy
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            4
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        Název pole K Typ  Délka  Krátkı text
+        ____________________________________________________________
+        VERTN        CHAR     13 Èíslo smlouvy
+        VBEWA        CHAR      4 Druh pohybu
+        DEPOT        CHAR     10 Depot
+        TXJCD        CHAR     15 Tax jurisdiction code - pøíslušnost pro
+        IMKEY        CHAR      8 Interní klíè pro nemovitı objekt
+        DABRZ        DATS      8 Refer.datum pro zúètování
+        POPTS        DEC       9 Opèní sazba nemovitostí
+        FIPOS        CHAR     14 Rozpoètová poloka
+        KSTRG        CHAR     12 Nositel nákladù
+        NPLNR        CHAR     12 Èís.sí.diagramu pro pøiøazení úètu
+        AUFPL        NUMC     10 Èíslo postupu pro operace v zakázce
+        APLZL        NUMC      8 Všeobecnı èítaè zakázky
+        PROJK        NUMC      8 Prvek struktur.plánu projektu (prvek SPP
+        PAOBJNR      NUMC     10 Èíslo pro vısledkové objekty (CO-PA)
+        PASUBNR      NUMC      4 Historie zmìn pro vısledkové objekty (CO
+        SPGRS        CHAR      1 Dùvod blokov.: Vıška èástky
+        SPGRC        CHAR      1 Dùvod blok.: Jakost
+        BTYPE        CHAR      2 Typ zúètování
+        ETYPE        CHAR      3 Tøída kapitálovıch úèastí
+        XEGDR        CHAR      1 Znak: Trojstrannı obchod uvnitø ES ?
+        LNRAN        NUMC      5 Poøadové èíslo jednotlivé poloky IM ve
+        HRKFT        CHAR      4 Skup.pùvodu jako podøadné èlenìní náklad
+        DMBE2        CURR     13 Èástka ve druhé firemní mìnì
+        DMBE3        CURR     13 Èástka ve tøetí firemní mìnì
+        DMB21        CURR     13 Èástka ve druhé firemní mìnì pro rozdìle
+        DMB22        CURR     13 Èástka ve druhé firemní mìnì pro rozdìle
+        DMB23        CURR     13 Èástka ve druhé firemní mìnì pro rozdìle
+        DMB31        CURR     13 Èástka ve tøetí firemní mìnì pro rozdìle
+        DMB32        CURR     13 Èástka ve tøetí firemní mìnì pro rozdìle
+        DMB33        CURR     13 Èástka ve tøetí firemní mìnì pro rozdìle
+        MWST2        CURR     13 Èástka danì ve druhé firemní mìnì
+        MWST3        CURR     13 Èástka danì ve tøetí firemní mìnì
+        NAVH2        CURR     13 Neodèitatelná vstupní DPH ve druhé firem
+        NAVH3        CURR     13 Neodèitatelná vstupní DPH ve tøetí firem
+        SKNT2        CURR     13 Èástka skonta ve druhé firemní mìnì
+        SKNT3        CURR     13 Èástka skonta ve tøetí firemní mìnì
+        BDIF3        CURR     13 Rozdíl ocenìní pro tøetí firemní mìnu
+        RDIF3        CURR     13 Realizovanı kurzovı rozdíl pro tøetí fir
+        HWMET        CHAR      1 Metoda, kterou byla stanovena èástka fir
+        GLUPM        CHAR      1 Metoda aktualizace pro integraci FM - FI
+        XRAGL        CHAR      1 Znak: Vyrovnání bylo zrušeno
+        UZAWE        CHAR      2 Dodatek ke zpùsobu platby
+        LOKKT        CHAR     10 Alternativní èíslo úètu v úèetním okruhu
+        FISTL        CHAR     16 Finanèní místo
+        GEBER        CHAR     10 Fond/§
+        STBUK        CHAR      4 Úèetní okruh danì
+        TXBH2        CURR     13 Základ danì / pùvodní základ danì ve FM
+        TXBH3        CURR     13 Základ danì / pùvodní základ danì ve FM
+        PPRCT        CHAR     10 Partnerské profit centrum
+        XREF1        CHAR     12 Referenèní klíè obchodního partnera
+        XREF2        CHAR     12 Referenèní klíè obchodního partnera
+        KBLNR        CHAR     10 Èís.dokl.-rezervace prostøedkù
+        KBLPOS       NUMC      3 Poloka dokladu - rezervace prostøedkù
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            5
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+        Název pole K Typ  Délka  Krátkı text
+        ____________________________________________________________
+        STTAX        CURR     13 Èástka danì jako statistická informace v
+        FKBER        CHAR      4 Funkèní oblast
+        OBZEI        NUMC      3 Èíslo øádky úètování v originálním dokla
+        XNEGP        CHAR      1 Znak: Záporné úètování
+        RFZEI        NUMC      3 Platební karty-poloka
+        CCBTC        CHAR     10 Platební karty: Bìh zúètování
+        KKBER        CHAR      4 Oblast kontroly úvìru
+        EMPFB        CHAR     10 Pøíjemce platby / plátce
+        XREF3        CHAR     20 Referenèní klíè k poloce dokladu
+        DTWS1        NUMC      2 Instrukce 1
+        DTWS2        NUMC      2 Instrukce 2
+        DTWS3        NUMC      2 Instrukce 3
+        DTWS4        NUMC      2 Instrukce 4
+        GRICD        CHAR      2 Znak èinnosti pro daò z pøíjmu brutto
+        GRIRG        CHAR      3 Region (spolkovı stát, spolková zemì, pr
+        GITYP        CHAR      2 Druh rozdìlení pro daò ze mzdy
+        XPYPR        CHAR      1 Znak: Platební pøíkaz pro tuto poloku e
+        KIDNO        CHAR     30 Reference platby
+        ABSBT        CURR     13 Øízení úvìru: Zajištìná èástka
+        IDXSP        CHAR      5 Index inflace
+        LINFV        DATS      8 Datum poslední úpravy
+        KONTT        CHAR      2 Typ pøiøazení úètu pro odvìtvové øešení
+        KONTL        CHAR     50 Øetìzec pøiøazení úètu pro specif.odvìtv
+        TXDAT        DATS      8 Datum pro stanovení daòové sazby
+        AGZEI        DEC       5 Vyrovnávací poloka
+        PYCUR        CUKY      5 Mìna pro automatickou platbu
+        PYAMT        CURR     13 Èástka v mìnì platby
+        BUPLA        CHAR      4 Obchodní místo
+        SECCO        CHAR      4 Sekce zdrojové danì
+        LSTAR        CHAR      6 Druh vıkonu
+        CESSION_KZ   CHAR      2 Znak cese
+        PRZNR        CHAR     12 Obchodní proces
+        PPDIFF       CURR     13 Realizovanı kurzovı zisk/ztráta 1.FM (dí
+        PPDIF2       CURR     13 Realizovanı kurzovı zisk/ztráta 2.FM (dí
+        PPDIF3       CURR     13 Realizovanı kurzovı zisk/ztráta 3 FM (dí
+        PENLC1       CURR     13
+        PENLC2       CURR     13
+        PENLC3       CURR     13
+        PENFC        CURR     13
+        PENDAYS      INT4     10 Poèet dnù pro vıpoèet pokuty
+        PENRC        CHAR      2 Dùvod opodìné platby
+        GRANT_NBR    CHAR     20 Grant
+        SCTAX        CURR     13 Daòovı podíl FI-CA, firemní mìna
+        FKBER_LONG   CHAR     16 Funkèní oblast
+        GMVKZ        CHAR      1 Znak, zda je poloka vymáhána
+        SRTYPE       CHAR      2 Druh vedlejší pohledávky
+        INTRENO      CHAR     13 Interní kódování kmenovıch dat nemovitos
+        MEASURE      CHAR     24 Program v øízení rozpoètu
+        AUGGJ        NUMC      4 Fiskální rok dokladu o vyrovnání
+        PPA_EX_IND   CHAR      1
+        ZZPROV       CHAR     12 Rezerva
+        ____________________________________________________________
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            6
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+
+          Pole s referenèními poli:
+            Název pole      referenèní pole
+            DMBTR           T001-WAERS
+            WRBTR           BKPF-WAERS
+            KZBTR           BKPF-HWAER
+            PSWBT           BSEG-PSWSL
+            TXBHW           T001-WAERS
+            TXBFW           BKPF-WAERS
+            MWSTS           T001-WAERS
+            WMWST           BKPF-WAERS
+            HWBAS           T001-WAERS
+            FWBAS           BKPF-WAERS
+            HWZUZ           T001-WAERS
+            FWZUZ           BKPF-WAERS
+            QSSHB           BKPF-WAERS
+            GBETR           BKPF-WAERS
+            BDIFF           T001-WAERS
+            BDIF2           BKPF-HWAE2
+            FDWBT           BKPF-WAERS
+            SKFBT           BKPF-WAERS
+            SKNTO           T001-WAERS
+            WSKTO           BKPF-WAERS
+            NEBTR           BKPF-WAERS
+            DMBT1           T001-WAERS
+            WRBT1           BKPF-WAERS
+            DMBT2           T001-WAERS
+            WRBT2           BKPF-WAERS
+            DMBT3           T001-WAERS
+            WRBT3           BKPF-WAERS
+            BLNBT           T001-WAERS
+            KLIBT           T014-WAERS
+            QBSHB           BKPF-WAERS
+            QSFBT           BKPF-WAERS
+            NAVHW           T001-WAERS
+            NAVFW           BKPF-WAERS
+            MENGE           BSEG-MEINS
+            ERFMG           BSEG-ERFME
+            BPMNG           BSEG-BPRME
+            REWRT           T001-WAERS
+            REWWR           BKPF-WAERS
+            BONFB           T001-WAERS
+            BUALT           BKPF-WAERS
+            NPREI           T001-WAERS
+            RDIFF           T001-WAERS
+            RDIF2           BKPF-HWAE2
+            DMBE2           BKPF-HWAE2
+            DMBE3           BKPF-HWAE3
+            DMB21           BKPF-HWAE2
+            DMB22           BKPF-HWAE2
+            DMB23           BKPF-HWAE2
+            DMB31           BKPF-HWAE3
+            DMB32           BKPF-HWAE3
+            DMB33           BKPF-HWAE3
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            7
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+            MWST2           BKPF-HWAE2
+            MWST3           BKPF-HWAE3
+            NAVH2           BKPF-HWAE2
+            NAVH3           BKPF-HWAE3
+            SKNT2           BKPF-HWAE2
+            SKNT3           BKPF-HWAE3
+            BDIF3           BKPF-HWAE3
+            RDIF3           BKPF-HWAE3
+            TXBH2           BKPF-HWAE2
+            TXBH3           BKPF-HWAE3
+            STTAX           BKPF-WAERS
+            ABSBT           T014-WAERS
+            PYAMT           BSEG-PYCUR
+            PPDIFF          T001-WAERS
+            PPDIF2          BKPF-HWAE2
+            PPDIF3          BKPF-HWAE3
+            PENLC1          BKPF-HWAER
+            PENLC2          BKPF-HWAE2
+            PENLC3          BKPF-HWAE3
+            PENFC           BKPF-WAERS
+            SCTAX           BKPF-WAERS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            8
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+
+          Pole s konverzními rutinami:
+            Název pole      konverzní rutina
+            BELNR           ALPHA
+            GJAHR           GJAHR
+            AUGBL           ALPHA
+            KURSR           EXCRT
+            VBUND           ALPHA
+            ALTKT           ALPHA
+            FDGRP           ALPHA
+            KOSTL           ALPHA
+            AUFNR           ALPHA
+            VBELN           ALPHA
+            VBEL2           ALPHA
+            ANLN1           ALPHA
+            ANLN2           ALPHA
+            SAKNR           ALPHA
+            HKONT           ALPHA
+            KUNNR           ALPHA
+            LIFNR           ALPHA
+            FILKD           ALPHA
+            REBZG           ALPHA
+            REBZJ           GJAHR
+            DISBN           ALPHA
+            DISBJ           GJAHR
+            ANFBN           ALPHA
+            ANFBJ           GJAHR
+            ESRRE           ALPHA
+            MATNR           MATN1
+            MEINS           CUNIT
+            ERFME           CUNIT
+            BPRME           CUNIT
+            EBELN           ALPHA
+            RYACQ           GJAHR
+            PRCTR           ALPHA
+            VNAME           ALPHA
+            RECID           ALPHA
+            EGRUP           ALPHA
+            VPTNR           ALPHA
+            VERTN           ALPHA
+            IMKEY           IMKEY
+            FIPOS           FMCIS
+            NPLNR           ALPHA
+            PROJK           ABPSP
+            BTYPE           ALPHA
+            ETYPE           ALPHA
+            LOKKT           ALPHA
+            PPRCT           ALPHA
+            KBLNR           ALPHA
+            CCBTC           ALPHA
+            EMPFB           ALPHA
+            PRZNR           ALPHA
+            GRANT_NBR       ALPHA
+            AUGGJ           GJAHR
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                            9
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          BSEG
+        ______________________________________________________________________
+
+
+            ZZPROV          ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         14.05.2007                           10

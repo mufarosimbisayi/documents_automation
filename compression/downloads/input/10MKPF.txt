@@ -1,0 +1,73 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          MKPF
+        ______________________________________________________________________
+
+
+        MKPF
+          Krátký popis:Hlavièka mater.dokladu
+          Transparentní tabulka
+          Aktivní verze
+
+
+        Struktura pole
+          Poèet polí: 25
+          Souèet délek polí: 211
+
+        Název pole  K Typ  Délka  Krátký text
+        ____________________________________________________________
+        MANDT       X CLNT      3 Klient
+        MBLNR       X CHAR     10 Èíslo materiálového dokladu
+        MJAHR       X NUMC      4 Rok materiálového dokladu
+        VGART         CHAR      2 Druh operace
+        BLART         CHAR      2 Druh dokl.
+        BLAUM         CHAR      2 Druh pøeceòovacího dokladu
+        BLDAT         DATS      8 Datum dokladu
+        BUDAT         DATS      8 Datum úètování v dokladu
+        CPUDT         DATS      8 Den poøízení úèetního dokladu
+        CPUTM         TIMS      6 Èas poøízení
+        AEDAT         DATS      8 Datum poslední zmìny
+        USNAM         CHAR     12 Jméno uživatele
+        TCODE         CHAR      4 Oblast není blíže def., event.lze použít
+        XBLNR         CHAR     16 Èíslo referenèního dokladu
+        BKTXT         CHAR     25 Text hl.dokl.
+        FRATH         CURR     13 Neplán.vedl.poøizovací náklady
+        FRBNR         CHAR     16 Èíslo nákladního listu u pøíjmu materiál
+        WEVER         CHAR      1 Verze tisku prùvodky materiálu
+        XABLN         CHAR     10 Èíslo prùvodky
+        AWSYS         CHAR     10 Logický systém
+        BLA2D         CHAR      2 Druh dokladu pro doplò.doklad k øízení ú
+        TCODE2        CHAR     20 Kód transakce
+        BFWMS         CHAR      1 Øízení úètování pro externí WMS
+        EXNUM         CHAR     10 Èíslo dat zahr.obchodu v dokladech MM a
+        APPEND  JVMKPF
+         KNUMV        CHAR     10 Èíslo podmínky dokladu
+        ____________________________________________________________
+          Pole s referenèními poli:
+            Název pole      referenèní pole
+            FRATH           T001-WAERS
+
+          Pole s konverzními rutinami:
+            Název pole      konverzní rutina
+            MBLNR           ALPHA
+            MJAHR           GJAHR
+            XABLN           ALPHA
+            AWSYS           ALPHA
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

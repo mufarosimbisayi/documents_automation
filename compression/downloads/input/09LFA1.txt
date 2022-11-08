@@ -1,0 +1,219 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          LFA1
+        ______________________________________________________________________
+
+
+        LFA1
+          Krátký popis:Kmenový soubor dodavatelù (všeob.èást)
+          Transparentní tabulka
+          Aktivní verze
+
+
+        Struktura pole
+          Poèet polí: 113
+          Souèet délek polí: 1487
+
+        Název pole      K Typ  Délka  Krátký text
+        ____________________________________________________________
+        MANDT           X CLNT      3 Klient
+        LIFNR           X CHAR     10 Èíslo úètu dodavatele
+        LAND1             CHAR      3 Klíè státu
+        NAME1             CHAR     35 Náz. 1
+        NAME2             CHAR     35 Náz. 2
+        NAME3             CHAR     35 Náz. 3
+        NAME4             CHAR     35 Náz. 4
+        ORT01             CHAR     35 Místo
+        ORT02             CHAR     35 Místní èást
+        PFACH             CHAR     10 Poštovní pøihrádka
+        PSTL2             CHAR     10 PSÈ poštovní pøihrádky
+        PSTLZ             CHAR     10 Poštovní smìrovací èíslo
+        REGIO             CHAR      3 Region (spolkový stát, spolková zemì, pr
+        SORTL             CHAR     10 Tøídicí pole
+        STRAS             CHAR     35 Ulice a èíslo domu
+        ADRNR             CHAR     10 Adresa
+        MCOD1             CHAR     25 Hledaný pojem pro použití match-kódù
+        MCOD2             CHAR     25 Hledaný pojem pro použití match-kódù
+        MCOD3             CHAR     25 Hledaný pojem pro použití match-kódù
+        INCLUDE SI_LFA1
+         ANRED            CHAR     15 Oslovení
+         BAHNS            CHAR     25 Žel.stanice
+         BBBNR            NUMC      7 Mezinárodní èíslo lokace (èást 1)
+         BBSNR            NUMC      5 Mezinárodní èíslo lokace (èást 2)
+         BEGRU            CHAR      4 Skupina oprávnìní
+         BRSCH            CHAR      4 Klíè odvìtví
+         BUBKZ            NUMC      1 Kontrolní èíslice pro mezinárodní èíslo
+         DATLT            CHAR     14 Èíslo datové linky
+         DTAMS            CHAR      1 Klíè hlášení pro výmìnu nosièù dat
+         DTAWS            CHAR      2 Klíè instrukce pro výmìnu nosièù dat
+         ERDAT            DATS      8 Datum pøipojení záznamu
+         ERNAM            CHAR     12 Jméno referenta, který objekt založil
+         ESRNR            CHAR     11 Èíslo úèastníka ESR
+         KONZS            CHAR     10 Klíè koncernu
+         KTOKK            CHAR      4 Úèt.skupina dodavatele
+         KUNNR            CHAR     10 Èíslo odbìratele 1
+         LNRZA            CHAR     10 Èíslo úètu odlišného pøíjemce platby
+         LOEVM            CHAR      1 Centrální oznaè.výmazu pro kmen.záznam
+         SPERR            CHAR      1 Centrální blok.úètování
+         SPERM            CHAR      1 Centrálnì pøidìlené blokov.nákupu
+         SPRAS            LANG      1 Jazykový klíè
+         STCD1            CHAR     16 Daòové èíslo 1
+         STCD2            CHAR     11 Daòové èíslo 2
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          LFA1
+        ______________________________________________________________________
+
+
+        Název pole      K Typ  Délka  Krátký text
+        ____________________________________________________________
+         STKZA            CHAR      1 Znak: Má obchodní partner povinnost vyro
+         STKZU            CHAR      1 Povinnost DPH
+         TELBX            CHAR     15 ÈísloTeleboxu
+         TELF1            CHAR     16 1. telefon.èíslo
+         TELF2            CHAR     16 2. telefonní èíslo
+         TELFX            CHAR     31 Èíslo faxu
+         TELTX            CHAR     30 Èíslo teletexu
+         TELX1            CHAR     30 Èíslo telexu
+         XCPDK            CHAR      1 Znak: Jedná se o úèet CPD ?
+         XZEMP            CHAR      1 Znak: Je v dokladu dovolen odlišný pøíje
+         VBUND            CHAR      6 Èíslo partnerské spoleènosti
+         FISKN            CHAR     10 Èíslo úètu kmenového záznamu s fiskální
+         STCEG            CHAR     20 Identifikaèní èíslo DPH
+         STKZN            CHAR      1 Fyzická osoba
+         SPERQ            CHAR      2 Zablokovaná funkce
+         GBORT            CHAR     25 Místo naroz.osoby podléhající zdroj.dani
+         GBDAT            DATS      8 Datum naroz.osoby podléhající zdroj.dani
+         SEXKZ            CHAR      1 Klíè pro pohlaví plátcù zdrojové danì
+         KRAUS            CHAR     11 Èís.informace o úvìru
+         REVDB            DATS      8 Poslední kontrola (externí)
+         QSSYS            CHAR      4 Systém QM dodavatele
+         KTOCK            CHAR      4 Referenèní úètová skupina pro úèet CPD (
+         PFORT            CHAR     35 Místo postboxu
+         WERKS            CHAR      4 Závod (vlastní nebo externí)
+         LTSNA            CHAR      1 Znak: Dílèí sortiment dodavatele relevan
+         WERKR            CHAR      1 Znak - úroveò závodu relevantní
+         PLKAL            CHAR      2 Klíè podnikového kalendáøe
+         DUEFL            CHAR      1 Status pøevzetí dat do násl.release
+         TXJCD            CHAR     15 Tax jurisdiction code - pøíslušnost pro
+         SPERZ            CHAR      1 Bl.platby
+         SCACD            CHAR      4 Standard Carrier Access Code
+         SFRGR            CHAR      4 Skup.pøepravy - dopravce
+         LZONE            CHAR     10 Pøepravní zóna, do které resp.ze které s
+         XLFZA            CHAR      1 Znak: Odlišný pøíjemce platby pomocí èís
+         DLGRP            CHAR      4 Skupina schématu poskytov.služeb
+         FITYP            CHAR      2 Druh danì
+         STCDT            CHAR      2 Typ daòového èísla
+         REGSS            CHAR      1 Registrován pro sociální pojištìní
+         ACTSS            CHAR      3 Znak èinnosti pro sociální pojištìní
+         STCD3            CHAR     18 Daòové èíslo 3
+         STCD4            CHAR     18 Daòové èíslo 4
+         IPISP            CHAR      1 Znak: Hodnota danì rozdìlena
+         TAXBS            NUMC      1 Procentuální základ danì
+         PROFS            CHAR     30 Povolání
+         STGDL            CHAR      2 Pøeprava: Statistická skupina, vykonavat
+         EMNFR            CHAR     10 Externí oznaèení výrobce
+         LFURL            CHAR    132 Uniform resource locator
+         J_1KFREPRE       CHAR     10 Jméno reprezentanta
+         J_1KFTBUS        CHAR     30 Typ transakce
+         J_1KFTIND        CHAR     30 Typ prùmyslu
+         CONFS            CHAR      1 Status potvrzení zmìny (centrální)
+         UPDAT            DATS      8 Datum potvrzení zmìn
+         UPTIM            TIMS      6 Èas posledního potvrzení zmìny
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          LFA1
+        ______________________________________________________________________
+
+
+        Název pole      K Typ  Délka  Krátký text
+        ____________________________________________________________
+         NODEL            CHAR      1 Centrální blokování výmazu pro kmenový z
+         QSSYSDAT         DATS      8 Datum platnosti certifikace
+         PODKZB           CHAR      1 Znak: Dodavatel relevantní pro potvrzení
+         FISKU            CHAR     10 Èíslo úètu v kmenovém záznamu pøíslušnéh
+         STENR            CHAR     18 Daòové ident.èíslo u pøíslušného fin.úøa
+        APPEND  /SAPNEA/J_SC_
+         J_SC_CAPITAL     CURR     15
+         J_SC_CURRENCY    CUKY      5
+        APPEND  ALFA1_FMFG
+         ALC              CHAR      8
+         PMT_OFFICE       CHAR      4
+        APPEND  ALFA1_PSO
+         PSOFG            CHAR     10 Skupina referentù
+         PSOIS            CHAR     20 Pøedbìžné zprac.osobního úètu
+         INCLUDE IADDR_PSO
+          PSON1           CHAR     35 Náz. 1
+          PSON2           CHAR     35 Náz. 2
+          PSON3           CHAR     35 Náz. 3
+          PSOVN           CHAR     35 Jméno
+          PSOTL           CHAR     20 Titulek
+          PSOHS           CHAR      6 Hausnummer: Od release 4.6B se již nepou
+          PSOST           CHAR     28 Ulice: Od release 4.6B se již nepoužívá
+        ____________________________________________________________
+          Pole s referenèními poli:
+            Název pole      referenèní pole
+            J_SC_CAPITAL    LFA1-J_SC_CURRENCY
+
+          Pole s konverzními rutinami:
+            Název pole      konverzní rutina
+            LIFNR           ALPHA
+            ADRNR           ALPHA
+            KUNNR           ALPHA
+            LNRZA           ALPHA
+            SPRAS           ISOLA
+            VBUND           ALPHA
+            FISKN           ALPHA
+            FISKU           ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

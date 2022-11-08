@@ -1,0 +1,438 @@
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        EKPO
+          Krátký popis:Položka nákup.dokladu
+          Transparentní tabulka
+          Aktivní verze
+
+
+        Struktura pole
+          Poèet polí: 209
+          Souèet délek polí: 1348
+
+        Název pole    K Typ  Délka  Krátký text
+        ____________________________________________________________
+        MANDT         X CLNT      3 Klient
+        EBELN         X CHAR     10 Èíslo nákupního dokladu
+        EBELP         X NUMC      5 Èíslo položky nákupního dokladu
+        INCLUDE EKPODATA
+         LOEKZ          CHAR      1 Znak výmazu v nákupním dokladu
+         STATU          CHAR      1 Status poptávky
+         AEDAT          DATS      8 Datum zmìny položky nákupního dokladu
+         TXZ01          CHAR     40 Kr.text
+         MATNR          CHAR     18 Èíslo materiálu
+         EMATN          CHAR     18 Èíslo materiálu
+         BUKRS          CHAR      4 Úèetní okruh
+         WERKS          CHAR      4 Závod
+         LGORT          CHAR      4 Sklad
+         BEDNR          CHAR     10 Èíslo potøeby
+         MATKL          CHAR      9 Skupina materiálu
+         INFNR          CHAR     10 Èíslo nákup.informaè.záznamu
+         IDNLF          CHAR     35 Èíslo materiálu u dodavatele
+         KTMNG          QUAN     13 Cílové množství
+         MENGE          QUAN     13 Objednací množství
+         MEINS          UNIT      3 Objednací mìrná jednotka
+         BPRME          UNIT      3 Mìrná jednotka objednací ceny
+         BPUMZ          DEC       5 Poèítadlo pro pøepoèet MJOC do OMJ
+         BPUMN          DEC       5 Jmenovatel pro pøepoèet MJOC do OMJ
+         UMREZ          DEC       5 Èítaè pro pøepoèet z objednací MJ na zák
+         UMREN          DEC       5 Jmenovatel pro pøepoèet z objednací MJ d
+         NETPR          CURR     11 Cena netto v nákupním dokladu v mìnì dok
+         PEINH          DEC       5 Poèet jednotek v cenì
+         NETWR          CURR     13 Hodnota objednávky netto v mìnì objednáv
+         BRTWR          CURR     13 Hodnota objednávky brutto v mìnì objedná
+         AGDAT          DATS      8 Lhùta pro odevzdání nabídky
+         WEBAZ          DEC       3 Doba zpracování ve dnech pro pøíjem mate
+         MWSKZ          CHAR      2 Znak DPH
+         BONUS          CHAR      2 Zúètovací skupina 1 (nákup)
+         INSMK          CHAR      1 Druh zásob
+         SPINF          CHAR      1 Znak: Aktualizace inform.záznamu
+         PRSDR          CHAR      1 Tisk ceny
+         SCHPR          CHAR      1 Znak odhadní ceny
+         MAHNZ          DEC       3 Poèet upomínek
+         MAHN1          DEC       3 Poèet dnù pro první upomínku
+         MAHN2          DEC       3 Poèet dnù pro druhou upomínku
+         MAHN3          DEC       3 Poèet dnù pro tøetí upomínku
+         UEBTO          DEC       3 Toleranèní mez pro nadlimitní dodávku
+         UEBTK          CHAR      1 Znak: Neomezená nadlimitní dodávka dovol
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            1
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Název pole    K Typ  Délka  Krátký text
+        ____________________________________________________________
+         UNTTO          DEC       3 Toleranèní mez pro neúplnou dodávku
+         BWTAR          CHAR     10 Druh ocenìní
+         BWTTY          CHAR      1 Typ ocenìní
+         ABSKZ          CHAR      1 Znak odmítnutí
+         AGMEM          CHAR      3 Atribut nabídky
+         ELIKZ          CHAR      1 Znak koneèné dodávky
+         EREKZ          CHAR      1 Znak koneèné faktury
+         PSTYP          CHAR      1 Typ položky v nákupním dokladu
+         KNTTP          CHAR      1 Typ pøiøazení úètu
+         KZVBR          CHAR      1 Úètování spotøeby
+         VRTKZ          CHAR      1 Znak rozdìlení pro vícenásobné pøiøazení
+         TWRKZ          CHAR      1 Znak dílèí faktury
+         WEPOS          CHAR      1 Znak pøíjmu materiálu
+         WEUNB          CHAR      1 Pøíjem materiálu neocenìn
+         REPOS          CHAR      1 Znak pøíjmu faktury
+         WEBRE          CHAR      1 Znak pro likvidaci faktur dle pøíjmu mat
+         KZABS          CHAR      1 Povinnost potvrzení zakázky
+         LABNR          CHAR     20 Èíslo potvrzení zakázky
+         KONNR          CHAR     10 Èíslo nadøazené smlouvy
+         KTPNR          NUMC      5 Èíslo položky nadøazené smlouvy
+         ABDAT          DATS      8 Datum odsouhl.pro odsouhlasené kumulovan
+         ABFTZ          QUAN     13 Odsouhlasené kumulované množství
+         ETFZ1          DEC       3 První období fixace
+         ETFZ2          DEC       3 Druhé období fixace
+         KZSTU          CHAR      1 Závaznost èasových období uvolnìní pro d
+         NOTKZ          CHAR      1 Vylouèení v položce rámcové smlouvy s tø
+         LMEIN          UNIT      3 Zákl.mìrná jednotka
+         EVERS          CHAR      2 Expedièní pøedpis
+         ZWERT          CURR     13 Cílová hodnota rámcové smlouvy v mìnì do
+         NAVNW          CURR     13 Neodèitatelná vstupní DPH
+         ABMNG          QUAN     13 Normální odvolávkové množství
+         PRDAT          DATS      8 Datum stanovení ceny
+         BSTYP          CHAR      1 Typ nákupního dokladu
+         EFFWR          CURR     13 Reálná hodnota položky
+         XOBLR          CHAR      1 Položka je relevantní pro obligo
+         KUNNR          CHAR     10 Zákazník
+         ADRNR          CHAR     10 Manuální èíslo adresy v položce nákupníh
+         EKKOL          CHAR      4 Skupina podmínek u dodavatele
+         SKTOF          CHAR      1 Položka není skontovatelná
+         STAFO          CHAR      6 Skupina aktualizace pro aktualizaci stat
+         PLIFZ          DEC       3 Plánovaná dodací lhùta ve dnech
+         NTGEW          QUAN     13 Hmotnost netto
+         GEWEI          UNIT      3 Jednotka hmotnosti
+         TXJCD          CHAR     15 Tax jurisdiction code - pøíslušnost pro
+         ETDRK          CHAR      1 Znak: Rozvržení relevantní pro tisk exis
+         SOBKZ          CHAR      1 Znak zvláštní zásoby
+         ARSNR          NUMC     10 Èíslo rezervace zúètování
+         ARSPS          NUMC      4 Èíslo položky rezervace zúètování
+         INSNC          CHAR      1 Znak kontroly jakosti je nemìnitelný
+         SSQSS          CHAR      8 Øídicí klíè pro management jakosti v zás
+         ZGTYP          CHAR      4 Typ osvìdèení
+         EAN11          CHAR     18 Evropské èíslo artiklu (EAN)
+         BSTAE          CHAR      4 Øídicí klíè pro potvrzení
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            2
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Název pole    K Typ  Délka  Krátký text
+        ____________________________________________________________
+         REVLV          CHAR      2 Stav revize
+         GEBER          CHAR     10 Fond/§
+         FISTL          CHAR     16 Finanèní místo
+         FIPOS          CHAR     14 Rozpoètová položka
+         KO_GSBER       CHAR      4 Parametru nahlášený pracovní úsek
+         KO_PARGB       CHAR      4 Pøijatý partnerský pracovní úsek obchodn
+         KO_PRCTR       CHAR     10 Profit centrum
+         KO_PPRCTR      CHAR     10 Partnerské profit centrum
+         MEPRF          CHAR      1 Øízení data stanovení ceny
+         BRGEW          QUAN     13 Hmotnost brutto
+         VOLUM          QUAN     13 Objem
+         VOLEH          UNIT      3 Jednotka objemu
+         INCO1          CHAR      3 Incoterms èást 1
+         INCO2          CHAR     28 Incoterms èást 2
+         VORAB          CHAR      1 Pøedb.poøízení projekt.zásoby
+         KOLIF          CHAR     10 Pøed.dodav.
+         LTSNR          CHAR      6 Dílèí sortiment dodavatele
+         PACKNO         NUMC     10 Èíslo paketu
+         FPLNR          CHAR     10 Èíslo plánu fakturace
+         GNETWR         CURR     13 Momentálnì se nepoužívá
+         STAPO          CHAR      1 Položka je statisticky
+         UEBPO          NUMC      5 Nadøazená položka v nákupních dokladech
+         LEWED          DATS      8 Nejzazší možné datum PM
+         EMLIF          CHAR     10 Dodavatel, jemuž se má dodat
+         LBLKZ          CHAR      1 Dodavatel práce ve mzdì
+         SATNR          CHAR     18 Materiál, který lze konfigurovat nad rám
+         ATTYP          CHAR      2 Typ materiálu
+         KANBA          CHAR      1 Znak kanbanu
+         ADRN2          CHAR     10 Èíslo adresy dodání
+         CUOBJ          NUMC     18 Konfigurace (interní èíslo objektu)
+         XERSY          CHAR      1 Automatické zúètování pøíjmu materiálu
+         EILDT          DATS      8 Poè.datum pro zúètov.vztažené k PM
+         DRDAT          DATS      8 Datum, kdy byl dokument naposledy vytisk
+         DRUHR          TIMS      6 Èas
+         DRUNR          NUMC      4 poøad.èíslo
+         AKTNR          CHAR     10 Akce
+         ABELN          CHAR     10 Èíslo rozdìlovníku
+         ABELP          NUMC      5 Èíslo položky rozdìlovníku
+         ANZPU          QUAN     13 Poèet bodù
+         PUNEI          UNIT      3 Bodová jednotka
+         SAISO          CHAR      4 Typ sezóny
+         SAISJ          CHAR      4 Rok sezóny
+         EBON2          CHAR      2 Zúètovací skupina 2 (dodateèné zúètování
+         EBON3          CHAR      2 Zúètovací skupina 3 (dodateèné zúètování
+         EBONF          CHAR      1 Položka není relevantní pro dodat. zúèto
+         MLMAA          CHAR      1 Aktivace materiál.ledgeru v rovinì mater
+         MHDRZ          DEC       4 Min.zbýv.doba platn.
+         ANFNR          CHAR     10 Èíslo poptávky
+         ANFPS          NUMC      5 Èíslo položky poptávky
+         KZKFG          CHAR      1 Pùvod konfigurace
+         USEQU          CHAR      1 Použití kvótování
+         UMSOK          CHAR      1 Znak zvláštních zásob pøeskladnìní
+         BANFN          CHAR     10 Èíslo POBJ
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            3
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Název pole    K Typ  Délka  Krátký text
+        ____________________________________________________________
+         BNFPO          NUMC      5 Èíslo položky požadavku na objednávku
+         MTART          CHAR      4 Druh materiálu
+         UPTYP          CHAR      1 Typ podpoložky v nákupním dokladu
+         UPVOR          CHAR      1 Podpoložky existují
+         KZWI1          CURR     13 Mezisouèet podmínky 1 z kalkulaèního sch
+         KZWI2          CURR     13 Mezisouèet podmínky 2 z kalkulaèního sch
+         KZWI3          CURR     13 Mezisouèet podmínky 3 z kalkulaèního sch
+         KZWI4          CURR     13 Mezisouèet podmínky 4 z kalkulaèního sch
+         KZWI5          CURR     13 Mezisouèet podmínky 5 z kalkul.schématu
+         KZWI6          CURR     13 Mezisouèet podmínky 6 z kalkul.schématu
+         SIKGR          CHAR      3 Klíè zpracování pro dílèí položky
+         MFZHI          QUAN     15 Maximální kumulované množství uvol.mater
+         FFZHI          QUAN     15 Maximální kumulované množství uvolnìné v
+         RETPO          CHAR      1 Položka vrácené dodávky
+         AUREL          CHAR      1 Rozdìlovaè relevant.
+         BSGRU          CHAR      3 Dùvod objedn.
+         LFRET          CHAR      4 Druh dodávky pro vrác. dodávky dodavatel
+         MFRGR          CHAR      8 Skup.pøepr.- materiál
+         NRFHG          CHAR      1 Materiál s možností naturálního rabatu
+         J_1BNBM        CHAR     16
+         J_1BMATUSE     CHAR      1 Použití materiálu
+         J_1BMATORG     CHAR      1 Pùvod materiálu
+         J_1BOWNPRO     CHAR      1 Vlastní výroba
+         J_1BINDUST     CHAR      2 Materiál: Typ CFOP
+         ABUEB          CHAR      4 Profil vytvoøení odvolávky
+         NLABD          DATS      8 Násled. pøedání odvolávky dodávky
+         NFABD          DATS      8 Následující pøenos operativní odvolávky
+         KZBWS          CHAR      1 Ocenìní zvláštní zásoby
+         BONBA          CURR     13 ZáklBonusu 1
+         FABKZ          CHAR      1 Znak: Položka relevantní pro operativní
+         J_1AINDXP      CHAR      5 Index inflace
+         J_1AIDATEP     DATS      8 Datum indexu inflace
+         MPROF          CHAR      4 Profil dílù výrobce
+         EGLKZ          CHAR      1 Znak koneèné dodávky
+         KZTLF          CHAR      1 Dílèí dodávka na úrovni položky (pøeskla
+         KZFME          CHAR      1 Použití/druhy mìrných jednotek
+         RDPRF          CHAR      4 Profil zaokrouhlení
+         TECHS          CHAR     12 Ocenìní platnosti/standardní ocenìní
+         CHG_SRV        CHAR      1 Konfigurace byla zmìnìna
+         CHG_FPLNR      CHAR      1 Není faktura k této položce, aèkoli není
+         MFRPN          CHAR     40 Èíslo dílu výrobce
+         MFRNR          CHAR     10 Èíslo výrobce
+         EMNFR          CHAR     10 Externí oznaèení výrobce
+         NOVET          CHAR      1 Položka pro dodávku SD je zablokovaná
+         AFNAM          CHAR     12 Jméno žadatele
+         TZONRC         CHAR      6 Èas.zóna pøijímajícího stanovištì
+         IPRKZ          CHAR      1 Znak období pro DMT
+         LEBRE          CHAR      1 Znak pro likvidaci faktur vztaženou k vý
+         BERID          CHAR     10 Dispozièní oblast
+         XCONDITIONS    CHAR      1 Podmínky pro položku, i když není faktur
+         APOMS          CHAR      1 APO jako systém plánování
+         CCOMP          CHAR      1 Logika úètování u pøeskladnìní
+         GRANT_NBR      CHAR     20 Grant
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            4
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+        Název pole    K Typ  Délka  Krátký text
+        ____________________________________________________________
+         FKBER          CHAR     16 Funkèní oblast
+         STATUS         CHAR      1 Status položky nákupního dokladu
+         RESLO          CHAR      4 Odevzdávající skald pøi objednávce pøepr
+         APPEND  FMFG_EKPODA
+          EXCPE         NUMC      2
+        INCLUDE CI_EKPODB
+        REFSITE         CHAR      4 Referenèní závod: Nákup
+        APPEND  ZAEKPO
+         ZZUEBPO        NUMC      5 Nadøazená položka v nákupních dokladech
+         ZZUMREZ        DEC       8
+         ZZUMREN        DEC       5 Jmenovatel pro pøepoèet na základní mìrn
+        ____________________________________________________________
+          Pole s referenèními poli:
+            Název pole      referenèní pole
+            KTMNG           EKPO-MEINS
+            MENGE           EKPO-MEINS
+            NETPR           EKKO-WAERS
+            NETWR           EKKO-WAERS
+            BRTWR           EKKO-WAERS
+            ABFTZ           EKPO-MEINS
+            ZWERT           EKKO-WAERS
+            NAVNW           EKKO-WAERS
+            ABMNG           EKPO-MEINS
+            EFFWR           EKKO-WAERS
+            NTGEW           EKPO-GEWEI
+            BRGEW           EKPO-GEWEI
+            VOLUM           EKPO-VOLEH
+            GNETWR          EKKO-WAERS
+            ANZPU           EKPO-PUNEI
+            KZWI1           EKKO-WAERS
+            KZWI2           EKKO-WAERS
+            KZWI3           EKKO-WAERS
+            KZWI4           EKKO-WAERS
+            KZWI5           EKKO-WAERS
+            KZWI6           EKKO-WAERS
+            MFZHI           EKPO-MEINS
+            FFZHI           EKPO-MEINS
+            BONBA           EKKO-WAERS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            5
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+        ABAP Dictionary                 Rel. 620                          EKPO
+        ______________________________________________________________________
+
+
+
+          Pole s konverzními rutinami:
+            Název pole      konverzní rutina
+            EBELN           ALPHA
+            MATNR           MATN1
+            EMATN           MATN1
+            INFNR           ALPHA
+            MEINS           CUNIT
+            BPRME           CUNIT
+            KONNR           ALPHA
+            LMEIN           CUNIT
+            KUNNR           ALPHA
+            ADRNR           ALPHA
+            STAFO           ALPHA
+            GEWEI           CUNIT
+            EAN11           EAN11
+            REVLV           NUMCV
+            FIPOS           FMCIS
+            KO_PRCTR        ALPHA
+            KO_PPRCTR       ALPHA
+            VOLEH           CUNIT
+            KOLIF           ALPHA
+            EMLIF           ALPHA
+            SATNR           MATN1
+            ADRN2           ALPHA
+            AKTNR           ALPHA
+            ABELN           ALPHA
+            PUNEI           CUNIT
+            SAISJ           GJAHR
+            ANFNR           ALPHA
+            BANFN           ALPHA
+            J_1BINDUST      ALPHA
+            MFRNR           ALPHA
+            IPRKZ           PERKZ
+            GRANT_NBR       ALPHA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ______________________________________________________________________
+        SAP AG                         18.05.2007                            6
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

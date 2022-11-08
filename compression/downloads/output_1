@@ -1,0 +1,1634 @@
+./input\01BKPF|MANDT|CLNT|3|Klient
+./input\01BKPF|BUKRS|CHAR|4|Úèetní okruh
+./input\01BKPF|BELNR|CHAR|10|Èíslo úèetního dokladu
+./input\01BKPF|GJAHR|NUMC|4|Fiskální rok
+./input\01BKPF|BLART|CHAR|2|Druh dokl.
+./input\01BKPF|BLDAT|DATS|8|Datum dokladu
+./input\01BKPF|BUDAT|DATS|8|Datum úètování v dokladu
+./input\01BKPF|MONAT|NUMC|2|Fiskální mìsíc
+./input\01BKPF|CPUDT|DATS|8|Den poøízení úèetního dokladu
+./input\01BKPF|CPUTM|TIMS|6|Èas poøízení
+./input\01BKPF|AEDAT|DATS|8|Datum poslední zmìny dokladu dle transak
+./input\01BKPF|UPDDT|DATS|8|Datum poslední aktualizace dokladu
+./input\01BKPF|WWERT|DATS|8|Datum pøepoètu
+./input\01BKPF|USNAM|CHAR|12|Jméno uivatele
+./input\01BKPF|TCODE|CHAR|20|Kód transakce
+./input\01BKPF|BVORG|CHAR|16|Èíslo úèetní operace nad rámec úèetního
+./input\01BKPF|XBLNR|CHAR|16|Èíslo referenèního dokladu
+./input\01BKPF|DBBLG|CHAR|10|Èís.dokladu trvalého úètování
+./input\01BKPF|STBLG|CHAR|10|Èíslo stornovacího dokladu
+./input\01BKPF|STJAH|NUMC|4|Fisk.rok stornovacího dokladu
+./input\01BKPF|BKTXT|CHAR|25|Text hl.dokl.
+./input\01BKPF|WAERS|CUKY|5|Klíè mìny
+./input\01BKPF|KURSF|DEC|9|Kurz pøepoètu
+./input\01BKPF|KZWRS|CUKY|5|Klíè koncernové mìny
+./input\01BKPF|KZKRS|DEC|9|Kurz koncernové mìny
+./input\01BKPF|BSTAT|CHAR|1|Status dokladu
+./input\01BKPF|XNETB|CHAR|1|Znak: Doklad zaúètován netto ?
+./input\01BKPF|FRATH|CURR|13|Neplán.vedl.poøizovací náklady
+./input\01BKPF|XRUEB|CHAR|1|Znak: Doklad je úètován do pøedchozího o
+./input\01BKPF|GLVOR|CHAR|4|Provoznì-ekonomická operace
+./input\01BKPF|GRPID|CHAR|12|Název mapy batch input
+./input\01BKPF|DOKID|CHAR|40|Náz.dokum.v archivním systému
+./input\01BKPF|ARCID|CHAR|10|ID extraktu hl.dokl.
+./input\01BKPF|IBLAR|CHAR|2|Interní druh dokladu k øízení dokladu
+./input\01BKPF|AWTYP|CHAR|5|Referenèní operace
+./input\01BKPF|AWKEY|CHAR|20|Referenèní klíè
+./input\01BKPF|FIKRS|CHAR|4|Finanèní okruh
+./input\01BKPF|HWAER|CUKY|5|Firemní mìna
+./input\01BKPF|HWAE2|CUKY|5|Klíè druhé firemní mìny
+./input\01BKPF|HWAE3|CUKY|5|Klíè tøetí firemní mìny
+./input\01BKPF|KURS2|DEC|9|Kurz pøepoètu pro druhou firemní mìnu
+./input\01BKPF|KURS3|DEC|9|Kurz pøepoètu pro tøetí firemní mìnu
+./input\01BKPF|BASW2|CHAR|1|Výchozí mìna pro pøepoèet mìny
+./input\01BKPF|BASW3|CHAR|1|Výchozí mìna pro pøepoèet mìny
+./input\01BKPF|UMRD2|CHAR|1|Druh data pøepoètu pro druhou firemní mì
+./input\01BKPF|UMRD3|CHAR|1|Druh data pøepoètu pro tøetí firemní mìn
+./input\01BKPF|XSTOV|CHAR|1|Znak: Doklad je oznaèen ke stornování
+./input\01BKPF|STODT|DATS|8|Plánované datum pro úètování storna
+./input\01BKPF|XMWST|CHAR|1|Výpoèet danì automaticky?
+./input\01BKPF|CURT2|CHAR|2|Typ druhé firemní mìny
+./input\01BKPF|CURT3|CHAR|2|Typ mìny pro tøetí firemní mìnu
+./input\01BKPF|KUTY2|CHAR|4|Typ kurzu
+./input\01BKPF|KUTY3|CHAR|4|Typ kurzu
+./input\01BKPF|XSNET|CHAR|1|Èástky úètù HK jsou èástky netto
+./input\01BKPF|AUSBK|CHAR|4|Zdrojový úèetní okruh
+./input\01BKPF|XUSVR|CHAR|1|Znak: Danì US byly zmìnìny na detailní ú
+./input\01BKPF|DUEFL|CHAR|1|Status pøevzetí dat do násl.release
+./input\01BKPF|AWSYS|CHAR|10|Logický systém
+./input\01BKPF|TXKRS|DEC|9|Smìnný kurs pro danì
+./input\01BKPF|LOTKZ|CHAR|10|Èíslo svazku poadavkù
+./input\01BKPF|XWVOF|CHAR|1|Znak: Platba smìnkou odbìratele pøed spl
+./input\01BKPF|STGRD|CHAR|2|Dùvod storna nebo zaúètování na opaènou
+./input\01BKPF|PPNAM|CHAR|12|Uivatel, který doklad pøedbìnì poøídil
+./input\01BKPF|BRNCH|CHAR|4|Èíslo poboèky
+./input\01BKPF|NUMPG|NUMC|3|Poèet stran faktury
+./input\01BKPF|ADISC|CHAR|1|Znak: Zadání pøedstavuje diskont.doklad
+./input\01BKPF|XREF1_HD|CHAR|20|Referenèní klíè _1 interní k hlavièce do
+./input\01BKPF|XREF2_HD|CHAR|20|Referenèní klíè_2 interní k hlavièce dok
+./input\01BKPF|XREVERSAL|CHAR|1|Uvádí, zda je doklad stronovací nebo sto
+./input\01BKPF|REINDAT|DATS|8|Datum pøíchodu faktury
+./input\01BKPF|PSOTY|CHAR|2|Typ dokladu: Poadavky na platbu
+./input\01BKPF|PSOAK|CHAR|10|Dùvod
+./input\01BKPF|PSOKS|CHAR|10|Region
+./input\01BKPF|PSOSG|CHAR|1|Dùvod pro storno - systém pøíkazù IS-PS
+./input\01BKPF|PSOFN|CHAR|30|IS-PS: Znak spisu
+./input\01BKPF|INTFORM|CHAR|4|Úrokový vzorec
+./input\01BKPF|INTDATE|DATS|8|Datum výpoètu úroku
+./input\01BKPF|PSOBT|DATS|8|Den úètování
+./input\01BKPF|PSOZL|CHAR|1|Skuteèné zaúètování
+./input\01BKPF|PSODT|DATS|8|Datum poslední zmìny
+./input\01BKPF|PSOTM|TIMS|6|Èas poslední zmìny
+./input\01BKPF|FM_UMART|CHAR|1|Druh pøevodu platby
+./input\01BKPF|CCINS|CHAR|4|Platební karty: Druh karty
+./input\01BKPF|CCNUM|CHAR|25|Platební karty: Èíslo karty
+./input\01BKPF|SSBLK|CHAR|1
+./input\01BKPF|BATCH|CHAR|10|Znak spojení pro doklady
+./input\01BKPF|SNAME|CHAR|12|Uivatel
+./input\01BKPF|SAMPLED|CHAR|1
+./input\01BKPF|EXCLUDE_FLAG|CHAR|1
+./input\01BKPF|BLIND|CHAR|1|Znak 'ledger rozpoètu'
+./input\01BKPF|OFFSET_STATUS|CHAR|2|Status ofsetu treasury
+./input\01BKPF|OFFSET_REFER_DAT|DATS|8|Datový záznam odeslaný zpìt do Treasury
+./input\01BKPF|PENRC|CHAR|2|Dùvod opodìné platby
+./input\01BKPF|KNUMV|CHAR|10|Èíslo podmínky dokladu
+./input\02BSAK|MANDT|CLNT|3|Klient
+./input\02BSAK|BUKRS|CHAR|4|Úèetní okruh
+./input\02BSAK|LIFNR|CHAR|10|Èíslo úètu dodavatele
+./input\02BSAK|UMSKS|CHAR|1|Tøída operací zvlát.hl.knihy
+./input\02BSAK|UMSKZ|CHAR|1|Znak zvlátní hlavní knihy
+./input\02BSAK|AUGDT|DATS|8|Datum vyrovnání
+./input\02BSAK|AUGBL|CHAR|10|Èíslo dokladu o vyrovnání
+./input\02BSAK|ZUONR|CHAR|18|Èíslo pøiøazení
+./input\02BSAK|GJAHR|NUMC|4|Fiskální rok
+./input\02BSAK|BELNR|CHAR|10|Èíslo úèetního dokladu
+./input\02BSAK|BUZEI|NUMC|3|Èíslo úèetní øádky v úèetním dokladu
+./input\02BSAK|BUDAT|DATS|8|Datum úètování v dokladu
+./input\02BSAK|BLDAT|DATS|8|Datum dokladu
+./input\02BSAK|CPUDT|DATS|8|Den poøízení úèetního dokladu
+./input\02BSAK|WAERS|CUKY|5|Klíè mìny
+./input\02BSAK|XBLNR|CHAR|16|Èíslo referenèního dokladu
+./input\02BSAK|BLART|CHAR|2|Druh dokl.
+./input\02BSAK|MONAT|NUMC|2|Fiskální mìsíc
+./input\02BSAK|BSCHL|CHAR|2|Úètovací klíè
+./input\02BSAK|ZUMSK|CHAR|1|Cílový znak zvlátní hlavní knihy
+./input\02BSAK|SHKZG|CHAR|1|Znak Má dáti/Dal
+./input\02BSAK|GSBER|CHAR|4|Pracovní úsek
+./input\02BSAK|MWSKZ|CHAR|2|Znak DPH
+./input\02BSAK|DMBTR|CURR|13|IN Èástka ve firemní mìnì
+./input\02BSAK|WRBTR|CURR|13|Èástka ve mìnì dokladu
+./input\02BSAK|MWSTS|CURR|13|Èástka danì ve firemní mìnì
+./input\02BSAK|WMWST|CURR|13|Èástka danì v mìnì dokladu
+./input\02BSAK|BDIFF|CURR|13|Rozdíl ocenìní
+./input\02BSAK|BDIF2|CURR|13|Oceòovací rozdíl pro 2. metodu oceòování
+./input\02BSAK|SGTXT|CHAR|50|Text poloky
+./input\02BSAK|PROJN|CHAR|16|Zastaralé: èíslo projektu : Ji NEPOUÍV
+./input\02BSAK|AUFNR|CHAR|12|Èíslo zakázky
+./input\02BSAK|ANLN1|CHAR|12|Hlavní èíslo IM
+./input\02BSAK|ANLN2|CHAR|4|Podèíslo inv.majetku
+./input\02BSAK|EBELN|CHAR|10|Èíslo nákupního dokladu
+./input\02BSAK|EBELP|NUMC|5|Èíslo poloky nákupního dokladu
+./input\02BSAK|SAKNR|CHAR|10|Èíslo úètu hlavní knihy
+./input\02BSAK|HKONT|CHAR|10|Úèet hlavní knihy úèetnictví HK
+./input\02BSAK|FKONT|NUMC|3|Polo.finanèního plánu
+./input\02BSAK|FILKD|CHAR|10|Èíslo úètu poboèky
+./input\02BSAK|ZFBDT|DATS|8|Zákl.datum pro výpoèet splatnosti
+./input\02BSAK|ZTERM|CHAR|4|Klíè platebních podmínek
+./input\02BSAK|ZBD1T|DEC|3|Dny skonta 1
+./input\02BSAK|ZBD2T|DEC|3|Dny skonta 2
+./input\02BSAK|ZBD3T|DEC|3|Lhùta pro podmínku netto
+./input\02BSAK|ZBD1P|DEC|5|Procenta skonta 1
+./input\02BSAK|ZBD2P|DEC|5|Procenta skonta 2
+./input\02BSAK|SKFBT|CURR|13|Skontovatelná èástka v mìnì dokladu
+./input\02BSAK|SKNTO|CURR|13|Èástka skonta ve firem.mìnì
+./input\02BSAK|WSKTO|CURR|13|Èástka skonta v mìnì dokladu
+./input\02BSAK|ZLSCH|CHAR|1|Zpùsob platby
+./input\02BSAK|ZLSPR|CHAR|1|Klíè pro blokování platby
+./input\02BSAK|ZBFIX|CHAR|1|Fixní platební podmínka
+./input\02BSAK|HBKID|CHAR|5|Krátký klíè pro firemní banku
+./input\02BSAK|BVTYP|CHAR|4|Typ banky part.
+./input\02BSAK|REBZG|CHAR|10|Èíslo dokladu faktury, k ní patøí daná
+./input\02BSAK|REBZJ|NUMC|4|Fiskální rok pøísluné faktury (u dobrop
+./input\02BSAK|REBZZ|NUMC|3|Úèetní poloka v pøísluné faktuøe
+./input\02BSAK|ZOLLT|CHAR|8|Èís.celní sazby
+./input\02BSAK|ZOLLD|DATS|8|Celní dat.
+./input\02BSAK|LZBKZ|CHAR|3|Kód centrální banky státu
+./input\02BSAK|LANDL|CHAR|3|Stát dodavatele
+./input\02BSAK|DIEKZ|CHAR|1|Znak slueb (zahranièní platba)
+./input\02BSAK|MANSP|CHAR|1|BlokUpomín
+./input\02BSAK|MSCHL|CHAR|1|Klíè upomínání
+./input\02BSAK|MADAT|DATS|8|Datum poslední upomínky
+./input\02BSAK|MANST|NUMC|1|Stupeò upomínání
+./input\02BSAK|MABER|CHAR|2|Oblast upomínání
+./input\02BSAK|XNETB|CHAR|1|Znak: Doklad zaúètován netto ?
+./input\02BSAK|XANET|CHAR|1|Znak: Záloha úètovaná netto ?
+./input\02BSAK|XCPDD|CHAR|1|Znak: Adresa a údaje banky jsou nastaven
+./input\02BSAK|XESRD|CHAR|1|Znak: Jsou v dokladu nastavena data ESR?
+./input\02BSAK|XZAHL|CHAR|1|Znak: Jedná se o platební operaci ?
+./input\02BSAK|MWSK1|CHAR|2|Znak danì pro rozdìlení
+./input\02BSAK|DMBT1|CURR|13|Èástka ve firemní mìnì pro rozdìlení dan
+./input\02BSAK|WRBT1|CURR|13|Èástka v cizí mìnì pro rozdìlení daní
+./input\02BSAK|MWSK2|CHAR|2|Znak danì pro rozdìlení
+./input\02BSAK|DMBT2|CURR|13|Èástka ve firemní mìnì pro rozdìlení dan
+./input\02BSAK|WRBT2|CURR|13|Èástka v cizí mìnì pro rozdìlení daní
+./input\02BSAK|MWSK3|CHAR|2|Znak danì pro rozdìlení
+./input\02BSAK|DMBT3|CURR|13|Èástka ve firemní mìnì pro rozdìlení dan
+./input\02BSAK|WRBT3|CURR|13|Èástka v cizí mìnì pro rozdìlení daní
+./input\02BSAK|QSSKZ|CHAR|2|Znak zdrojové danì
+./input\02BSAK|QSSHB|CURR|13|Zákl.èástka zdroj.danì
+./input\02BSAK|QBSHB|CURR|13|Èástka zdrojové danì (ve mìnì dokladu)
+./input\02BSAK|BSTAT|CHAR|1|Status dokladu
+./input\02BSAK|ANFBN|CHAR|10|Èís.dokl.poadavku smìneèné platby
+./input\02BSAK|ANFBJ|NUMC|4|Fisk.rok dokladu poadavku smìneèné plat
+./input\02BSAK|ANFBU|CHAR|4|Úè.okruh, v nìm je zaúètován poadavek
+./input\02BSAK|VBUND|CHAR|6|Èíslo partnerské spoleènosti
+./input\02BSAK|REBZT|CHAR|1|Druh násled.dokladu
+./input\02BSAK|STCEG|CHAR|20|Identifikaèní èíslo DPH
+./input\02BSAK|EGBLD|CHAR|3|Stát urèení pro dodávku zboí
+./input\02BSAK|EGLLD|CHAR|3|Stát dodavatele u dod.zboí
+./input\02BSAK|QSZNR|CHAR|10|Èíslo osvìdèení o osvobození od zdrojové
+./input\02BSAK|QSFBT|CURR|13|Èástka osvoboz.od zdroj.danì(v mìnì dokl
+./input\02BSAK|XINVE|CHAR|1|Znak: Týká se investièního majetku ?
+./input\02BSAK|PROJK|NUMC|8|Prvek struktur.plánu projektu (prvek SPP
+./input\02BSAK|FIPOS|CHAR|14|Rozpoètová poloka
+./input\02BSAK|NPLNR|CHAR|12|Èís.sí.diagramu pro pøiøazení úètu
+./input\02BSAK|AUFPL|NUMC|10|Èíslo postupu pro operace v zakázce
+./input\02BSAK|APLZL|NUMC|8|Interní èítaè
+./input\02BSAK|XEGDR|CHAR|1|Znak: Trojstranný obchod uvnitø ES ?
+./input\02BSAK|DMBE2|CURR|13|Èástka ve druhé firemní mìnì
+./input\02BSAK|DMBE3|CURR|13|Èástka ve tøetí firemní mìnì
+./input\02BSAK|DMB21|CURR|13|Èástka ve druhé firemní mìnì pro rozdìle
+./input\02BSAK|DMB22|CURR|13|Èástka ve druhé firemní mìnì pro rozdìle
+./input\02BSAK|DMB23|CURR|13|Èástka ve druhé firemní mìnì pro rozdìle
+./input\02BSAK|DMB31|CURR|13|Èástka ve tøetí firemní mìnì pro rozdìle
+./input\02BSAK|DMB32|CURR|13|Èástka ve tøetí firemní mìnì pro rozdìle
+./input\02BSAK|DMB33|CURR|13|Èástka ve tøetí firemní mìnì pro rozdìle
+./input\02BSAK|MWST2|CURR|13|Èástka danì ve druhé firemní mìnì
+./input\02BSAK|MWST3|CURR|13|Èástka danì ve tøetí firemní mìnì
+./input\02BSAK|SKNT2|CURR|13|Èástka skonta ve druhé firemní mìnì
+./input\02BSAK|SKNT3|CURR|13|Èástka skonta ve tøetí firemní mìnì
+./input\02BSAK|BDIF3|CURR|13|Rozdíl ocenìní pro tøetí firemní mìnu
+./input\02BSAK|XRAGL|CHAR|1|Znak: Vyrovnání bylo zrueno
+./input\02BSAK|RSTGR|CHAR|3|Dùvod rozdílu pøi platbách
+./input\02BSAK|UZAWE|CHAR|2|Dodatek ke zpùsobu platby
+./input\02BSAK|KOSTL|CHAR|10|Nákladové støedisko
+./input\02BSAK|LNRAN|NUMC|5|Poøadové èíslo jednotlivé poloky IM ve
+./input\02BSAK|XSTOV|CHAR|1|Znak: Doklad je oznaèen ke stornování
+./input\02BSAK|KZBTR|CURR|13|Pùvodní zredukovaná èástka ve firemní mì
+./input\02BSAK|XREF1|CHAR|12|Referenèní klíè obchodního partnera
+./input\02BSAK|XREF2|CHAR|12|Referenèní klíè obchodního partnera
+./input\02BSAK|XARCH|CHAR|1|Znak: Doklad je ji v archivu ?
+./input\02BSAK|PSWSL|CUKY|5|Aktualizovaná mìna pro obraty na úètu HK
+./input\02BSAK|PSWBT|CURR|13|Èástka pro aktualizaci v hlavní knize
+./input\02BSAK|IMKEY|CHAR|8|Interní klíè pro nemovitý objekt
+./input\02BSAK|ZEKKN|NUMC|2|Poøadové èíslo pøiøazení úètu
+./input\02BSAK|FISTL|CHAR|16|Finanèní místo
+./input\02BSAK|GEBER|CHAR|10|Fond/§
+./input\02BSAK|DABRZ|DATS|8|Refer.datum pro zúètování
+./input\02BSAK|XNEGP|CHAR|1|Znak: Záporné úètování
+./input\02BSAK|EMPFB|CHAR|10|Pøíjemce platby / plátce
+./input\02BSAK|PRCTR|CHAR|10|Profit centrum
+./input\02BSAK|XREF3|CHAR|20|Referenèní klíè k poloce dokladu
+./input\02BSAK|DTWS1|NUMC|2|Instrukce 1
+./input\02BSAK|DTWS2|NUMC|2|Instrukce 2
+./input\02BSAK|DTWS3|NUMC|2|Instrukce 3
+./input\02BSAK|DTWS4|NUMC|2|Instrukce 4
+./input\02BSAK|XPYPR|CHAR|1|Znak: Platební pøíkaz pro tuto poloku e
+./input\02BSAK|KIDNO|CHAR|30|Reference platby
+./input\02BSAK|PYCUR|CUKY|5|Mìna pro automatickou platbu
+./input\02BSAK|PYAMT|CURR|13|Èástka v mìnì platby
+./input\02BSAK|BUPLA|CHAR|4|Obchodní místo
+./input\02BSAK|SECCO|CHAR|4|Sekce zdrojové danì
+./input\02BSAK|PPDIFF|CURR|13|Realizovaný kurzový zisk/ztráta 1.FM (dí
+./input\02BSAK|PPDIF2|CURR|13|Realizovaný kurzový zisk/ztráta 2.FM (dí
+./input\02BSAK|PPDIF3|CURR|13|Realizovaný kurzový zisk/ztráta 3 FM (dí
+./input\02BSAK|PENLC1|CURR|13
+./input\02BSAK|PENLC2|CURR|13
+./input\02BSAK|PENLC3|CURR|13
+./input\02BSAK|PENFC|CURR|13
+./input\02BSAK|PENDAYS|INT4|10|Poèet dnù pro výpoèet pokuty
+./input\02BSAK|PENRC|CHAR|2|Dùvod opodìné platby
+./input\02BSAK|VERTT|CHAR|1|Dr.smlouvy
+./input\02BSAK|VERTN|CHAR|13|Èíslo smlouvy
+./input\02BSAK|VBEWA|CHAR|4|Druh pohybu
+./input\02BSAK|KBLNR|CHAR|10|Èís.dokl.-rezervace prostøedkù
+./input\02BSAK|KBLPOS|NUMC|3|Poloka dokladu - rezervace prostøedkù
+./input\02BSAK|GRANT_NBR|CHAR|20|Grant
+./input\02BSAK|GMVKZ|CHAR|1|Znak, zda je poloka vymáhána
+./input\02BSAK|SRTYPE|CHAR|2|Druh vedlejí pohledávky
+./input\02BSAK|LOTKZ|CHAR|10|Èíslo svazku poadavkù
+./input\02BSAK|ZINKZ|CHAR|2|Výjimka z úroèení
+./input\02BSAK|FKBER|CHAR|16|Funkèní oblast
+./input\02BSAK|INTRENO|CHAR|13|Interní kódování kmenových dat nemovitos
+./input\02BSAK|PPRCT|CHAR|10|Partnerské profit centrum
+./input\02BSAK|BUZID|CHAR|1|Identifikace úèetní øádky
+./input\02BSAK|AUGGJ|NUMC|4|Fiskální rok dokladu o vyrovnání
+./input\02BSAK|KONTT|CHAR|2|Typ pøiøazení úètu pro odvìtvové øeení
+./input\02BSAK|KONTL|CHAR|50|Øetìzec pøiøazení úètu pro specif.odvìtv
+./input\02BSAK|UEBGDAT|DATS|8|Datum pøedání poloky k soudnímu upomínk
+./input\02BSAK|VNAME|CHAR|6|Joint Venture
+./input\02BSAK|EGRUP|CHAR|3|Skupina kapitálových úèastí
+./input\02BSAK|BTYPE|CHAR|2|Typ zúètování
+./input\03BSEG|MANDT|CLNT|3|Klient
+./input\03BSEG|BUKRS|CHAR|4|Úèetní okruh
+./input\03BSEG|BELNR|CHAR|10|Èíslo úèetního dokladu
+./input\03BSEG|GJAHR|NUMC|4|Fiskální rok
+./input\03BSEG|BUZEI|NUMC|3|Èíslo úèetní øádky v úèetním dokladu
+./input\03BSEG|BUZID|CHAR|1|Identifikace úèetní øádky
+./input\03BSEG|AUGDT|DATS|8|Datum vyrovnání
+./input\03BSEG|AUGCP|DATS|8|Datum poøízení vyrovnání
+./input\03BSEG|AUGBL|CHAR|10|Èíslo dokladu o vyrovnání
+./input\03BSEG|BSCHL|CHAR|2|Úètovací klíè
+./input\03BSEG|KOART|CHAR|1|DruhÚètu
+./input\03BSEG|UMSKZ|CHAR|1|Znak zvlátní hlavní knihy
+./input\03BSEG|UMSKS|CHAR|1|Tøída operací zvlát.hl.knihy
+./input\03BSEG|ZUMSK|CHAR|1|Cílový znak zvlátní hlavní knihy
+./input\03BSEG|SHKZG|CHAR|1|Znak Má dáti/Dal
+./input\03BSEG|GSBER|CHAR|4|Pracovní úsek
+./input\03BSEG|PARGB|CHAR|4|Pracovní úsek obchodního partnera
+./input\03BSEG|MWSKZ|CHAR|2|Znak DPH
+./input\03BSEG|QSSKZ|CHAR|2|Znak zdrojové danì
+./input\03BSEG|DMBTR|CURR|13|IN Èástka ve firemní mìnì
+./input\03BSEG|WRBTR|CURR|13|Èástka ve mìnì dokladu
+./input\03BSEG|KZBTR|CURR|13|Pùvodní zredukovaná èástka ve firemní mì
+./input\03BSEG|PSWBT|CURR|13|Èástka pro aktualizaci v hlavní knize
+./input\03BSEG|PSWSL|CUKY|5|Aktualizovaná mìna pro obraty na úètu HK
+./input\03BSEG|TXBHW|CURR|13|Pùvodní èástka základu danì ve firemní m
+./input\03BSEG|TXBFW|CURR|13|Pùvodní èástka základu danì v mìnì dokla
+./input\03BSEG|MWSTS|CURR|13|Èástka danì ve firemní mìnì
+./input\03BSEG|WMWST|CURR|13|Èástka danì v mìnì dokladu
+./input\03BSEG|HWBAS|CURR|13|Èástka základu danì ve fir.mìnì
+./input\03BSEG|FWBAS|CURR|13|Èástka základu danì v mìnì dokladu
+./input\03BSEG|HWZUZ|CURR|13|Rezervní èástka ve firemní mìnì
+./input\03BSEG|FWZUZ|CURR|13|Dodateèná daò v mìnì dokladu
+./input\03BSEG|SHZUZ|CHAR|1|Doplnìk MáDáti/Dal pro skonto
+./input\03BSEG|STEKZ|CHAR|2|Komponenta èísla verze
+./input\03BSEG|MWART|CHAR|1|Druh danì
+./input\03BSEG|TXGRP|NUMC|3|Znak skupiny pro øádky daní
+./input\03BSEG|KTOSL|CHAR|3|Klíè operace
+./input\03BSEG|QSSHB|CURR|13|Zákl.èástka zdroj.danì
+./input\03BSEG|KURSR|DEC|9|Zajitìný kurz
+./input\03BSEG|GBETR|CURR|13|Èástka se zajitìným kurzem v cizí mìnì
+./input\03BSEG|BDIFF|CURR|13|Rozdíl ocenìní
+./input\03BSEG|BDIF2|CURR|13|Oceòovací rozdíl pro 2. metodu oceòování
+./input\03BSEG|VALUT|DATS|8|Dat.valuty
+./input\03BSEG|ZUONR|CHAR|18|Èíslo pøiøazení
+./input\03BSEG|SGTXT|CHAR|50|Text poloky
+./input\03BSEG|ZINKZ|CHAR|2|Výjimka z úroèení
+./input\03BSEG|VBUND|CHAR|6|Èíslo partnerské spoleènosti
+./input\03BSEG|BEWAR|CHAR|3|Druh pohybu
+./input\03BSEG|ALTKT|CHAR|10|Èís.úètu koncernu
+./input\03BSEG|VORGN|CHAR|4|Druh operace pro HK
+./input\03BSEG|FDLEV|CHAR|2|Úroveò øíz.hotovosti
+./input\03BSEG|FDGRP|CHAR|10|Dispozièní skupina
+./input\03BSEG|FDWBT|CURR|13|Dispozièní èástka v mìnì dokladu-popø.mì
+./input\03BSEG|FDTAG|DATS|8|Datum dispozice
+./input\03BSEG|FKONT|NUMC|3|Polo.finanèního plánu
+./input\03BSEG|KOKRS|CHAR|4|Nákladový okruh
+./input\03BSEG|KOSTL|CHAR|10|Nákladové støedisko
+./input\03BSEG|PROJN|CHAR|16|Zastaralé: èíslo projektu : Ji NEPOUÍV
+./input\03BSEG|AUFNR|CHAR|12|Èíslo zakázky
+./input\03BSEG|VBELN|CHAR|10|Faktura
+./input\03BSEG|VBEL2|CHAR|10|Prodej.doklad
+./input\03BSEG|POSN2|NUMC|6|Poloka prod.dokladu
+./input\03BSEG|ETEN2|NUMC|4|Èíslo rozvrení
+./input\03BSEG|ANLN1|CHAR|12|Hlavní èíslo IM
+./input\03BSEG|ANLN2|CHAR|4|Podèíslo inv.majetku
+./input\03BSEG|ANBWA|CHAR|3|Druh pohybu IM
+./input\03BSEG|BZDAT|DATS|8|Refer.datum
+./input\03BSEG|PERNR|NUMC|8|Osobní èíslo
+./input\03BSEG|XUMSW|CHAR|1|Znak: Poloka ovlivòující obrat ?
+./input\03BSEG|XHRES|CHAR|1|Znak: Úèet hlavní knihy je rezidentní ?
+./input\03BSEG|XKRES|CHAR|1|Znak: Zobrazení jednotl.poloek pomocí ú
+./input\03BSEG|XOPVW|CHAR|1|Znak: Správa otevøených poloek ?
+./input\03BSEG|XCPDD|CHAR|1|Znak: Adresa a údaje banky jsou nastaven
+./input\03BSEG|XSKST|CHAR|1|Znak: Statistické úètování na nákladové
+./input\03BSEG|XSAUF|CHAR|1|Znak: Úètování na zakázku je statistické
+./input\03BSEG|XSPRO|CHAR|1|Znak: Úètování na projekt je statistické
+./input\03BSEG|XSERG|CHAR|1|Znak: Úètování do výsledku je statistick
+./input\03BSEG|XFAKT|CHAR|1|Znak: Provedena aktualizace faktury ?
+./input\03BSEG|XUMAN|CHAR|1|Znak: Pøeúètování ze zálohy ?
+./input\03BSEG|XANET|CHAR|1|Znak: Záloha úètovaná netto ?
+./input\03BSEG|XSKRL|CHAR|1|Znak: Úèetní øádka není relevant.pro pos
+./input\03BSEG|XINVE|CHAR|1|Znak: Týká se investièního majetku ?
+./input\03BSEG|XPANZ|CHAR|1|Zobrazení poloky
+./input\03BSEG|XAUTO|CHAR|1|Znak: Automaticky vygenerovaná poloka
+./input\03BSEG|XNCOP|CHAR|1|Znak: Poloky nelze kopírovat ?
+./input\03BSEG|XZAHL|CHAR|1|Znak: Jedná se o platební operaci ?
+./input\03BSEG|SAKNR|CHAR|10|Èíslo úètu hlavní knihy
+./input\03BSEG|HKONT|CHAR|10|Úèet hlavní knihy úèetnictví HK
+./input\03BSEG|KUNNR|CHAR|10|Èíslo odbìratele 1
+./input\03BSEG|LIFNR|CHAR|10|Èíslo úètu dodavatele
+./input\03BSEG|FILKD|CHAR|10|Èíslo úètu poboèky
+./input\03BSEG|XBILK|CHAR|1|Znak: Jedná se o rozvahový úèet ?
+./input\03BSEG|GVTYP|CHAR|2|Typ výsled.úètu
+./input\03BSEG|HZUON|CHAR|18|Pøiøazovací èíslo pro úèty ZHK
+./input\03BSEG|ZFBDT|DATS|8|Zákl.datum pro výpoèet splatnosti
+./input\03BSEG|ZTERM|CHAR|4|Klíè platebních podmínek
+./input\03BSEG|ZBD1T|DEC|3|Dny skonta 1
+./input\03BSEG|ZBD2T|DEC|3|Dny skonta 2
+./input\03BSEG|ZBD3T|DEC|3|Lhùta pro podmínku netto
+./input\03BSEG|ZBD1P|DEC|5|Procenta skonta 1
+./input\03BSEG|ZBD2P|DEC|5|Procenta skonta 2
+./input\03BSEG|SKFBT|CURR|13|Skontovatelná èástka v mìnì dokladu
+./input\03BSEG|SKNTO|CURR|13|Èástka skonta ve firem.mìnì
+./input\03BSEG|WSKTO|CURR|13|Èástka skonta v mìnì dokladu
+./input\03BSEG|ZLSCH|CHAR|1|Zpùsob platby
+./input\03BSEG|ZLSPR|CHAR|1|Klíè pro blokování platby
+./input\03BSEG|ZBFIX|CHAR|1|Fixní platební podmínka
+./input\03BSEG|HBKID|CHAR|5|Krátký klíè pro firemní banku
+./input\03BSEG|BVTYP|CHAR|4|Typ banky part.
+./input\03BSEG|NEBTR|CURR|13|Èástka platby netto
+./input\03BSEG|MWSK1|CHAR|2|Znak danì pro rozdìlení
+./input\03BSEG|DMBT1|CURR|13|Èástka ve firemní mìnì pro rozdìlení dan
+./input\03BSEG|WRBT1|CURR|13|Èástka v cizí mìnì pro rozdìlení daní
+./input\03BSEG|MWSK2|CHAR|2|Znak danì pro rozdìlení
+./input\03BSEG|DMBT2|CURR|13|Èástka ve firemní mìnì pro rozdìlení dan
+./input\03BSEG|WRBT2|CURR|13|Èástka v cizí mìnì pro rozdìlení daní
+./input\03BSEG|MWSK3|CHAR|2|Znak danì pro rozdìlení
+./input\03BSEG|DMBT3|CURR|13|Èástka ve firemní mìnì pro rozdìlení dan
+./input\03BSEG|WRBT3|CURR|13|Èástka v cizí mìnì pro rozdìlení daní
+./input\03BSEG|REBZG|CHAR|10|Èíslo dokladu faktury, k ní patøí daná
+./input\03BSEG|REBZJ|NUMC|4|Fiskální rok pøísluné faktury (u dobrop
+./input\03BSEG|REBZZ|NUMC|3|Úèetní poloka v pøísluné faktuøe
+./input\03BSEG|REBZT|CHAR|1|Druh násled.dokladu
+./input\03BSEG|ZOLLT|CHAR|8|Èís.celní sazby
+./input\03BSEG|ZOLLD|DATS|8|Celní dat.
+./input\03BSEG|LZBKZ|CHAR|3|Kód centrální banky státu
+./input\03BSEG|LANDL|CHAR|3|Stát dodavatele
+./input\03BSEG|DIEKZ|CHAR|1|Znak slueb (zahranièní platba)
+./input\03BSEG|SAMNR|NUMC|8|Èíslo seznamu faktur
+./input\03BSEG|ABPER|ACCP|6|Zúètovací období
+./input\03BSEG|VRSKZ|CHAR|1|Znak pojitìní
+./input\03BSEG|VRSDT|DATS|8|Datum pojitìní
+./input\03BSEG|DISBN|CHAR|10|Èíslo dokladu o pouití smìnky (doklad o
+./input\03BSEG|DISBJ|NUMC|4|Fiskální rok dokladu pouití smìnky
+./input\03BSEG|DISBZ|NUMC|3|Úèetní øádka v dokladu o pouití smìnky
+./input\03BSEG|WVERW|CHAR|1|Druh pouití smìnky
+./input\03BSEG|ANFBN|CHAR|10|Èís.dokl.poadavku smìneèné platby
+./input\03BSEG|ANFBJ|NUMC|4|Fisk.rok dokladu poadavku smìneèné plat
+./input\03BSEG|ANFBU|CHAR|4|Úè.okruh, v nìm je zaúètován poadavek
+./input\03BSEG|ANFAE|DATS|8|Splatnost u poad.smìneèné platby
+./input\03BSEG|BLNBT|CURR|13|Základní èástka pro urèení preferenèní è
+./input\03BSEG|BLNKZ|CHAR|2|(zastar.) Znak dotace pro stanovení zkrá
+./input\03BSEG|BLNPZ|DEC|7|Procentuál.sazba pref.
+./input\03BSEG|MSCHL|CHAR|1|Klíè upomínání
+./input\03BSEG|MANSP|CHAR|1|BlokUpomín
+./input\03BSEG|MADAT|DATS|8|Datum poslední upomínky
+./input\03BSEG|MANST|NUMC|1|Stupeò upomínání
+./input\03BSEG|MABER|CHAR|2|Oblast upomínání
+./input\03BSEG|ESRNR|CHAR|11|Èíslo úèastníka ESR
+./input\03BSEG|ESRRE|CHAR|27|Referenèní èís.ESR
+./input\03BSEG|ESRPZ|CHAR|2|Kontr.èís.ESR
+./input\03BSEG|KLIBT|CURR|13|Èástka pro kontrolu úvìru
+./input\03BSEG|QSZNR|CHAR|10|Èíslo osvìdèení o osvobození od zdrojové
+./input\03BSEG|QBSHB|CURR|13|Èástka zdrojové danì (ve mìnì dokladu)
+./input\03BSEG|QSFBT|CURR|13|Èástka osvoboz.od zdroj.danì(v mìnì dokl
+./input\03BSEG|NAVHW|CURR|13|Neodèitatelná vstupní DPH (ve firemní mì
+./input\03BSEG|NAVFW|CURR|13|Neodèitatelná vstupní DPH (ve mìnì dokla
+./input\03BSEG|MATNR|CHAR|18|Èíslo materiálu
+./input\03BSEG|WERKS|CHAR|4|Závod
+./input\03BSEG|MENGE|QUAN|13|Mnoství
+./input\03BSEG|MEINS|UNIT|3|Základní mìrná jednotka
+./input\03BSEG|ERFMG|QUAN|13|Mnoství v mìrné jednotce zadávaného mno
+./input\03BSEG|ERFME|UNIT|3|Mìrná jednotka zad.mnoství
+./input\03BSEG|BPMNG|QUAN|13|Mnoství v mìrné jednotce objednací ceny
+./input\03BSEG|BPRME|UNIT|3|Jednotka u objednací ceny
+./input\03BSEG|EBELN|CHAR|10|Èíslo nákupního dokladu
+./input\03BSEG|EBELP|NUMC|5|Èíslo poloky nákupního dokladu
+./input\03BSEG|ZEKKN|NUMC|2|Poøadové èíslo pøiøazení úètu
+./input\03BSEG|ELIKZ|CHAR|1|Znak koneèné dodávky
+./input\03BSEG|VPRSV|CHAR|1|Znak øízení ceny
+./input\03BSEG|PEINH|DEC|5|Poèet jednotek v cenì
+./input\03BSEG|BWKEY|CHAR|4|Okruh ocenìní
+./input\03BSEG|BWTAR|CHAR|10|Druh ocenìní
+./input\03BSEG|BUSTW|CHAR|4|Úèetní øetìzec hodnot
+./input\03BSEG|REWRT|CURR|13|Evidovaná hodnota faktury ve firemní mìn
+./input\03BSEG|REWWR|CURR|13|Evidovaná hodnota faktury v cizí mìnì
+./input\03BSEG|BONFB|CURR|13|Èástka s moností bonusu ve fir.mìnì
+./input\03BSEG|BUALT|CURR|13|Úèetní èástka v alternativním øízení cen
+./input\03BSEG|PSALT|CHAR|1|Alternativní øízení cen
+./input\03BSEG|NPREI|CURR|11|Nová cena
+./input\03BSEG|TBTKZ|CHAR|1|Znak:Násled.úètov. na vrub
+./input\03BSEG|SPGRP|CHAR|1|Dùv.blokov.:Cena
+./input\03BSEG|SPGRM|CHAR|1|Dùv.blok.: Mno.
+./input\03BSEG|SPGRT|CHAR|1|Dùv.blok.: Termín
+./input\03BSEG|SPGRG|CHAR|1|Dùv.blok:Poèet jedn.uObjCeny
+./input\03BSEG|SPGRV|CHAR|1|Dùv.blok:Rozpoè.projektu
+./input\03BSEG|SPGRQ|CHAR|1|Znak: Manuální dùvod blokování
+./input\03BSEG|STCEG|CHAR|20|Identifikaèní èíslo DPH
+./input\03BSEG|EGBLD|CHAR|3|Stát urèení pro dodávku zboí
+./input\03BSEG|EGLLD|CHAR|3|Stát dodavatele u dod.zboí
+./input\03BSEG|RSTGR|CHAR|3|Dùvod rozdílu pøi platbách
+./input\03BSEG|RYACQ|CHAR|4|Rok pøírùstku
+./input\03BSEG|RPACQ|NUMC|3|Období pøírùstku
+./input\03BSEG|RDIFF|CURR|13|Realizovaný kurzový zisk / ztráta
+./input\03BSEG|RDIF2|CURR|13|Realizovaný kurzový rozdíl pro druhou fi
+./input\03BSEG|PRCTR|CHAR|10|Profit centrum
+./input\03BSEG|XHKOM|CHAR|1|Znak: Úèet hlavní knihy pøiøazen manuáln
+./input\03BSEG|VNAME|CHAR|6|Joint Venture
+./input\03BSEG|RECID|CHAR|2|Typ nákladù
+./input\03BSEG|EGRUP|CHAR|3|Skupina kapitálových úèastí
+./input\03BSEG|VPTNR|CHAR|10|Zák. èíslo partnera
+./input\03BSEG|VERTT|CHAR|1|Dr.smlouvy
+./input\03BSEG|VERTN|CHAR|13|Èíslo smlouvy
+./input\03BSEG|VBEWA|CHAR|4|Druh pohybu
+./input\03BSEG|DEPOT|CHAR|10|Depot
+./input\03BSEG|TXJCD|CHAR|15|Tax jurisdiction code - pøíslunost pro
+./input\03BSEG|IMKEY|CHAR|8|Interní klíè pro nemovitý objekt
+./input\03BSEG|DABRZ|DATS|8|Refer.datum pro zúètování
+./input\03BSEG|POPTS|DEC|9|Opèní sazba nemovitostí
+./input\03BSEG|FIPOS|CHAR|14|Rozpoètová poloka
+./input\03BSEG|KSTRG|CHAR|12|Nositel nákladù
+./input\03BSEG|NPLNR|CHAR|12|Èís.sí.diagramu pro pøiøazení úètu
+./input\03BSEG|AUFPL|NUMC|10|Èíslo postupu pro operace v zakázce
+./input\03BSEG|APLZL|NUMC|8|Veobecný èítaè zakázky
+./input\03BSEG|PROJK|NUMC|8|Prvek struktur.plánu projektu (prvek SPP
+./input\03BSEG|PAOBJNR|NUMC|10|Èíslo pro výsledkové objekty (CO-PA)
+./input\03BSEG|PASUBNR|NUMC|4|Historie zmìn pro výsledkové objekty (CO
+./input\03BSEG|SPGRS|CHAR|1|Dùvod blokov.: Výka èástky
+./input\03BSEG|SPGRC|CHAR|1|Dùvod blok.: Jakost
+./input\03BSEG|BTYPE|CHAR|2|Typ zúètování
+./input\03BSEG|ETYPE|CHAR|3|Tøída kapitálových úèastí
+./input\03BSEG|XEGDR|CHAR|1|Znak: Trojstranný obchod uvnitø ES ?
+./input\03BSEG|LNRAN|NUMC|5|Poøadové èíslo jednotlivé poloky IM ve
+./input\03BSEG|HRKFT|CHAR|4|Skup.pùvodu jako podøadné èlenìní náklad
+./input\03BSEG|DMBE2|CURR|13|Èástka ve druhé firemní mìnì
+./input\03BSEG|DMBE3|CURR|13|Èástka ve tøetí firemní mìnì
+./input\03BSEG|DMB21|CURR|13|Èástka ve druhé firemní mìnì pro rozdìle
+./input\03BSEG|DMB22|CURR|13|Èástka ve druhé firemní mìnì pro rozdìle
+./input\03BSEG|DMB23|CURR|13|Èástka ve druhé firemní mìnì pro rozdìle
+./input\03BSEG|DMB31|CURR|13|Èástka ve tøetí firemní mìnì pro rozdìle
+./input\03BSEG|DMB32|CURR|13|Èástka ve tøetí firemní mìnì pro rozdìle
+./input\03BSEG|DMB33|CURR|13|Èástka ve tøetí firemní mìnì pro rozdìle
+./input\03BSEG|MWST2|CURR|13|Èástka danì ve druhé firemní mìnì
+./input\03BSEG|MWST3|CURR|13|Èástka danì ve tøetí firemní mìnì
+./input\03BSEG|NAVH2|CURR|13|Neodèitatelná vstupní DPH ve druhé firem
+./input\03BSEG|NAVH3|CURR|13|Neodèitatelná vstupní DPH ve tøetí firem
+./input\03BSEG|SKNT2|CURR|13|Èástka skonta ve druhé firemní mìnì
+./input\03BSEG|SKNT3|CURR|13|Èástka skonta ve tøetí firemní mìnì
+./input\03BSEG|BDIF3|CURR|13|Rozdíl ocenìní pro tøetí firemní mìnu
+./input\03BSEG|RDIF3|CURR|13|Realizovaný kurzový rozdíl pro tøetí fir
+./input\03BSEG|HWMET|CHAR|1|Metoda, kterou byla stanovena èástka fir
+./input\03BSEG|GLUPM|CHAR|1|Metoda aktualizace pro integraci FM - FI
+./input\03BSEG|XRAGL|CHAR|1|Znak: Vyrovnání bylo zrueno
+./input\03BSEG|UZAWE|CHAR|2|Dodatek ke zpùsobu platby
+./input\03BSEG|LOKKT|CHAR|10|Alternativní èíslo úètu v úèetním okruhu
+./input\03BSEG|FISTL|CHAR|16|Finanèní místo
+./input\03BSEG|GEBER|CHAR|10|Fond/§
+./input\03BSEG|STBUK|CHAR|4|Úèetní okruh danì
+./input\03BSEG|TXBH2|CURR|13|Základ danì / pùvodní základ danì ve FM
+./input\03BSEG|TXBH3|CURR|13|Základ danì / pùvodní základ danì ve FM
+./input\03BSEG|PPRCT|CHAR|10|Partnerské profit centrum
+./input\03BSEG|XREF1|CHAR|12|Referenèní klíè obchodního partnera
+./input\03BSEG|XREF2|CHAR|12|Referenèní klíè obchodního partnera
+./input\03BSEG|KBLNR|CHAR|10|Èís.dokl.-rezervace prostøedkù
+./input\03BSEG|KBLPOS|NUMC|3|Poloka dokladu - rezervace prostøedkù
+./input\03BSEG|STTAX|CURR|13|Èástka danì jako statistická informace v
+./input\03BSEG|FKBER|CHAR|4|Funkèní oblast
+./input\03BSEG|OBZEI|NUMC|3|Èíslo øádky úètování v originálním dokla
+./input\03BSEG|XNEGP|CHAR|1|Znak: Záporné úètování
+./input\03BSEG|RFZEI|NUMC|3|Platební karty-poloka
+./input\03BSEG|CCBTC|CHAR|10|Platební karty: Bìh zúètování
+./input\03BSEG|KKBER|CHAR|4|Oblast kontroly úvìru
+./input\03BSEG|EMPFB|CHAR|10|Pøíjemce platby / plátce
+./input\03BSEG|XREF3|CHAR|20|Referenèní klíè k poloce dokladu
+./input\03BSEG|DTWS1|NUMC|2|Instrukce 1
+./input\03BSEG|DTWS2|NUMC|2|Instrukce 2
+./input\03BSEG|DTWS3|NUMC|2|Instrukce 3
+./input\03BSEG|DTWS4|NUMC|2|Instrukce 4
+./input\03BSEG|GRICD|CHAR|2|Znak èinnosti pro daò z pøíjmu brutto
+./input\03BSEG|GRIRG|CHAR|3|Region (spolkový stát, spolková zemì, pr
+./input\03BSEG|GITYP|CHAR|2|Druh rozdìlení pro daò ze mzdy
+./input\03BSEG|XPYPR|CHAR|1|Znak: Platební pøíkaz pro tuto poloku e
+./input\03BSEG|KIDNO|CHAR|30|Reference platby
+./input\03BSEG|ABSBT|CURR|13|Øízení úvìru: Zajitìná èástka
+./input\03BSEG|IDXSP|CHAR|5|Index inflace
+./input\03BSEG|LINFV|DATS|8|Datum poslední úpravy
+./input\03BSEG|KONTT|CHAR|2|Typ pøiøazení úètu pro odvìtvové øeení
+./input\03BSEG|KONTL|CHAR|50|Øetìzec pøiøazení úètu pro specif.odvìtv
+./input\03BSEG|TXDAT|DATS|8|Datum pro stanovení daòové sazby
+./input\03BSEG|AGZEI|DEC|5|Vyrovnávací poloka
+./input\03BSEG|PYCUR|CUKY|5|Mìna pro automatickou platbu
+./input\03BSEG|PYAMT|CURR|13|Èástka v mìnì platby
+./input\03BSEG|BUPLA|CHAR|4|Obchodní místo
+./input\03BSEG|SECCO|CHAR|4|Sekce zdrojové danì
+./input\03BSEG|LSTAR|CHAR|6|Druh výkonu
+./input\03BSEG|CESSION_KZ|CHAR|2|Znak cese
+./input\03BSEG|PRZNR|CHAR|12|Obchodní proces
+./input\03BSEG|PPDIFF|CURR|13|Realizovaný kurzový zisk/ztráta 1.FM (dí
+./input\03BSEG|PPDIF2|CURR|13|Realizovaný kurzový zisk/ztráta 2.FM (dí
+./input\03BSEG|PPDIF3|CURR|13|Realizovaný kurzový zisk/ztráta 3 FM (dí
+./input\03BSEG|PENLC1|CURR|13
+./input\03BSEG|PENLC2|CURR|13
+./input\03BSEG|PENLC3|CURR|13
+./input\03BSEG|PENFC|CURR|13
+./input\03BSEG|PENDAYS|INT4|10|Poèet dnù pro výpoèet pokuty
+./input\03BSEG|PENRC|CHAR|2|Dùvod opodìné platby
+./input\03BSEG|GRANT_NBR|CHAR|20|Grant
+./input\03BSEG|SCTAX|CURR|13|Daòový podíl FI-CA, firemní mìna
+./input\03BSEG|FKBER_LONG|CHAR|16|Funkèní oblast
+./input\03BSEG|GMVKZ|CHAR|1|Znak, zda je poloka vymáhána
+./input\03BSEG|SRTYPE|CHAR|2|Druh vedlejí pohledávky
+./input\03BSEG|INTRENO|CHAR|13|Interní kódování kmenových dat nemovitos
+./input\03BSEG|MEASURE|CHAR|24|Program v øízení rozpoètu
+./input\03BSEG|AUGGJ|NUMC|4|Fiskální rok dokladu o vyrovnání
+./input\03BSEG|PPA_EX_IND|CHAR|1
+./input\03BSEG|ZZPROV|CHAR|12|Rezerva
+./input\04EINA|MANDT|CLNT|3|Klient
+./input\04EINA|INFNR|CHAR|10|Èíslo nákup.informaè.záznamu
+./input\04EINA|MATNR|CHAR|18|Èíslo materiálu
+./input\04EINA|MATKL|CHAR|9|Skupina materiálu
+./input\04EINA|LIFNR|CHAR|10|Èíslo úètu dodavatele
+./input\04EINA|LOEKZ|CHAR|1|Nák.infor.záz.: Veobecná data oznaèena
+./input\04EINA|ERDAT|DATS|8|Datum pøipojení záznamu
+./input\04EINA|ERNAM|CHAR|12|Jméno referenta, který objekt zaloil
+./input\04EINA|TXZ01|CHAR|40|Krátký text k infonákupu
+./input\04EINA|SORTL|CHAR|10|Tøídicí pojem pro inf.záznamy pro neskla
+./input\04EINA|MEINS|UNIT|3|Objednací mìrná jednotka
+./input\04EINA|UMREZ|DEC|5|Èítaè pro pøepoèet z objednací MJ na zák
+./input\04EINA|UMREN|DEC|5|Jmenovatel pro pøepoèet z objednací MJ d
+./input\04EINA|IDNLF|CHAR|35|Èíslo materiálu u dodavatele
+./input\04EINA|VERKF|CHAR|30|KompetentníPracOdbytuProPøípadDotazy
+./input\04EINA|TELF1|CHAR|16|Èíslo telefonu dodavatele
+./input\04EINA|MAHN1|DEC|3|Poèet dnù pro první upomínku
+./input\04EINA|MAHN2|DEC|3|Poèet dnù pro druhou upomínku
+./input\04EINA|MAHN3|DEC|3|Poèet dnù pro tøetí upomínku
+./input\04EINA|URZNR|CHAR|10|Èíslo osvìdèení
+./input\04EINA|URZDT|DATS|8|Osvìdèení o pùvodu platí do
+./input\04EINA|URZLA|CHAR|3|Stát vystavení osvìdèení o pùvodu
+./input\04EINA|URZTP|CHAR|1|Typ osvìdèení
+./input\04EINA|URZZT|CHAR|16|Èíslo
+./input\04EINA|LMEIN|UNIT|3|Základní mìrná jednotka
+./input\04EINA|REGIO|CHAR|3|Region (spolkový stát, spolková zemì, pr
+./input\04EINA|VABME|CHAR|1|Variabilní objednací MJ aktivní
+./input\04EINA|LTSNR|CHAR|6|Dílèí sortiment dodavatele
+./input\04EINA|LTSSF|NUMC|5|Èíslo sekvence tøídìní
+./input\04EINA|WGLIF|CHAR|18|Skupina materiálu dodavatele
+./input\04EINA|RUECK|CHAR|2|Dohoda o zruení
+./input\04EINA|LIFAB|DATS|8|Lze dodat od
+./input\04EINA|LIFBI|DATS|8|Lze dodat do
+./input\04EINA|KOLIF|CHAR|10|Pøed.dodav.
+./input\04EINA|ANZPU|QUAN|13|Poèet bodù
+./input\04EINA|PUNEI|UNIT|3|Bodová jednotka
+./input\04EINA|RELIF|CHAR|1|Pravidelný dodavatel
+./input\04EINA|MFRNR|CHAR|10|Výrobce
+./input\04EINA|KNTTP|CHAR|1|Typ pøiøazení úètu
+./input\06EKBE|MANDT|CLNT|3|Klient
+./input\06EKBE|EBELN|CHAR|10|Èíslo nákupního dokladu
+./input\06EKBE|EBELP|NUMC|5|Èíslo poloky nákupního dokladu
+./input\06EKBE|ZEKKN|NUMC|2|Poøadové èíslo pøiøazení úètu
+./input\06EKBE|VGABE|CHAR|1|Druh operace - vývoj objednávek
+./input\06EKBE|GJAHR|NUMC|4|Rok materiálového dokladu
+./input\06EKBE|BELNR|CHAR|10|Èíslo materiálového dokladu
+./input\06EKBE|BUZEI|NUMC|4|Poloka v mater.dokladu
+./input\06EKBE|BEWTP|CHAR|1|Typ vývoje objednávky
+./input\06EKBE|BWART|CHAR|3|Druh pohybu (vedení zásob)
+./input\06EKBE|BUDAT|DATS|8|Datum úètování v dokladu
+./input\06EKBE|MENGE|QUAN|13|Mnoství
+./input\06EKBE|BPMNG|QUAN|13|Mnoství v mìrné jednotce objednací ceny
+./input\06EKBE|DMBTR|CURR|13|IN Èástka ve firemní mìnì
+./input\06EKBE|WRBTR|CURR|13|Èástka ve mìnì dokladu
+./input\06EKBE|WAERS|CUKY|5|Klíè mìny
+./input\06EKBE|AREWR|CURR|13|Vyrovnávací hodnota na úètu PM/PF ve fir
+./input\06EKBE|WESBS|QUAN|13|Blok. zásoby pøíjmu materiálu v objedn.
+./input\06EKBE|BPWES|QUAN|13|Mno. v blok.zás.pø.mat. v MJOC
+./input\06EKBE|SHKZG|CHAR|1|Znak Má dáti/Dal
+./input\06EKBE|BWTAR|CHAR|10|Druh ocenìní
+./input\06EKBE|ELIKZ|CHAR|1|Znak koneèné dodávky
+./input\06EKBE|XBLNR|CHAR|16|Èíslo referenèního dokladu
+./input\06EKBE|LFGJA|NUMC|4|Fiskální rok referenèního dokladu
+./input\06EKBE|LFBNR|CHAR|10|Èíslo referenèního dokladu
+./input\06EKBE|GRUND|NUMC|4|Dùvod pohybu
+./input\06EKBE|CPUDT|DATS|8|Den poøízení úèetního dokladu
+./input\06EKBE|CPUTM|TIMS|6|Èas poøízení
+./input\06EKBE|REEWR|CURR|13|Evidovaná hodnota faktury ve firemní mìn
+./input\06EKBE|EVERE|CHAR|2|Dodrení expedièního pøedpisu
+./input\06EKBE|REFWR|CURR|13|Evidovaná hodnota faktury v cizí mìnì
+./input\06EKBE|MATNR|CHAR|18|Èíslo materiálu
+./input\06EKBE|WERKS|CHAR|4|Závod
+./input\06EKBE|XWSBR|CHAR|1|Storno PM dovoleno pøi LF navzdory faktu
+./input\06EKBE|ETENS|NUMC|4|Poøadové èíslo potvrzení objednávky
+./input\06EKBE|KNUMV|CHAR|10|Èíslo podmínky dokladu
+./input\06EKBE|MWSKZ|CHAR|2|Znak DPH
+./input\06EKBE|LSMNG|QUAN|13|Mnoství v mìrné jednotce z dod.listu
+./input\06EKBE|LSMEH|UNIT|3|Mìrná jednotka z dodacího listu
+./input\06EKBE|EMATN|CHAR|18|Èíslo materiálu
+./input\06EKBE|AREWW|CURR|13|Vyrovnávací hodnota na úètì PM/PF v mìnì
+./input\06EKBE|HSWAE|CUKY|5|Klíè firemní mìny
+./input\06EKBE|BAMNG|QUAN|13|Mnoství
+./input\06EKBE|CHARG|CHAR|10|Èíslo are
+./input\06EKBE|BLDAT|DATS|8|Datum dokladu
+./input\06EKBE|XWOFF|CHAR|1|Otevøená tvorba hodnot
+./input\06EKBE|XUNPL|CHAR|1|Neplánované pøiøazení úètu z likvidace f
+./input\06EKBE|ERNAM|CHAR|12|Jméno referenta, který objekt zaloil
+./input\06EKBE|SRVPOS|CHAR|18|Èíslo výkonu
+./input\06EKBE|PACKNO|NUMC|10|Æíslo paketu výkonu
+./input\06EKBE|INTROW|NUMC|10|Èíslo øádky výkonu
+./input\06EKBE|BEKKN|NUMC|2|Èíslo pøiøazení úètu na objednávku
+./input\06EKBE|LEMIN|CHAR|1|Znak vrácené dodávky
+./input\06EKBE|AREWB|CURR|13|Vyrovnávací hodnota na úètu PM/PF v mìnì
+./input\06EKBE|REWRB|CURR|13|Èástka faktury v mìnì objednávky
+./input\06EKBE|SAPRL|CHAR|4|Release SAP
+./input\06EKBE|ET_UPD|CHAR|1|Metoda aktualizace rozvreného mnoství
+./input\06EKBE|J_SC_DIE_COMP_F|CHAR|1
+./input\07EKKO|MANDT|CLNT|3|Klient
+./input\07EKKO|EBELN|CHAR|10|Èíslo nákupního dokladu
+./input\07EKKO|BUKRS|CHAR|4|Úèetní okruh
+./input\07EKKO|BSTYP|CHAR|1|Typ nákupního dokladu
+./input\07EKKO|BSART|CHAR|4|Druh nákup.dokladu
+./input\07EKKO|BSAKZ|CHAR|1|Øídící znak k druhu nákupního dokladu
+./input\07EKKO|LOEKZ|CHAR|1|Znak výmazu v nákupním dokladu
+./input\07EKKO|STATU|CHAR|1|Status nákupního dokladu
+./input\07EKKO|AEDAT|DATS|8|Datum pøipojení záznamu
+./input\07EKKO|ERNAM|CHAR|12|Jméno referenta, který objekt zaloil
+./input\07EKKO|PINCR|NUMC|5|Interval poloky
+./input\07EKKO|LPONR|NUMC|5|Èíslo poslední poloky
+./input\07EKKO|LIFNR|CHAR|10|Èíslo úètu dodavatele
+./input\07EKKO|SPRAS|LANG|1|Jazykový klíè
+./input\07EKKO|ZTERM|CHAR|4|Klíè platebních podmínek
+./input\07EKKO|ZBD1T|DEC|3|Dny skonta
+./input\07EKKO|ZBD2T|DEC|3|Dny skonta
+./input\07EKKO|ZBD3T|DEC|3|Dny skonta
+./input\07EKKO|ZBD1P|DEC|5|Procenta skonta 1
+./input\07EKKO|ZBD2P|DEC|5|Procenta skonta 2
+./input\07EKKO|EKORG|CHAR|4|Nákupní organizace
+./input\07EKKO|EKGRP|CHAR|3|Skupina nákupu
+./input\07EKKO|WAERS|CUKY|5|Klíè mìny
+./input\07EKKO|WKURS|DEC|9|Smìnný kurz
+./input\07EKKO|KUFIX|CHAR|1|Znak: Fixace kurzu
+./input\07EKKO|BEDAT|DATS|8|Datum nákupního dokladu
+./input\07EKKO|KDATB|DATS|8|Zaèátek doby platnosti
+./input\07EKKO|KDATE|DATS|8|Konec platnosti
+./input\07EKKO|BWBDT|DATS|8|Lhùta výbìr.øízení
+./input\07EKKO|ANGDT|DATS|8|Lhùta pro odevzdání nabídky
+./input\07EKKO|BNDDT|DATS|8|Závazná lhùta nabídky
+./input\07EKKO|GWLDT|DATS|8|Datum záruky
+./input\07EKKO|AUSNR|CHAR|10|Èíslo vypsané soutìe
+./input\07EKKO|ANGNR|CHAR|10|Èíslo nabídky
+./input\07EKKO|IHRAN|DATS|8|Datum podání nabídky
+./input\07EKKO|IHREZ|CHAR|12|Vae znaèka
+./input\07EKKO|VERKF|CHAR|30|Kompetentní prodejce u dodavatele
+./input\07EKKO|TELF1|CHAR|16|Èíslo telefonu dodavatele
+./input\07EKKO|LLIEF|CHAR|10|Dodavatel pro dodávku
+./input\07EKKO|KUNNR|CHAR|10|Èíslo odbìratele 1
+./input\07EKKO|KONNR|CHAR|10|Èíslo nadøazené smlouvy
+./input\07EKKO|ABGRU|CHAR|2|Pole se nepouívá
+./input\07EKKO|AUTLF|CHAR|1|Komplet.dodávka pøedepsaná pro ka.objed
+./input\07EKKO|WEAKT|CHAR|1|Znak: Zpráva o pøíjmu materiálu
+./input\07EKKO|RESWK|CHAR|4|Odevzdávající závod u objednávky pøeprav
+./input\07EKKO|LBLIF|CHAR|10|Pole se nepouívá
+./input\07EKKO|INCO1|CHAR|3|Incoterms èást 1
+./input\07EKKO|INCO2|CHAR|28|Incoterms èást 2
+./input\07EKKO|KTWRT|CURR|15|Kumulovaná plánovaná hodnota
+./input\07EKKO|SUBMI|CHAR|10|Èíslo submise
+./input\07EKKO|KNUMV|CHAR|10|Èíslo podmínky dokladu
+./input\07EKKO|KALSM|CHAR|6|Schéma (stanovení ceny, zprávy, pøiøazen
+./input\07EKKO|STAFO|CHAR|6|Skupina aktualizace pro aktualizaci stat
+./input\07EKKO|LIFRE|CHAR|10|Odliný výstavce faktury
+./input\07EKKO|EXNUM|CHAR|10|Èíslo dat zahr.obchodu v dokladech MM a
+./input\07EKKO|UNSEZ|CHAR|12|Nae znaèka
+./input\07EKKO|LOGSY|CHAR|10|Logický systém
+./input\07EKKO|UPINC|NUMC|5|Interval pro podpoloky
+./input\07EKKO|STAKO|CHAR|1|Doklad s podmínkami závislými na èase
+./input\07EKKO|FRGGR|CHAR|2|Skup.uvolnìní
+./input\07EKKO|FRGSX|CHAR|2|Strategie uvolnìní
+./input\07EKKO|FRGKE|CHAR|1|Znak uvolnìní: Nákupní doklad
+./input\07EKKO|FRGZU|CHAR|8|Stav uvolnìní
+./input\07EKKO|FRGRL|CHAR|1|Uvolnìní neúplné
+./input\07EKKO|LANDS|CHAR|3|Stát pro daòové pøiznání
+./input\07EKKO|LPHIS|CHAR|1|Znak pro odvol.plánu dodávek - dokumenta
+./input\07EKKO|ADRNR|CHAR|10|Èíslo adresy
+./input\07EKKO|STCEG_L|CHAR|3|Stát identif.èísla danì z pøidané hodnot
+./input\07EKKO|STCEG|CHAR|20|Identifikaèní èíslo DPH
+./input\07EKKO|ABSGR|NUMC|2|Dùvod odmítnutí
+./input\07EKKO|ADDNR|CHAR|10|Èíslo dokladu pro pom.prostø.prodeje
+./input\07EKKO|KORNR|CHAR|1|Korektura neutrálních rezerv
+./input\07EKKO|MEMORY|CHAR|1|Objednávka není jetì kompletní
+./input\07EKKO|PROCSTAT|CHAR|2|Status zpracování nákupního dokladu
+./input\07EKKO|RLWRT|CURR|15|Celková hodnota pøi uvolnìní
+./input\07EKKO|REVNO|CHAR|8|Èíslo verze v nákupu
+./input\08EKPO|MANDT|CLNT|3|Klient
+./input\08EKPO|EBELN|CHAR|10|Èíslo nákupního dokladu
+./input\08EKPO|EBELP|NUMC|5|Èíslo poloky nákupního dokladu
+./input\08EKPO|LOEKZ|CHAR|1|Znak výmazu v nákupním dokladu
+./input\08EKPO|STATU|CHAR|1|Status poptávky
+./input\08EKPO|AEDAT|DATS|8|Datum zmìny poloky nákupního dokladu
+./input\08EKPO|TXZ01|CHAR|40|Kr.text
+./input\08EKPO|MATNR|CHAR|18|Èíslo materiálu
+./input\08EKPO|EMATN|CHAR|18|Èíslo materiálu
+./input\08EKPO|BUKRS|CHAR|4|Úèetní okruh
+./input\08EKPO|WERKS|CHAR|4|Závod
+./input\08EKPO|LGORT|CHAR|4|Sklad
+./input\08EKPO|BEDNR|CHAR|10|Èíslo potøeby
+./input\08EKPO|MATKL|CHAR|9|Skupina materiálu
+./input\08EKPO|INFNR|CHAR|10|Èíslo nákup.informaè.záznamu
+./input\08EKPO|IDNLF|CHAR|35|Èíslo materiálu u dodavatele
+./input\08EKPO|KTMNG|QUAN|13|Cílové mnoství
+./input\08EKPO|MENGE|QUAN|13|Objednací mnoství
+./input\08EKPO|MEINS|UNIT|3|Objednací mìrná jednotka
+./input\08EKPO|BPRME|UNIT|3|Mìrná jednotka objednací ceny
+./input\08EKPO|BPUMZ|DEC|5|Poèítadlo pro pøepoèet MJOC do OMJ
+./input\08EKPO|BPUMN|DEC|5|Jmenovatel pro pøepoèet MJOC do OMJ
+./input\08EKPO|UMREZ|DEC|5|Èítaè pro pøepoèet z objednací MJ na zák
+./input\08EKPO|UMREN|DEC|5|Jmenovatel pro pøepoèet z objednací MJ d
+./input\08EKPO|NETPR|CURR|11|Cena netto v nákupním dokladu v mìnì dok
+./input\08EKPO|PEINH|DEC|5|Poèet jednotek v cenì
+./input\08EKPO|NETWR|CURR|13|Hodnota objednávky netto v mìnì objednáv
+./input\08EKPO|BRTWR|CURR|13|Hodnota objednávky brutto v mìnì objedná
+./input\08EKPO|AGDAT|DATS|8|Lhùta pro odevzdání nabídky
+./input\08EKPO|WEBAZ|DEC|3|Doba zpracování ve dnech pro pøíjem mate
+./input\08EKPO|MWSKZ|CHAR|2|Znak DPH
+./input\08EKPO|BONUS|CHAR|2|Zúètovací skupina 1 (nákup)
+./input\08EKPO|INSMK|CHAR|1|Druh zásob
+./input\08EKPO|SPINF|CHAR|1|Znak: Aktualizace inform.záznamu
+./input\08EKPO|PRSDR|CHAR|1|Tisk ceny
+./input\08EKPO|SCHPR|CHAR|1|Znak odhadní ceny
+./input\08EKPO|MAHNZ|DEC|3|Poèet upomínek
+./input\08EKPO|MAHN1|DEC|3|Poèet dnù pro první upomínku
+./input\08EKPO|MAHN2|DEC|3|Poèet dnù pro druhou upomínku
+./input\08EKPO|MAHN3|DEC|3|Poèet dnù pro tøetí upomínku
+./input\08EKPO|UEBTO|DEC|3|Toleranèní mez pro nadlimitní dodávku
+./input\08EKPO|UEBTK|CHAR|1|Znak: Neomezená nadlimitní dodávka dovol
+./input\08EKPO|UNTTO|DEC|3|Toleranèní mez pro neúplnou dodávku
+./input\08EKPO|BWTAR|CHAR|10|Druh ocenìní
+./input\08EKPO|BWTTY|CHAR|1|Typ ocenìní
+./input\08EKPO|ABSKZ|CHAR|1|Znak odmítnutí
+./input\08EKPO|AGMEM|CHAR|3|Atribut nabídky
+./input\08EKPO|ELIKZ|CHAR|1|Znak koneèné dodávky
+./input\08EKPO|EREKZ|CHAR|1|Znak koneèné faktury
+./input\08EKPO|PSTYP|CHAR|1|Typ poloky v nákupním dokladu
+./input\08EKPO|KNTTP|CHAR|1|Typ pøiøazení úètu
+./input\08EKPO|KZVBR|CHAR|1|Úètování spotøeby
+./input\08EKPO|VRTKZ|CHAR|1|Znak rozdìlení pro vícenásobné pøiøazení
+./input\08EKPO|TWRKZ|CHAR|1|Znak dílèí faktury
+./input\08EKPO|WEPOS|CHAR|1|Znak pøíjmu materiálu
+./input\08EKPO|WEUNB|CHAR|1|Pøíjem materiálu neocenìn
+./input\08EKPO|REPOS|CHAR|1|Znak pøíjmu faktury
+./input\08EKPO|WEBRE|CHAR|1|Znak pro likvidaci faktur dle pøíjmu mat
+./input\08EKPO|KZABS|CHAR|1|Povinnost potvrzení zakázky
+./input\08EKPO|LABNR|CHAR|20|Èíslo potvrzení zakázky
+./input\08EKPO|KONNR|CHAR|10|Èíslo nadøazené smlouvy
+./input\08EKPO|KTPNR|NUMC|5|Èíslo poloky nadøazené smlouvy
+./input\08EKPO|ABDAT|DATS|8|Datum odsouhl.pro odsouhlasené kumulovan
+./input\08EKPO|ABFTZ|QUAN|13|Odsouhlasené kumulované mnoství
+./input\08EKPO|ETFZ1|DEC|3|První období fixace
+./input\08EKPO|ETFZ2|DEC|3|Druhé období fixace
+./input\08EKPO|KZSTU|CHAR|1|Závaznost èasových období uvolnìní pro d
+./input\08EKPO|NOTKZ|CHAR|1|Vylouèení v poloce rámcové smlouvy s tø
+./input\08EKPO|LMEIN|UNIT|3|Zákl.mìrná jednotka
+./input\08EKPO|EVERS|CHAR|2|Expedièní pøedpis
+./input\08EKPO|ZWERT|CURR|13|Cílová hodnota rámcové smlouvy v mìnì do
+./input\08EKPO|NAVNW|CURR|13|Neodèitatelná vstupní DPH
+./input\08EKPO|ABMNG|QUAN|13|Normální odvolávkové mnoství
+./input\08EKPO|PRDAT|DATS|8|Datum stanovení ceny
+./input\08EKPO|BSTYP|CHAR|1|Typ nákupního dokladu
+./input\08EKPO|EFFWR|CURR|13|Reálná hodnota poloky
+./input\08EKPO|XOBLR|CHAR|1|Poloka je relevantní pro obligo
+./input\08EKPO|KUNNR|CHAR|10|Zákazník
+./input\08EKPO|ADRNR|CHAR|10|Manuální èíslo adresy v poloce nákupníh
+./input\08EKPO|EKKOL|CHAR|4|Skupina podmínek u dodavatele
+./input\08EKPO|SKTOF|CHAR|1|Poloka není skontovatelná
+./input\08EKPO|STAFO|CHAR|6|Skupina aktualizace pro aktualizaci stat
+./input\08EKPO|PLIFZ|DEC|3|Plánovaná dodací lhùta ve dnech
+./input\08EKPO|NTGEW|QUAN|13|Hmotnost netto
+./input\08EKPO|GEWEI|UNIT|3|Jednotka hmotnosti
+./input\08EKPO|TXJCD|CHAR|15|Tax jurisdiction code - pøíslunost pro
+./input\08EKPO|ETDRK|CHAR|1|Znak: Rozvrení relevantní pro tisk exis
+./input\08EKPO|SOBKZ|CHAR|1|Znak zvlátní zásoby
+./input\08EKPO|ARSNR|NUMC|10|Èíslo rezervace zúètování
+./input\08EKPO|ARSPS|NUMC|4|Èíslo poloky rezervace zúètování
+./input\08EKPO|INSNC|CHAR|1|Znak kontroly jakosti je nemìnitelný
+./input\08EKPO|SSQSS|CHAR|8|Øídicí klíè pro management jakosti v zás
+./input\08EKPO|ZGTYP|CHAR|4|Typ osvìdèení
+./input\08EKPO|EAN11|CHAR|18|Evropské èíslo artiklu (EAN)
+./input\08EKPO|BSTAE|CHAR|4|Øídicí klíè pro potvrzení
+./input\08EKPO|REVLV|CHAR|2|Stav revize
+./input\08EKPO|GEBER|CHAR|10|Fond/§
+./input\08EKPO|FISTL|CHAR|16|Finanèní místo
+./input\08EKPO|FIPOS|CHAR|14|Rozpoètová poloka
+./input\08EKPO|KO_GSBER|CHAR|4|Parametru nahláený pracovní úsek
+./input\08EKPO|KO_PARGB|CHAR|4|Pøijatý partnerský pracovní úsek obchodn
+./input\08EKPO|KO_PRCTR|CHAR|10|Profit centrum
+./input\08EKPO|KO_PPRCTR|CHAR|10|Partnerské profit centrum
+./input\08EKPO|MEPRF|CHAR|1|Øízení data stanovení ceny
+./input\08EKPO|BRGEW|QUAN|13|Hmotnost brutto
+./input\08EKPO|VOLUM|QUAN|13|Objem
+./input\08EKPO|VOLEH|UNIT|3|Jednotka objemu
+./input\08EKPO|INCO1|CHAR|3|Incoterms èást 1
+./input\08EKPO|INCO2|CHAR|28|Incoterms èást 2
+./input\08EKPO|VORAB|CHAR|1|Pøedb.poøízení projekt.zásoby
+./input\08EKPO|KOLIF|CHAR|10|Pøed.dodav.
+./input\08EKPO|LTSNR|CHAR|6|Dílèí sortiment dodavatele
+./input\08EKPO|PACKNO|NUMC|10|Èíslo paketu
+./input\08EKPO|FPLNR|CHAR|10|Èíslo plánu fakturace
+./input\08EKPO|GNETWR|CURR|13|Momentálnì se nepouívá
+./input\08EKPO|STAPO|CHAR|1|Poloka je statisticky
+./input\08EKPO|UEBPO|NUMC|5|Nadøazená poloka v nákupních dokladech
+./input\08EKPO|LEWED|DATS|8|Nejzazí moné datum PM
+./input\08EKPO|EMLIF|CHAR|10|Dodavatel, jemu se má dodat
+./input\08EKPO|LBLKZ|CHAR|1|Dodavatel práce ve mzdì
+./input\08EKPO|SATNR|CHAR|18|Materiál, který lze konfigurovat nad rám
+./input\08EKPO|ATTYP|CHAR|2|Typ materiálu
+./input\08EKPO|KANBA|CHAR|1|Znak kanbanu
+./input\08EKPO|ADRN2|CHAR|10|Èíslo adresy dodání
+./input\08EKPO|CUOBJ|NUMC|18|Konfigurace (interní èíslo objektu)
+./input\08EKPO|XERSY|CHAR|1|Automatické zúètování pøíjmu materiálu
+./input\08EKPO|EILDT|DATS|8|Poè.datum pro zúètov.vztaené k PM
+./input\08EKPO|DRDAT|DATS|8|Datum, kdy byl dokument naposledy vytisk
+./input\08EKPO|DRUHR|TIMS|6|Èas
+./input\08EKPO|DRUNR|NUMC|4|poøad.èíslo
+./input\08EKPO|AKTNR|CHAR|10|Akce
+./input\08EKPO|ABELN|CHAR|10|Èíslo rozdìlovníku
+./input\08EKPO|ABELP|NUMC|5|Èíslo poloky rozdìlovníku
+./input\08EKPO|ANZPU|QUAN|13|Poèet bodù
+./input\08EKPO|PUNEI|UNIT|3|Bodová jednotka
+./input\08EKPO|SAISO|CHAR|4|Typ sezóny
+./input\08EKPO|SAISJ|CHAR|4|Rok sezóny
+./input\08EKPO|EBON2|CHAR|2|Zúètovací skupina 2 (dodateèné zúètování
+./input\08EKPO|EBON3|CHAR|2|Zúètovací skupina 3 (dodateèné zúètování
+./input\08EKPO|EBONF|CHAR|1|Poloka není relevantní pro dodat. zúèto
+./input\08EKPO|MLMAA|CHAR|1|Aktivace materiál.ledgeru v rovinì mater
+./input\08EKPO|MHDRZ|DEC|4|Min.zbýv.doba platn.
+./input\08EKPO|ANFNR|CHAR|10|Èíslo poptávky
+./input\08EKPO|ANFPS|NUMC|5|Èíslo poloky poptávky
+./input\08EKPO|KZKFG|CHAR|1|Pùvod konfigurace
+./input\08EKPO|USEQU|CHAR|1|Pouití kvótování
+./input\08EKPO|UMSOK|CHAR|1|Znak zvlátních zásob pøeskladnìní
+./input\08EKPO|BANFN|CHAR|10|Èíslo POBJ
+./input\08EKPO|BNFPO|NUMC|5|Èíslo poloky poadavku na objednávku
+./input\08EKPO|MTART|CHAR|4|Druh materiálu
+./input\08EKPO|UPTYP|CHAR|1|Typ podpoloky v nákupním dokladu
+./input\08EKPO|UPVOR|CHAR|1|Podpoloky existují
+./input\08EKPO|KZWI1|CURR|13|Mezisouèet podmínky 1 z kalkulaèního sch
+./input\08EKPO|KZWI2|CURR|13|Mezisouèet podmínky 2 z kalkulaèního sch
+./input\08EKPO|KZWI3|CURR|13|Mezisouèet podmínky 3 z kalkulaèního sch
+./input\08EKPO|KZWI4|CURR|13|Mezisouèet podmínky 4 z kalkulaèního sch
+./input\08EKPO|KZWI5|CURR|13|Mezisouèet podmínky 5 z kalkul.schématu
+./input\08EKPO|KZWI6|CURR|13|Mezisouèet podmínky 6 z kalkul.schématu
+./input\08EKPO|SIKGR|CHAR|3|Klíè zpracování pro dílèí poloky
+./input\08EKPO|MFZHI|QUAN|15|Maximální kumulované mnoství uvol.mater
+./input\08EKPO|FFZHI|QUAN|15|Maximální kumulované mnoství uvolnìné v
+./input\08EKPO|RETPO|CHAR|1|Poloka vrácené dodávky
+./input\08EKPO|AUREL|CHAR|1|Rozdìlovaè relevant.
+./input\08EKPO|BSGRU|CHAR|3|Dùvod objedn.
+./input\08EKPO|LFRET|CHAR|4|Druh dodávky pro vrác. dodávky dodavatel
+./input\08EKPO|MFRGR|CHAR|8|Skup.pøepr.- materiál
+./input\08EKPO|NRFHG|CHAR|1|Materiál s moností naturálního rabatu
+./input\08EKPO|J_1BNBM|CHAR|16
+./input\08EKPO|J_1BMATUSE|CHAR|1|Pouití materiálu
+./input\08EKPO|J_1BMATORG|CHAR|1|Pùvod materiálu
+./input\08EKPO|J_1BOWNPRO|CHAR|1|Vlastní výroba
+./input\08EKPO|J_1BINDUST|CHAR|2|Materiál: Typ CFOP
+./input\08EKPO|ABUEB|CHAR|4|Profil vytvoøení odvolávky
+./input\08EKPO|NLABD|DATS|8|Násled. pøedání odvolávky dodávky
+./input\08EKPO|NFABD|DATS|8|Následující pøenos operativní odvolávky
+./input\08EKPO|KZBWS|CHAR|1|Ocenìní zvlátní zásoby
+./input\08EKPO|BONBA|CURR|13|ZáklBonusu 1
+./input\08EKPO|FABKZ|CHAR|1|Znak: Poloka relevantní pro operativní
+./input\08EKPO|J_1AINDXP|CHAR|5|Index inflace
+./input\08EKPO|J_1AIDATEP|DATS|8|Datum indexu inflace
+./input\08EKPO|MPROF|CHAR|4|Profil dílù výrobce
+./input\08EKPO|EGLKZ|CHAR|1|Znak koneèné dodávky
+./input\08EKPO|KZTLF|CHAR|1|Dílèí dodávka na úrovni poloky (pøeskla
+./input\08EKPO|KZFME|CHAR|1|Pouití/druhy mìrných jednotek
+./input\08EKPO|RDPRF|CHAR|4|Profil zaokrouhlení
+./input\08EKPO|TECHS|CHAR|12|Ocenìní platnosti/standardní ocenìní
+./input\08EKPO|CHG_SRV|CHAR|1|Konfigurace byla zmìnìna
+./input\08EKPO|CHG_FPLNR|CHAR|1|Není faktura k této poloce, aèkoli není
+./input\08EKPO|MFRPN|CHAR|40|Èíslo dílu výrobce
+./input\08EKPO|MFRNR|CHAR|10|Èíslo výrobce
+./input\08EKPO|EMNFR|CHAR|10|Externí oznaèení výrobce
+./input\08EKPO|NOVET|CHAR|1|Poloka pro dodávku SD je zablokovaná
+./input\08EKPO|AFNAM|CHAR|12|Jméno adatele
+./input\08EKPO|TZONRC|CHAR|6|Èas.zóna pøijímajícího stanovitì
+./input\08EKPO|IPRKZ|CHAR|1|Znak období pro DMT
+./input\08EKPO|LEBRE|CHAR|1|Znak pro likvidaci faktur vztaenou k vý
+./input\08EKPO|BERID|CHAR|10|Dispozièní oblast
+./input\08EKPO|XCONDITIONS|CHAR|1|Podmínky pro poloku, i kdy není faktur
+./input\08EKPO|APOMS|CHAR|1|APO jako systém plánování
+./input\08EKPO|CCOMP|CHAR|1|Logika úètování u pøeskladnìní
+./input\08EKPO|GRANT_NBR|CHAR|20|Grant
+./input\08EKPO|FKBER|CHAR|16|Funkèní oblast
+./input\08EKPO|STATUS|CHAR|1|Status poloky nákupního dokladu
+./input\08EKPO|RESLO|CHAR|4|Odevzdávající skald pøi objednávce pøepr
+./input\08EKPO|EXCPE|NUMC|2
+./input\08EKPO|REFSITE|CHAR|4|Referenèní závod: Nákup
+./input\08EKPO|ZZUEBPO|NUMC|5|Nadøazená poloka v nákupních dokladech
+./input\08EKPO|ZZUMREZ|DEC|8
+./input\08EKPO|ZZUMREN|DEC|5|Jmenovatel pro pøepoèet na základní mìrn
+./input\09LFA1|MANDT|CLNT|3|Klient
+./input\09LFA1|LIFNR|CHAR|10|Èíslo úètu dodavatele
+./input\09LFA1|LAND1|CHAR|3|Klíè státu
+./input\09LFA1|NAME1|CHAR|35|Náz. 1
+./input\09LFA1|NAME2|CHAR|35|Náz. 2
+./input\09LFA1|NAME3|CHAR|35|Náz. 3
+./input\09LFA1|NAME4|CHAR|35|Náz. 4
+./input\09LFA1|ORT01|CHAR|35|Místo
+./input\09LFA1|ORT02|CHAR|35|Místní èást
+./input\09LFA1|PFACH|CHAR|10|Potovní pøihrádka
+./input\09LFA1|PSTL2|CHAR|10|PSÈ potovní pøihrádky
+./input\09LFA1|PSTLZ|CHAR|10|Potovní smìrovací èíslo
+./input\09LFA1|REGIO|CHAR|3|Region (spolkový stát, spolková zemì, pr
+./input\09LFA1|SORTL|CHAR|10|Tøídicí pole
+./input\09LFA1|STRAS|CHAR|35|Ulice a èíslo domu
+./input\09LFA1|ADRNR|CHAR|10|Adresa
+./input\09LFA1|MCOD1|CHAR|25|Hledaný pojem pro pouití match-kódù
+./input\09LFA1|MCOD2|CHAR|25|Hledaný pojem pro pouití match-kódù
+./input\09LFA1|MCOD3|CHAR|25|Hledaný pojem pro pouití match-kódù
+./input\09LFA1|ANRED|CHAR|15|Oslovení
+./input\09LFA1|BAHNS|CHAR|25|el.stanice
+./input\09LFA1|BBBNR|NUMC|7|Mezinárodní èíslo lokace (èást 1)
+./input\09LFA1|BBSNR|NUMC|5|Mezinárodní èíslo lokace (èást 2)
+./input\09LFA1|BEGRU|CHAR|4|Skupina oprávnìní
+./input\09LFA1|BRSCH|CHAR|4|Klíè odvìtví
+./input\09LFA1|BUBKZ|NUMC|1|Kontrolní èíslice pro mezinárodní èíslo
+./input\09LFA1|DATLT|CHAR|14|Èíslo datové linky
+./input\09LFA1|DTAMS|CHAR|1|Klíè hláení pro výmìnu nosièù dat
+./input\09LFA1|DTAWS|CHAR|2|Klíè instrukce pro výmìnu nosièù dat
+./input\09LFA1|ERDAT|DATS|8|Datum pøipojení záznamu
+./input\09LFA1|ERNAM|CHAR|12|Jméno referenta, který objekt zaloil
+./input\09LFA1|ESRNR|CHAR|11|Èíslo úèastníka ESR
+./input\09LFA1|KONZS|CHAR|10|Klíè koncernu
+./input\09LFA1|KTOKK|CHAR|4|Úèt.skupina dodavatele
+./input\09LFA1|KUNNR|CHAR|10|Èíslo odbìratele 1
+./input\09LFA1|LNRZA|CHAR|10|Èíslo úètu odliného pøíjemce platby
+./input\09LFA1|LOEVM|CHAR|1|Centrální oznaè.výmazu pro kmen.záznam
+./input\09LFA1|SPERR|CHAR|1|Centrální blok.úètování
+./input\09LFA1|SPERM|CHAR|1|Centrálnì pøidìlené blokov.nákupu
+./input\09LFA1|SPRAS|LANG|1|Jazykový klíè
+./input\09LFA1|STCD1|CHAR|16|Daòové èíslo 1
+./input\09LFA1|STCD2|CHAR|11|Daòové èíslo 2
+./input\09LFA1|STKZA|CHAR|1|Znak: Má obchodní partner povinnost vyro
+./input\09LFA1|STKZU|CHAR|1|Povinnost DPH
+./input\09LFA1|TELBX|CHAR|15|ÈísloTeleboxu
+./input\09LFA1|TELF1|CHAR|16|1. telefon.èíslo
+./input\09LFA1|TELF2|CHAR|16|2. telefonní èíslo
+./input\09LFA1|TELFX|CHAR|31|Èíslo faxu
+./input\09LFA1|TELTX|CHAR|30|Èíslo teletexu
+./input\09LFA1|TELX1|CHAR|30|Èíslo telexu
+./input\09LFA1|XCPDK|CHAR|1|Znak: Jedná se o úèet CPD ?
+./input\09LFA1|XZEMP|CHAR|1|Znak: Je v dokladu dovolen odliný pøíje
+./input\09LFA1|VBUND|CHAR|6|Èíslo partnerské spoleènosti
+./input\09LFA1|FISKN|CHAR|10|Èíslo úètu kmenového záznamu s fiskální
+./input\09LFA1|STCEG|CHAR|20|Identifikaèní èíslo DPH
+./input\09LFA1|STKZN|CHAR|1|Fyzická osoba
+./input\09LFA1|SPERQ|CHAR|2|Zablokovaná funkce
+./input\09LFA1|GBORT|CHAR|25|Místo naroz.osoby podléhající zdroj.dani
+./input\09LFA1|GBDAT|DATS|8|Datum naroz.osoby podléhající zdroj.dani
+./input\09LFA1|SEXKZ|CHAR|1|Klíè pro pohlaví plátcù zdrojové danì
+./input\09LFA1|KRAUS|CHAR|11|Èís.informace o úvìru
+./input\09LFA1|REVDB|DATS|8|Poslední kontrola (externí)
+./input\09LFA1|QSSYS|CHAR|4|Systém QM dodavatele
+./input\09LFA1|KTOCK|CHAR|4|Referenèní úètová skupina pro úèet CPD (
+./input\09LFA1|PFORT|CHAR|35|Místo postboxu
+./input\09LFA1|WERKS|CHAR|4|Závod (vlastní nebo externí)
+./input\09LFA1|LTSNA|CHAR|1|Znak: Dílèí sortiment dodavatele relevan
+./input\09LFA1|WERKR|CHAR|1|Znak - úroveò závodu relevantní
+./input\09LFA1|PLKAL|CHAR|2|Klíè podnikového kalendáøe
+./input\09LFA1|DUEFL|CHAR|1|Status pøevzetí dat do násl.release
+./input\09LFA1|TXJCD|CHAR|15|Tax jurisdiction code - pøíslunost pro
+./input\09LFA1|SPERZ|CHAR|1|Bl.platby
+./input\09LFA1|SCACD|CHAR|4|Standard Carrier Access Code
+./input\09LFA1|SFRGR|CHAR|4|Skup.pøepravy - dopravce
+./input\09LFA1|LZONE|CHAR|10|Pøepravní zóna, do které resp.ze které s
+./input\09LFA1|XLFZA|CHAR|1|Znak: Odliný pøíjemce platby pomocí èís
+./input\09LFA1|DLGRP|CHAR|4|Skupina schématu poskytov.slueb
+./input\09LFA1|FITYP|CHAR|2|Druh danì
+./input\09LFA1|STCDT|CHAR|2|Typ daòového èísla
+./input\09LFA1|REGSS|CHAR|1|Registrován pro sociální pojitìní
+./input\09LFA1|ACTSS|CHAR|3|Znak èinnosti pro sociální pojitìní
+./input\09LFA1|STCD3|CHAR|18|Daòové èíslo 3
+./input\09LFA1|STCD4|CHAR|18|Daòové èíslo 4
+./input\09LFA1|IPISP|CHAR|1|Znak: Hodnota danì rozdìlena
+./input\09LFA1|TAXBS|NUMC|1|Procentuální základ danì
+./input\09LFA1|PROFS|CHAR|30|Povolání
+./input\09LFA1|STGDL|CHAR|2|Pøeprava: Statistická skupina, vykonavat
+./input\09LFA1|EMNFR|CHAR|10|Externí oznaèení výrobce
+./input\09LFA1|LFURL|CHAR|132|Uniform resource locator
+./input\09LFA1|J_1KFREPRE|CHAR|10|Jméno reprezentanta
+./input\09LFA1|J_1KFTBUS|CHAR|30|Typ transakce
+./input\09LFA1|J_1KFTIND|CHAR|30|Typ prùmyslu
+./input\09LFA1|CONFS|CHAR|1|Status potvrzení zmìny (centrální)
+./input\09LFA1|UPDAT|DATS|8|Datum potvrzení zmìn
+./input\09LFA1|UPTIM|TIMS|6|Èas posledního potvrzení zmìny
+./input\09LFA1|NODEL|CHAR|1|Centrální blokování výmazu pro kmenový z
+./input\09LFA1|QSSYSDAT|DATS|8|Datum platnosti certifikace
+./input\09LFA1|PODKZB|CHAR|1|Znak: Dodavatel relevantní pro potvrzení
+./input\09LFA1|FISKU|CHAR|10|Èíslo úètu v kmenovém záznamu pøíslunéh
+./input\09LFA1|STENR|CHAR|18|Daòové ident.èíslo u pøísluného fin.úøa
+./input\09LFA1|J_SC_CAPITAL|CURR|15
+./input\09LFA1|J_SC_CURRENCY|CUKY|5
+./input\09LFA1|ALC|CHAR|8
+./input\09LFA1|PMT_OFFICE|CHAR|4
+./input\09LFA1|PSOFG|CHAR|10|Skupina referentù
+./input\09LFA1|PSOIS|CHAR|20|Pøedbìné zprac.osobního úètu
+./input\09LFA1|PSON1|CHAR|35|Náz. 1
+./input\09LFA1|PSON2|CHAR|35|Náz. 2
+./input\09LFA1|PSON3|CHAR|35|Náz. 3
+./input\09LFA1|PSOVN|CHAR|35|Jméno
+./input\09LFA1|PSOTL|CHAR|20|Titulek
+./input\09LFA1|PSOHS|CHAR|6|Hausnummer: Od release 4.6B se ji nepou
+./input\09LFA1|PSOST|CHAR|28|Ulice: Od release 4.6B se ji nepouívá
+./input\10MKPF|MANDT|CLNT|3|Klient
+./input\10MKPF|MBLNR|CHAR|10|Èíslo materiálového dokladu
+./input\10MKPF|MJAHR|NUMC|4|Rok materiálového dokladu
+./input\10MKPF|VGART|CHAR|2|Druh operace
+./input\10MKPF|BLART|CHAR|2|Druh dokl.
+./input\10MKPF|BLAUM|CHAR|2|Druh pøeceòovacího dokladu
+./input\10MKPF|BLDAT|DATS|8|Datum dokladu
+./input\10MKPF|BUDAT|DATS|8|Datum úètování v dokladu
+./input\10MKPF|CPUDT|DATS|8|Den poøízení úèetního dokladu
+./input\10MKPF|CPUTM|TIMS|6|Èas poøízení
+./input\10MKPF|AEDAT|DATS|8|Datum poslední zmìny
+./input\10MKPF|USNAM|CHAR|12|Jméno uivatele
+./input\10MKPF|TCODE|CHAR|4|Oblast není blíe def., event.lze pouít
+./input\10MKPF|XBLNR|CHAR|16|Èíslo referenèního dokladu
+./input\10MKPF|BKTXT|CHAR|25|Text hl.dokl.
+./input\10MKPF|FRATH|CURR|13|Neplán.vedl.poøizovací náklady
+./input\10MKPF|FRBNR|CHAR|16|Èíslo nákladního listu u pøíjmu materiál
+./input\10MKPF|WEVER|CHAR|1|Verze tisku prùvodky materiálu
+./input\10MKPF|XABLN|CHAR|10|Èíslo prùvodky
+./input\10MKPF|AWSYS|CHAR|10|Logický systém
+./input\10MKPF|BLA2D|CHAR|2|Druh dokladu pro doplò.doklad k øízení ú
+./input\10MKPF|TCODE2|CHAR|20|Kód transakce
+./input\10MKPF|BFWMS|CHAR|1|Øízení úètování pro externí WMS
+./input\10MKPF|EXNUM|CHAR|10|Èíslo dat zahr.obchodu v dokladech MM a
+./input\10MKPF|KNUMV|CHAR|10|Èíslo podmínky dokladu
+./input\12RBKP|MANDT|CLNT|3|Klient
+./input\12RBKP|BELNR|CHAR|10|Èíslo dokladu dokl.faktury
+./input\12RBKP|GJAHR|NUMC|4|Fiskální rok
+./input\12RBKP|BLART|CHAR|2|Druh dokl.
+./input\12RBKP|BLDAT|DATS|8|Datum dokladu
+./input\12RBKP|BUDAT|DATS|8|Datum úètování v dokladu
+./input\12RBKP|USNAM|CHAR|12|Jméno uivatele
+./input\12RBKP|TCODE|CHAR|20|Kód transakce
+./input\12RBKP|CPUDT|DATS|8|Den poøízení úèetního dokladu
+./input\12RBKP|CPUTM|TIMS|6|Èas poøízení
+./input\12RBKP|VGART|CHAR|2|Druh operace v AG08 (druh inter.dokl.)
+./input\12RBKP|XBLNR|CHAR|16|Èíslo referenèního dokladu
+./input\12RBKP|BUKRS|CHAR|4|Úèetní okruh
+./input\12RBKP|LIFNR|CHAR|10|Odliný výstavce faktury
+./input\12RBKP|WAERS|CUKY|5|Klíè mìny
+./input\12RBKP|KURSF|DEC|9|Kurz pøepoètu
+./input\12RBKP|RMWWR|CURR|13|Fakturovaná èástka brutto v mìnì dokladu
+./input\12RBKP|BEZNK|CURR|13|Neplán.vedl.poøizovací náklady
+./input\12RBKP|WMWST1|CURR|13|Èástka danì ve mìnì dokladu se znaménkem
+./input\12RBKP|MWSKZ1|CHAR|2|Znak danì
+./input\12RBKP|WMWST2|CURR|13|Zastar.: Èástka danì v mìnì dokladu - u
+./input\12RBKP|MWSKZ2|CHAR|2|Zast.: Znak DPH
+./input\12RBKP|ZTERM|CHAR|4|Klíè platebních podmínek
+./input\12RBKP|ZBD1T|DEC|3|Dny skonta 1
+./input\12RBKP|ZBD1P|DEC|5|Procenta skonta 1
+./input\12RBKP|ZBD2T|DEC|3|Dny skonta 2
+./input\12RBKP|ZBD2P|DEC|5|Procenta skonta 2
+./input\12RBKP|ZBD3T|DEC|3|Lhùta pro podmínku netto
+./input\12RBKP|WSKTO|CURR|13|Èástka skonta v mìnì dokladu
+./input\12RBKP|XRECH|CHAR|1|Znak: Úètování faktury
+./input\12RBKP|BKTXT|CHAR|25|Text hl.dokl.
+./input\12RBKP|SAPRL|CHAR|4|Release SAP
+./input\12RBKP|LOGSYS|CHAR|10|Logický systém
+./input\12RBKP|XMWST|CHAR|1|Výpoèet danì automaticky?
+./input\12RBKP|STBLG|CHAR|10|Èíslo stornovacího dokladu
+./input\12RBKP|STJAH|NUMC|4|Fiskální rok storn.dokladu
+./input\12RBKP|MWSKZ_BNK|CHAR|2|Znak DPH
+./input\12RBKP|TXJCD_BNK|CHAR|15|Tax jurisdiction code - pøíslunost pro
+./input\12RBKP|IVTYP|CHAR|1|Pùvod logist. dokladu likvidace faktur
+./input\12RBKP|XRBTX|CHAR|1|Znak: Více ne jeden znak danì
+./input\12RBKP|REPART|CHAR|1|Znak: Druh likvidace faktur
+./input\12RBKP|RBSTAT|CHAR|1|Status fakturaèního dokladu
+./input\12RBKP|KNUMVE|CHAR|10|Podmínka dokladu - vlastní podmínky
+./input\12RBKP|KNUMVL|CHAR|10|Podmínka dokladu - chyba dodavatele
+./input\12RBKP|ARKUEN|CURR|13|Automatická èástka sníení faktury (nett
+./input\12RBKP|ARKUEMW|CURR|13|DPH - podíl automatické zredukované èást
+./input\12RBKP|MAKZN|CURR|13|Manuál.akcept.rozdílová èástka netto
+./input\12RBKP|MAKZMW|CURR|13|Manuálnì akceptovaná èástka DPH
+./input\12RBKP|LIEFFN|CURR|13|Chyba dodavatele exkl. DPH
+./input\12RBKP|LIEFFMW|CURR|13|DPH-podíl chyby dodavatele
+./input\12RBKP|XAUTAKZ|CHAR|1|Zn. pro automaticky akceptované faktury
+./input\12RBKP|ESRNR|CHAR|11|Èíslo úèastníka ESR
+./input\12RBKP|ESRPZ|CHAR|2|Kontr.èís.ESR
+./input\12RBKP|ESRRE|CHAR|27|Referenèní èís.ESR
+./input\12RBKP|QSSHB|CURR|13|Zákl.èástka zdroj.danì
+./input\12RBKP|QSFBT|CURR|13|Èástka osvoboz.od zdroj.danì(v mìnì dokl
+./input\12RBKP|QSSKZ|CHAR|2|Znak zdrojové danì
+./input\12RBKP|DIEKZ|CHAR|1|Znak slueb (zahranièní platba)
+./input\12RBKP|LANDL|CHAR|3|Stát dodavatele
+./input\12RBKP|LZBKZ|CHAR|3|Kód centrální banky státu
+./input\12RBKP|TXKRS|DEC|9|Smìnný kurs pro danì
+./input\12RBKP|EMPFB|CHAR|10|Pøíjemce platby / plátce
+./input\12RBKP|BVTYP|CHAR|4|Typ banky part.
+./input\12RBKP|HBKID|CHAR|5|Krátký klíè pro firemní banku
+./input\12RBKP|ZUONR|CHAR|18|Èíslo pøiøazení
+./input\12RBKP|ZLSPR|CHAR|1|Klíè pro blokování platby
+./input\12RBKP|ZLSCH|CHAR|1|Zpùsob platby
+./input\12RBKP|ZFBDT|DATS|8|Zákl.datum pro výpoèet splatnosti
+./input\12RBKP|KIDNO|CHAR|30|Reference platby
+./input\12RBKP|REBZG|CHAR|10|Odkaz na fakturu: Èíslo ref.dokladu pro
+./input\12RBKP|REBZJ|NUMC|4|Fiskální rok pøísluné faktury (u dobrop
+./input\12RBKP|XINVE|CHAR|1|Znak: Týká se investièního majetku ?
+./input\12RBKP|EGMLD|CHAR|3|Stát hlásící dodávky zboí v rámci EU
+./input\12RBKP|XEGDR|CHAR|1|Znak: Trojstranný obchod uvnitø ES ?
+./input\12RBKP|J_1BNFTYPE|CHAR|2
+./input\12RBKP|BRNCH|CHAR|4|Èíslo poboèky
+./input\12RBKP|ERFPR|CHAR|12|Profil poøízení likvidace faktur v logis
+./input\12RBKP|SECCO|CHAR|4|Sekce zdrojové danì
+./input\12RBKP|NAME1|CHAR|35|Náz. 1
+./input\12RBKP|NAME2|CHAR|35|Náz. 2
+./input\12RBKP|NAME3|CHAR|35|Náz. 3
+./input\12RBKP|NAME4|CHAR|35|Náz. 4
+./input\12RBKP|PSTLZ|CHAR|10|Potovní smìrovací èíslo
+./input\12RBKP|ORT01|CHAR|35|Místo
+./input\12RBKP|LAND1|CHAR|3|Klíè státu
+./input\12RBKP|STRAS|CHAR|35|Ulice a èíslo domu
+./input\12RBKP|PFACH|CHAR|10|Potovní pøihrádka
+./input\12RBKP|PSTL2|CHAR|10|PSÈ potovní pøihrádky
+./input\12RBKP|PSKTO|CHAR|16|Èíslo postir.úètu
+./input\12RBKP|BANKN|CHAR|18|Èíslo bank.úètu
+./input\12RBKP|BANKL|CHAR|15|Smìrový kód banky
+./input\12RBKP|BANKS|CHAR|3|Klíè státu banky
+./input\12RBKP|STCD1|CHAR|16|Daòové èíslo 1
+./input\12RBKP|STCD2|CHAR|11|Daòové èíslo 2
+./input\12RBKP|STKZU|CHAR|1|Povinnost DPH
+./input\12RBKP|STKZA|CHAR|1|Znak: Má obchodní partner povinnost vyro
+./input\12RBKP|REGIO|CHAR|3|Region (spolkový stát, spolková zemì, pr
+./input\12RBKP|BKONT|CHAR|2|Kontrolní kód banky
+./input\12RBKP|DTAWS|CHAR|2|Klíè instrukce pro výmìnu nosièù dat
+./input\12RBKP|DTAMS|CHAR|1|Klíè hláení pro výmìnu nosièù dat
+./input\12RBKP|SPRAS|CHAR|1|Znakové pole délky 1
+./input\12RBKP|XCPDK|CHAR|1|Znak: Jedná se o úèet CPD ?
+./input\12RBKP|EMPFG|CHAR|16|Zakódování pøíjemce platby
+./input\12RBKP|FITYP|CHAR|2|Druh danì
+./input\12RBKP|STCDT|CHAR|2|Typ daòového èísla
+./input\12RBKP|STKZN|CHAR|1|Fyzická osoba
+./input\12RBKP|STCD3|CHAR|18|Daòové èíslo 3
+./input\12RBKP|STCD4|CHAR|18|Daòové èíslo 4
+./input\12RBKP|BKREF|CHAR|20|Referenèní údaj k bank.spojení
+./input\12RBKP|J_1KFREPRE|CHAR|10|Jméno reprezentanta
+./input\12RBKP|J_1KFTBUS|CHAR|30|Typ transakce
+./input\12RBKP|J_1KFTIND|CHAR|30|Typ prùmyslu
+./input\12RBKP|ANRED|CHAR|15|Oslovení
+./input\12RBKP|STCEG|CHAR|20|Identifikaèní èíslo DPH
+./input\12RBKP|ERNAME|CHAR|12|Název poøizovatele externím systému
+./input\12RBKP|REINDAT|DATS|8|Datum pøíchodu faktury
+./input\12RBKP|UZAWE|CHAR|2|Dodatek ke zpùsobu platby
+./input\12RBKP|FDLEV|CHAR|2|Úroveò øíz.hotovosti
+./input\12RBKP|FDTAG|DATS|8|Datum dispozice
+./input\12RBKP|ZBFIX|CHAR|1|Fixní platební podmínka
+./input\12RBKP|FRGKZ|CHAR|1|Znak: Uvolnìní je nutné
+./input\12RBKP|ERFNAM|CHAR|12|Jméno referenta, který objekt zadal
+./input\12RBKP|BUPLA|CHAR|4|Obchodní místo
+./input\12RBKP|FILKD|CHAR|10|Èíslo úètu poboèky
+./input\12RBKP|GSBER|CHAR|4|Pracovní úsek
+./input\12RBKP|LOTKZ|CHAR|10|Znak spojení pro doklady
+./input\12RBKP|SGTXT|CHAR|50|Text poloky
+./input\13REGUH|MANDT|CLNT|3|Klient
+./input\13REGUH|LAUFD|DATS|8|Datum sputìní programu
+./input\13REGUH|LAUFI|CHAR|6|Doplòkový identifikaèní atribut
+./input\13REGUH|XVORL|CHAR|1|Znak: Pouze bìh návrhu ?
+./input\13REGUH|ZBUKR|CHAR|4|Platící úèetní okruh
+./input\13REGUH|LIFNR|CHAR|10|Èíslo úètu dodavatele
+./input\13REGUH|KUNNR|CHAR|10|Èíslo odbìratele 1
+./input\13REGUH|EMPFG|CHAR|16|Zakódování pøíjemce platby
+./input\13REGUH|VBLNR|CHAR|10|Èíslo platebního dokladu
+./input\13REGUH|AVISG|CHAR|1|Dùvod pro tisk avíza
+./input\13REGUH|WAERS|CUKY|5|Klíè mìny
+./input\13REGUH|SRTGB|CHAR|4|Pracovní úsek
+./input\13REGUH|ANRED|CHAR|15|Oslovení
+./input\13REGUH|NAME1|CHAR|35|Náz. 1
+./input\13REGUH|NAME2|CHAR|35|Náz. 2
+./input\13REGUH|NAME3|CHAR|35|Náz. 3
+./input\13REGUH|NAME4|CHAR|35|Náz. 4
+./input\13REGUH|PSTLZ|CHAR|10|Potovní smìrovací èíslo
+./input\13REGUH|ORT01|CHAR|35|Místo
+./input\13REGUH|STRAS|CHAR|35|Ulice a èíslo domu
+./input\13REGUH|PFACH|CHAR|10|Potovní pøihrádka
+./input\13REGUH|LAND1|CHAR|3|Klíè státu
+./input\13REGUH|STCD1|CHAR|16|Daòové èíslo 1
+./input\13REGUH|WEVWV|CHAR|1|Plánované pouití smìnky
+./input\13REGUH|ZANRE|CHAR|15|Oslovení pøíjemce platby
+./input\13REGUH|ZNME1|CHAR|35|Jméno pøíjemce platby
+./input\13REGUH|ZNME2|CHAR|35|Jméno pøíjemce platby
+./input\13REGUH|ZNME3|CHAR|35|Jméno pøíjemce platby
+./input\13REGUH|ZNME4|CHAR|35|Jméno pøíjemce platby
+./input\13REGUH|ZPSTL|CHAR|10|Pot.smìr.èíslo pøíjemce platby
+./input\13REGUH|ZORT1|CHAR|35|Místo pøíjemce platby
+./input\13REGUH|ZSTRA|CHAR|35|Ulice a èíslo domu pøíjemce platby
+./input\13REGUH|ZPFAC|CHAR|10|Pot.pøihrádka pøíjemce platby
+./input\13REGUH|ZLAND|CHAR|3|Klíè státu
+./input\13REGUH|ZREGI|CHAR|3|Regionální kód pøíjemce platby
+./input\13REGUH|ZBNKS|CHAR|3|Klíè státu
+./input\13REGUH|ZBNKN|CHAR|18|Èíslo bankovního úètu pøíjemce platby
+./input\13REGUH|ZBNKL|CHAR|15|Smìrový kód banky pøíjemce platby
+./input\13REGUH|ZBKON|CHAR|2|Kontrolní kód banky pøíjemce platby
+./input\13REGUH|ZBVTY|CHAR|4|Znak bankovního spojení pøíjemce platby
+./input\13REGUH|ZSWIF|CHAR|11|Kód SWIFT pro mezinárodní platby
+./input\13REGUH|XEZER|CHAR|1|Znak: Existuje oprávnìní k inkasu ?
+./input\13REGUH|ZSPRA|LANG|1|Jazykový klíè pøíjemce platby
+./input\13REGUH|ZALDT|DATS|8|Datum úètování platebního dokladu
+./input\13REGUH|RZAWE|CHAR|1|Zpùsob platby pro tuto platbu
+./input\13REGUH|RUMSK|CHAR|1|Znak zvlátní hlavní knihy platební oper
+./input\13REGUH|RZUMS|CHAR|1|Znak cílové zvlátní hlavní knihy plateb
+./input\13REGUH|HKTID|CHAR|5|Krátký klíè pro úètové spojení
+./input\13REGUH|HBKID|CHAR|5|Krátký klíè pro firemní banku
+./input\13REGUH|HKTIW|CHAR|5|Krátký klíè spojení úètù pro smìnku
+./input\13REGUH|HBKIW|CHAR|5|Krátký klíè firem.banky pro smìnku pøi r
+./input\13REGUH|BVTYP|CHAR|4|Typ banky part.
+./input\13REGUH|UBKON|CHAR|2|Kontrolní kód banky u naeho bankovního
+./input\13REGUH|UBKNT|CHAR|18|Èíslo naeho bankovního úètu
+./input\13REGUH|UBNKS|CHAR|3|Klíè státu banky
+./input\13REGUH|UBNKL|CHAR|15|Smìrový kód naí banky
+./input\13REGUH|UBHKT|CHAR|10|Èíslo úètu HK pro ná bankovní úèet / po
+./input\13REGUH|VALUT|DATS|8|Dat.valuty
+./input\13REGUH|CRVAL|DATS|8|Datum valuty v bance pøíjemce platby
+./input\13REGUH|ANFAE|DATS|8|Splatnost u poad.smìneèné platby
+./input\13REGUH|WEFAE|DATS|8|Datum splatnosti poøizované smìnky
+./input\13REGUH|RBETR|CURR|13|Èástka ve firemní mìnì
+./input\13REGUH|RSKON|CURR|13|Celkový úèet platební operace ve firemní
+./input\13REGUH|RWBTR|CURR|13|Placená èástka v mìnì platby
+./input\13REGUH|RWSKT|CURR|13|Celkové skonto platební operace v mìnì p
+./input\13REGUH|RSPE1|CURR|11|Popl.ve formuláøi
+./input\13REGUH|RSPE2|CURR|11|Popl.ve formuláøi
+./input\13REGUH|RPOST|DEC|5|Poèet zaplacených poloek
+./input\13REGUH|RTEXT|DEC|5|Poèet øádek textu k zaplaceným polokám
+./input\13REGUH|RSPM1|CURR|11|Poplatky formuláøe za smìnku s maxim.èás
+./input\13REGUH|RSPM2|CURR|11|Poplatky formuláøe za smìnku s maxim.èás
+./input\13REGUH|WEHMX|CURR|13|Maximální èástka na smìnku ve firem.mìnì
+./input\13REGUH|WEFMX|CURR|13|Maximální èástka na smìnku v mìnì platby
+./input\13REGUH|WEHRS|CURR|13|Zbytková èástka ve firem.mìnì pro posled
+./input\13REGUH|WEFRS|CURR|13|Zbytková èástka v mìnì platby pro posled
+./input\13REGUH|WEAMX|DEC|3|Poèet smìnek s maximální èástkou
+./input\13REGUH|BUSAB|CHAR|2|Úèetní referent
+./input\13REGUH|EIKTO|CHAR|12|Nae èíslo úètu u zákazníka nebo odbìrat
+./input\13REGUH|XINVE|CHAR|1|Znak: Týká se investièního majetku ?
+./input\13REGUH|WDATE|DATS|8|Datum vystavení smìnky
+./input\13REGUH|XAEND|CHAR|1|Znak: Návrh platby byl dodateènì zmìnìn
+./input\13REGUH|ZLSPR|CHAR|1|Klíè pro blokování platby
+./input\13REGUH|DTAWS|CHAR|2|Klíè instrukce pro výmìnu nosièù dat
+./input\13REGUH|DTAMS|CHAR|1|Klíè hláení pro výmìnu nosièù dat
+./input\13REGUH|KURSF|DEC|9|Kurz pøepoètu
+./input\13REGUH|ABWAE|CUKY|5|Zúètovací mìna pro pøevody penìz
+./input\13REGUH|SKVHW|CURR|13|Ztráta skonta ve fir.mìnì
+./input\13REGUH|SKVFW|CURR|13|Ztráta ze skonta v mìnì platby
+./input\13REGUH|DSKVH|CURR|13|Hrozící ztráta ze skonta ve firem.mìnì
+./input\13REGUH|ZPST2|CHAR|10|PSÈ potovní pøihrádky pøíjemce platby
+./input\13REGUH|PAYGR|CHAR|20|Pole seskupování pro automatické platby
+./input\13REGUH|ZBNKY|CHAR|15|Kód banky pøíjemce platby
+./input\13REGUH|UBNKY|CHAR|15|Kód naí banky
+./input\13REGUH|PSTL2|CHAR|10|PSÈ potovní pøihrádky
+./input\13REGUH|ABSBU|CHAR|4|Odesílající úèetní okruh
+./input\13REGUH|RBET2|CURR|13|Placená èástka ve druhé firemní mìnì
+./input\13REGUH|RBET3|CURR|13|Placená èástka ve tøetí firemní mìnì
+./input\13REGUH|RSKO2|CURR|13|Celkový úèet platební operace ve druhé f
+./input\13REGUH|RSKO3|CURR|13|Celkový úèet platební operace ve tøetí f
+./input\13REGUH|KURS2|DEC|9|Kurz pøepoètu pro druhou firemní mìnu
+./input\13REGUH|KURS3|DEC|9|Kurz pøepoètu pro tøetí firemní mìnu
+./input\13REGUH|BKREF|CHAR|20|Referenèní údaj k bank.spojení
+./input\13REGUH|UZAWE|CHAR|2|Dodatek ke zpùsobu platby
+./input\13REGUH|ZORT2|CHAR|35|Místní èást z adresy pøíjemce platby
+./input\13REGUH|ZTLFX|CHAR|31|Èíslo telefaxu pøíjemce platby
+./input\13REGUH|XSIWE|CHAR|1|Znak: Smìnka na vidìnou
+./input\13REGUH|ZPFOR|CHAR|35|Místo P.O.Boxu u pøíjemce platby
+./input\13REGUH|PERNR|NUMC|8|Osobní èíslo
+./input\13REGUH|SEQNR|CHAR|5|Poøad.èíslo
+./input\13REGUH|BTZNR|RAW|1|Pøiøazení fin.pøevodù
+./input\13REGUH|AUSFD|DATS|8|Datum splatnosti placených poloek
+./input\13REGUH|EDIAV|CHAR|1|Status avíza EDI
+./input\13REGUH|IDOC_NUM_AVIS|NUMC|16|Èíslo IDoc
+./input\13REGUH|EDIBN|CHAR|1|Status plateb.pøíkazu EDI
+./input\13REGUH|IDOC_NUM|NUMC|16|Èíslo IDoc
+./input\13REGUH|ZTELF|CHAR|20|Telefonní èíslo pøíjemce platby
+./input\13REGUH|ZTELX|CHAR|30|Èíslo telexu pøíjemce platby
+./input\13REGUH|KOINH|CHAR|60|Jméno majitele úètu
+./input\13REGUH|DTWS1|NUMC|2|Instrukce 1
+./input\13REGUH|DTWS2|NUMC|2|Instrukce 2
+./input\13REGUH|DTWS3|NUMC|2|Instrukce 3
+./input\13REGUH|DTWS4|NUMC|2|Instrukce 4
+./input\13REGUH|ZSTC1|CHAR|16|Èíslo danì 1 pøíjemce platby
+./input\13REGUH|KIDNO|CHAR|30|Reference platby
+./input\13REGUH|PYORD|CHAR|10|Platební pøíkaz
+./input\13REGUH|REGIO|CHAR|3|Region (spolkový stát, spolková zemì, pr
+./input\13REGUH|TEXT|CHAR|29|Textové pole
+./input\13REGUH|BTYP1|CHAR|1|Typ banky pro bankovní cestu (koresp.ban
+./input\13REGUH|BNKS1|CHAR|3|Klíè státu banky
+./input\13REGUH|BNKL1|CHAR|15|Kód banky
+./input\13REGUH|BNKN1|CHAR|18|Èíslo bank.úètu
+./input\13REGUH|BKON1|CHAR|2|Kontrolní kód banky
+./input\13REGUH|BKRF1|CHAR|20|Referenèní údaj k bank.spojení
+./input\13REGUH|BTYP2|CHAR|1|Typ banky pro bankovní cestu (koresp.ban
+./input\13REGUH|BNKS2|CHAR|3|Klíè státu banky
+./input\13REGUH|BNKL2|CHAR|15|Kód banky
+./input\13REGUH|BNKN2|CHAR|18|Èíslo bank.úètu
+./input\13REGUH|BKON2|CHAR|2|Kontrolní kód banky
+./input\13REGUH|BKRF2|CHAR|20|Referenèní údaj k bank.spojení
+./input\13REGUH|BTYP3|CHAR|1|Typ banky pro bankovní cestu (koresp.ban
+./input\13REGUH|BNKS3|CHAR|3|Klíè státu banky
+./input\13REGUH|BNKL3|CHAR|15|Kód banky
+./input\13REGUH|BNKN3|CHAR|18|Èíslo bank.úètu
+./input\13REGUH|BKON3|CHAR|2|Kontrolní kód banky
+./input\13REGUH|BKRF3|CHAR|20|Referenèní údaj k bank.spojení
+./input\13REGUH|SAKNR|CHAR|10|Èíslo úètu hlavní knihy
+./input\13REGUH|HKONT|CHAR|10|Úèet hlavní knihy úèetnictví HK
+./input\13REGUH|ALEBN|CHAR|1|ALE-IDOC status rozdìlení dat platby
+./input\13REGUH|XKDFB|CHAR|1|Neúètovat kurzové rozdíly
+./input\13REGUH|SRTBP|CHAR|4|Obchodní místo
+./input\13REGUH|FPM_KEY|CHAR|15|Zøetìzené datum bìhu, ID a navrh.pøíznak
+./input\13REGUH|GRPNO|INT4|10|Kritérium seskupení plateb
+./input\13REGUH|SRTF1|CHAR|38|Specifické tøídìní plat.prostø.dle formá
+./input\13REGUH|SRTF2|CHAR|56|Tøídìní plat.prostø.defin.uivatelem vèe
+./input\13REGUH|XCORR|CHAR|1|Znak: Korespondence k platbì
+./input\13REGUH|XAVIS|CHAR|1|Znak: Oddìlené avízo
+./input\13REGUH|XCOPM|CHAR|1|Platební médium pro obchodního partnera
+./input\13REGUH|DORIGIN|CHAR|8|Pùvod seskupování
+./input\13REGUH|RFTTRN|CHAR|20|Kód platby
+./input\13REGUH|ZADNR|CHAR|10|Èíslo adresy pøíjemce platby
+./input\13REGUH|ADRNR|CHAR|10|Èíslo adresy
+./input\13REGUH|ZIBAN|CHAR|34|IBAN pøíjemce platby
+./input\13REGUH|FM_STATUS|CHAR|1|Status disponibility pro platbu
+./input\13REGUH|FILE_NBR|NUMC|6
+./input\14REGUP|MANDT|CLNT|3|Klient
+./input\14REGUP|LAUFD|DATS|8|Datum sputìní programu
+./input\14REGUP|LAUFI|CHAR|6|Doplòkový identifikaèní atribut
+./input\14REGUP|XVORL|CHAR|1|Znak: Pouze bìh návrhu ?
+./input\14REGUP|ZBUKR|CHAR|4|Platící úèetní okruh
+./input\14REGUP|LIFNR|CHAR|10|Èíslo úètu dodavatele
+./input\14REGUP|KUNNR|CHAR|10|Èíslo odbìratele 1
+./input\14REGUP|EMPFG|CHAR|16|Zakódování pøíjemce platby
+./input\14REGUP|VBLNR|CHAR|10|Èíslo platebního dokladu
+./input\14REGUP|BUKRS|CHAR|4|Úèetní okruh
+./input\14REGUP|BELNR|CHAR|10|Èíslo úèetního dokladu
+./input\14REGUP|GJAHR|NUMC|4|Fiskální rok
+./input\14REGUP|BUZEI|NUMC|3|Èíslo úèetní øádky v úèetním dokladu
+./input\14REGUP|FILKD|CHAR|10|Èíslo úètu poboèky
+./input\14REGUP|ZLSCH|CHAR|1|Zpùsob platby
+./input\14REGUP|WAERS|CUKY|5|Klíè mìny
+./input\14REGUP|HBKID|CHAR|5|Krátký klíè pro firemní banku
+./input\14REGUP|BVTYP|CHAR|4|Typ banky part.
+./input\14REGUP|POKEN|CHAR|3|Znak poloky
+./input\14REGUP|XBLNR|CHAR|16|Èíslo referenèního dokladu
+./input\14REGUP|BLART|CHAR|2|Druh dokl.
+./input\14REGUP|BUDAT|DATS|8|Datum úètování v dokladu
+./input\14REGUP|BLDAT|DATS|8|Datum dokladu
+./input\14REGUP|KOART|CHAR|1|DruhÚètu
+./input\14REGUP|BSCHL|CHAR|2|Úètovací klíè
+./input\14REGUP|HKONT|CHAR|10|Úèet hlavní knihy úèetnictví HK
+./input\14REGUP|SAKNR|CHAR|10|Èíslo úètu hlavní knihy
+./input\14REGUP|UMSKZ|CHAR|1|Znak zvlátní hlavní knihy
+./input\14REGUP|UMSKS|CHAR|1|Tøída operací zvlát.hl.knihy
+./input\14REGUP|ZUMSK|CHAR|1|Cílový znak zvlátní hlavní knihy
+./input\14REGUP|SHKZG|CHAR|1|Znak Má dáti/Dal
+./input\14REGUP|DMBTR|CURR|13|IN Èástka ve firemní mìnì
+./input\14REGUP|WRBTR|CURR|13|Èástka ve mìnì dokladu
+./input\14REGUP|BDIFF|CURR|13|Rozdíl ocenìní
+./input\14REGUP|GSBER|CHAR|4|Pracovní úsek
+./input\14REGUP|MWSKZ|CHAR|2|Znak DPH
+./input\14REGUP|MWSTS|CURR|13|Èástka danì ve firemní mìnì
+./input\14REGUP|WMWST|CURR|13|Èástka danì v mìnì dokladu
+./input\14REGUP|MWSK1|CHAR|2|Znak danì pro rozdìlení
+./input\14REGUP|DMBT1|CURR|13|Èástka ve firemní mìnì pro rozdìlení dan
+./input\14REGUP|WRBT1|CURR|13|Èástka v cizí mìnì pro rozdìlení daní
+./input\14REGUP|MWSK2|CHAR|2|Znak danì pro rozdìlení
+./input\14REGUP|DMBT2|CURR|13|Èástka ve firemní mìnì pro rozdìlení dan
+./input\14REGUP|WRBT2|CURR|13|Èástka v cizí mìnì pro rozdìlení daní
+./input\14REGUP|MWSK3|CHAR|2|Znak danì pro rozdìlení
+./input\14REGUP|DMBT3|CURR|13|Èástka ve firemní mìnì pro rozdìlení dan
+./input\14REGUP|WRBT3|CURR|13|Èástka v cizí mìnì pro rozdìlení daní
+./input\14REGUP|SGTXT|CHAR|50|Text poloky
+./input\14REGUP|ZFBDT|DATS|8|Zákl.datum pro výpoèet splatnosti
+./input\14REGUP|ZTERM|CHAR|4|Klíè platebních podmínek
+./input\14REGUP|ZBD1T|DEC|3|Dny skonta 1
+./input\14REGUP|ZBD2T|DEC|3|Dny skonta 2
+./input\14REGUP|ZBD3T|DEC|3|Lhùta pro podmínku netto
+./input\14REGUP|ZBD1P|DEC|5|Procenta skonta 1
+./input\14REGUP|ZBD2P|DEC|5|Procenta skonta 2
+./input\14REGUP|SKFBT|CURR|13|Skontovatelná èástka v mìnì dokladu
+./input\14REGUP|SKNTO|CURR|13|Èástka skonta ve firem.mìnì
+./input\14REGUP|WSKTO|CURR|13|Èástka skonta v mìnì dokladu
+./input\14REGUP|ZBFIX|CHAR|1|Fixní platební podmínka
+./input\14REGUP|ZLSPR|CHAR|1|Klíè pro blokování platby
+./input\14REGUP|SPLEV|CHAR|1|Úroveò, na ní se uskuteènilo zablok.pla
+./input\14REGUP|XREBZ|CHAR|1|Znak: Poloka je dobropisem ve vztahu k
+./input\14REGUP|ZOLLT|CHAR|8|Èís.celní sazby
+./input\14REGUP|ZOLLD|DATS|8|Celní dat.
+./input\14REGUP|LZBKZ|CHAR|3|Kód centrální banky státu
+./input\14REGUP|LANDL|CHAR|3|Stát dodavatele
+./input\14REGUP|DIEKZ|CHAR|1|Znak slueb (zahranièní platba)
+./input\14REGUP|QSSKZ|CHAR|2|Znak zdrojové danì
+./input\14REGUP|QSSHB|CURR|13|Zákl.èástka zdroj.danì
+./input\14REGUP|QBSHB|CURR|13|Èástka zdrojové danì (ve mìnì dokladu)
+./input\14REGUP|QBSHH|CURR|13|Èástka zdroj.danì (ve firemní mìnì)
+./input\14REGUP|ESRNR|CHAR|11|Èíslo úèastníka ESR
+./input\14REGUP|ESRRE|CHAR|27|Referenèní èís.ESR
+./input\14REGUP|ESRPZ|CHAR|2|Kontr.èís.ESR
+./input\14REGUP|ZBDXT|DEC|3|Vybrané dny skonta
+./input\14REGUP|ZBDXP|DEC|5|Zvolená procent.sazba skonta
+./input\14REGUP|MSHBT|CURR|13|Maximál.èástka skonta ve firemní mìnì
+./input\14REGUP|MSFBT|CURR|13|Maximální èástka skonta v cizí mìnì
+./input\14REGUP|PROJN|CHAR|16|Zastaralé: èíslo projektu : Ji NEPOUÍV
+./input\14REGUP|AUFNR|CHAR|12|Èíslo zakázky
+./input\14REGUP|ANLN1|CHAR|12|Hlavní èíslo IM
+./input\14REGUP|ANLN2|CHAR|4|Podèíslo inv.majetku
+./input\14REGUP|EBELN|CHAR|10|Èíslo nákupního dokladu
+./input\14REGUP|EBELP|NUMC|5|Èíslo poloky nákupního dokladu
+./input\14REGUP|XANET|CHAR|1|Znak: Záloha úètovaná netto ?
+./input\14REGUP|XNETB|CHAR|1|Znak: Doklad zaúètován netto ?
+./input\14REGUP|XNACH|CHAR|1|Znak: Doklad musí být pøeèten jetì jedn
+./input\14REGUP|ZWELS|CHAR|10|Seznam zpùsobù platby, které je tøeba zo
+./input\14REGUP|VBUND|CHAR|6|Èíslo partnerské spoleènosti
+./input\14REGUP|STCEG|CHAR|20|Identifikaèní èíslo DPH
+./input\14REGUP|EGBLD|CHAR|3|Stát urèení pro dodávku zboí
+./input\14REGUP|EGLLD|CHAR|3|Stát dodavatele u dod.zboí
+./input\14REGUP|QSZNR|CHAR|10|Èíslo osvìdèení o osvobození od zdrojové
+./input\14REGUP|BDIF2|CURR|13|Oceòovací rozdíl pro 2. metodu oceòování
+./input\14REGUP|DSKVH|CURR|13|Hrozící ztráta ze skonta ve firem.mìnì
+./input\14REGUP|POKLA|CHAR|1|Klasifikace poloky pro tisk eku online
+./input\14REGUP|FIPOS|CHAR|14|Rozpoètová poloka
+./input\14REGUP|PROJK|NUMC|8|Prvek struktur.plánu projektu (prvek SPP
+./input\14REGUP|NPLNR|CHAR|12|Èís.sí.diagramu pro pøiøazení úètu
+./input\14REGUP|AUFPL|NUMC|10|Èíslo postupu pro operace v zakázce
+./input\14REGUP|APLZL|NUMC|8|Interní èítaè
+./input\14REGUP|XEGDR|CHAR|1|Znak: Trojstranný obchod uvnitø ES ?
+./input\14REGUP|BDIF3|CURR|13|Rozdíl ocenìní pro tøetí firemní mìnu
+./input\14REGUP|DMBE2|CURR|13|Èástka ve druhé firemní mìnì
+./input\14REGUP|DMBE3|CURR|13|Èástka ve tøetí firemní mìnì
+./input\14REGUP|MWST2|CURR|13|Èástka danì ve druhé firemní mìnì
+./input\14REGUP|SKNT2|CURR|13|Èástka skonta ve druhé firemní mìnì
+./input\14REGUP|SKNT3|CURR|13|Èástka skonta ve tøetí firemní mìnì
+./input\14REGUP|QBSH2|CURR|13|Èástka zdrojové danì ve druhé firemní mì
+./input\14REGUP|QBSH3|CURR|13|Èástka zdrojové danì ve tøetí firemní mì
+./input\14REGUP|DMB21|CURR|13|Èástka ve druhé firemní mìnì pro rozdìle
+./input\14REGUP|DMB22|CURR|13|Èástka ve druhé firemní mìnì pro rozdìle
+./input\14REGUP|DMB23|CURR|13|Èástka ve druhé firemní mìnì pro rozdìle
+./input\14REGUP|DMB31|CURR|13|Èástka ve tøetí firemní mìnì pro rozdìle
+./input\14REGUP|DMB32|CURR|13|Èástka ve tøetí firemní mìnì pro rozdìle
+./input\14REGUP|DMB33|CURR|13|Èástka ve tøetí firemní mìnì pro rozdìle
+./input\14REGUP|UZAWE|CHAR|2|Dodatek ke zpùsobu platby
+./input\14REGUP|MWST3|CURR|13|Èástka danì ve tøetí firemní mìnì
+./input\14REGUP|ZUONR|CHAR|18|Èíslo pøiøazení
+./input\14REGUP|OSKTO|CURR|13|Èástka skonta ve firem.mìnì
+./input\14REGUP|VERTN|CHAR|13|Èíslo smlouvy
+./input\14REGUP|IMKEY|CHAR|8|Interní klíè pro nemovitý objekt
+./input\14REGUP|REBZT|CHAR|1|Druh násled.dokladu
+./input\14REGUP|REBZG|CHAR|10|Èíslo dokladu faktury, k ní patøí daná
+./input\14REGUP|REBZJ|NUMC|4|Fiskální rok pøísluné faktury (u dobrop
+./input\14REGUP|REBZZ|NUMC|3|Úèetní poloka v pøísluné faktuøe
+./input\14REGUP|KOSTL|CHAR|10|Nákladové støedisko
+./input\14REGUP|XINVE|CHAR|1|Znak: Týká se investièního majetku ?
+./input\14REGUP|VBEL2|CHAR|10|Prodej.doklad
+./input\14REGUP|VPOS2|NUMC|6|Numerické pole délky 6
+./input\14REGUP|ZEKKN|NUMC|2|Poøadové èíslo pøiøazení úètu
+./input\14REGUP|POSN2|NUMC|6|Poloka prod.dokladu
+./input\14REGUP|ETEN2|NUMC|4|Èíslo rozvrení
+./input\14REGUP|FISTL|CHAR|16|Finanèní místo
+./input\14REGUP|GEBER|CHAR|10|Fond/§
+./input\14REGUP|DABRZ|DATS|8|Refer.datum pro zúètování
+./input\14REGUP|KKBER|CHAR|4|Oblast kontroly úvìru
+./input\14REGUP|EMPFB|CHAR|10|Pøíjemce platby / plátce
+./input\14REGUP|PRCTR|CHAR|10|Profit centrum
+./input\14REGUP|XREF1|CHAR|12|Referenèní klíè obchodního partnera
+./input\14REGUP|XREF2|CHAR|12|Referenèní klíè obchodního partnera
+./input\14REGUP|XREF3|CHAR|20|Referenèní klíè k poloce dokladu
+./input\14REGUP|ZINKZ|CHAR|2|Výjimka z úroèení
+./input\14REGUP|DTWS1|NUMC|2|Instrukce 1
+./input\14REGUP|DTWS2|NUMC|2|Instrukce 2
+./input\14REGUP|DTWS3|NUMC|2|Instrukce 3
+./input\14REGUP|DTWS4|NUMC|2|Instrukce 4
+./input\14REGUP|MANSP|CHAR|1|BlokUpomín
+./input\14REGUP|KIDNO|CHAR|30|Reference platby
+./input\14REGUP|XCPDD|CHAR|1|Znak: Adresa a údaje banky jsou nastaven
+./input\14REGUP|VERTT|CHAR|1|Dr.smlouvy
+./input\14REGUP|VBEWA|CHAR|4|Druh pohybu
+./input\14REGUP|AGZEI|DEC|5|Vyrovnávací poloka
+./input\14REGUP|PSWSL|CUKY|5|Aktualizovaná mìna pro obraty na úètu HK
+./input\14REGUP|PSWBT|CURR|13|Èástka pro aktualizaci v hlavní knize
+./input\14REGUP|PSSKT|CURR|13|Sráka skonta pro poloku
+./input\14REGUP|XPYAM|CHAR|1|Znak: Èástka platby byla stanovena
+./input\14REGUP|GDIFF|CURR|13|Celkový kurzový rozdíl
+./input\14REGUP|GDIF2|CURR|13|Celkový kurzový rozdíl
+./input\14REGUP|GDIF3|CURR|13|Celkový kurzový rozdíl
+./input\14REGUP|BUPLA|CHAR|4|Obchodní místo
+./input\14REGUP|SECCO|CHAR|4|Sekce zdrojové danì
+./input\14REGUP|XSAEN|CHAR|1|Znak: Nepotvrzená zmìna kmenového záznam
+./input\14REGUP|KBLNR|CHAR|10|Èís.dokl.-rezervace prostøedkù
+./input\14REGUP|KBLPOS|NUMC|3|Poloka dokladu - rezervace prostøedkù
+./input\14REGUP|KEYNO|CHAR|10|Èíslo klíèe poadavku na platbu
+./input\14REGUP|PAMTF|CURR|13|Èástka poadavku na platbu v mìnì platby
+./input\14REGUP|ORIGIN|CHAR|8|Znak pùvodu
+./input\14REGUP|PENLC1|CURR|13
+./input\14REGUP|PENLC2|CURR|13
+./input\14REGUP|PENLC3|CURR|13
+./input\14REGUP|PENFC|CURR|13
+./input\14REGUP|PENDAYS|INT4|10|Poèet dnù pro výpoèet pokuty
+./input\14REGUP|PPRCT|CHAR|10|Partnerské profit centrum
+./input\14REGUP|GRANT_NBR|CHAR|20|Grant
+./input\14REGUP|FKBER|CHAR|16|Funkèní oblast
+./input\15RSEG|MANDT|CLNT|3|Klient
+./input\15RSEG|BELNR|CHAR|10|Èíslo úèetního dokladu
+./input\15RSEG|GJAHR|NUMC|4|Fiskální rok
+./input\15RSEG|BUZEI|NUMC|6|Poloka v dokladu faktury
+./input\15RSEG|EBELN|CHAR|10|Èíslo nákupního dokladu
+./input\15RSEG|EBELP|NUMC|5|Èíslo poloky nákupního dokladu
+./input\15RSEG|ZEKKN|NUMC|2|Poøadové èíslo pøiøazení úètu
+./input\15RSEG|MATNR|CHAR|18|Èíslo materiálu
+./input\15RSEG|BWKEY|CHAR|4|Okruh ocenìní
+./input\15RSEG|BWTAR|CHAR|10|Druh ocenìní
+./input\15RSEG|BUKRS|CHAR|4|Úèetní okruh
+./input\15RSEG|WERKS|CHAR|4|Závod
+./input\15RSEG|WRBTR|CURR|13|Èástka ve mìnì dokladu
+./input\15RSEG|SHKZG|CHAR|1|Znak Má dáti/Dal
+./input\15RSEG|MWSKZ|CHAR|2|Znak DPH
+./input\15RSEG|TXJCD|CHAR|15|Tax jurisdiction code - pøíslunost pro
+./input\15RSEG|MENGE|QUAN|13|Mnoství
+./input\15RSEG|BSTME|UNIT|3|Objednací mìrná jednotka
+./input\15RSEG|BPMNG|QUAN|13|Mnoství v mìrné jednotce objednací ceny
+./input\15RSEG|BPRME|UNIT|3|Jednotka u objednací ceny
+./input\15RSEG|LBKUM|QUAN|13|Celková ocenìná zásoba
+./input\15RSEG|VRKUM|QUAN|13|Celková ocenìná zásoba v období v úètov.
+./input\15RSEG|MEINS|UNIT|3|Základní mìrná jednotka
+./input\15RSEG|PSTYP|CHAR|1|Typ poloky v nákupním dokladu
+./input\15RSEG|KNTTP|CHAR|1|Typ pøiøazení úètu
+./input\15RSEG|BKLAS|CHAR|4|Tøída ocenìní
+./input\15RSEG|EREKZ|CHAR|1|Znak koneèné faktury
+./input\15RSEG|EXKBE|CHAR|1|Aktualizace znaku vývoje objednávky
+./input\15RSEG|XEKBZ|CHAR|1|Znak: Aktualizace vedl.poøizovacích nákl
+./input\15RSEG|TBTKZ|CHAR|1|Znak:Násled.úètov. na vrub
+./input\15RSEG|SPGRP|CHAR|1|Dùv.blokov.:Cena
+./input\15RSEG|SPGRM|CHAR|1|Dùv.blok.: Mno.
+./input\15RSEG|SPGRT|CHAR|1|Dùv.blok.: Termín
+./input\15RSEG|SPGRG|CHAR|1|Dùv.blok:Poèet jedn.uObjCeny
+./input\15RSEG|SPGRV|CHAR|1|Dùv.blok:Rozpoè.projektu
+./input\15RSEG|SPGRQ|CHAR|1|Znak: Manuální dùvod blokování
+./input\15RSEG|SPGRS|CHAR|1|Dùvod blokov.: Výka èástky
+./input\15RSEG|SPGRC|CHAR|1|Dùvod blok.: Jakost
+./input\15RSEG|BUSTW|CHAR|4|Úèetní øetìzec hodnot
+./input\15RSEG|XBLNR|CHAR|16|Èíslo referenèního dokladu
+./input\15RSEG|XRUEB|CHAR|1|Znak: Doklad je úètován do pøedchozího o
+./input\15RSEG|BNKAN|CURR|13|Podíl vedlej.nákladù u hodn.poloky
+./input\15RSEG|KSCHL|CHAR|4|Druh podmínky
+./input\15RSEG|SALK3|CURR|13|Hodnota celkové ocenìné zásoby
+./input\15RSEG|VMSAL|CURR|13|Hodnota celkových ocenìných zásob v pøed
+./input\15RSEG|XLIFO|CHAR|1|LIFO/FIFO-relevantní
+./input\15RSEG|LFBNR|CHAR|10|Èíslo referenèního dokladu
+./input\15RSEG|LFGJA|NUMC|4|Fiskální rok souèasného období
+./input\15RSEG|MATBF|CHAR|18|Materiál, ve kterém je vedena zásoba
+./input\15RSEG|RBMNG|QUAN|13|Fakturované mnoství podle faktury dodav
+./input\15RSEG|BPRBM|QUAN|13|Faktur.mnoství podle faktury dodavatele
+./input\15RSEG|RBWWR|CURR|13|Fakturovaná èástka v mìnì dokladu podle
+./input\15RSEG|LFEHL|CHAR|1|Druh chyby dodavatele
+./input\15RSEG|GRICD|CHAR|2|Znak èinnosti pro daò z pøíjmu brutto
+./input\15RSEG|GRIRG|CHAR|3|Region (spolkový stát, spolková zemì, pr
+./input\15RSEG|GITYP|CHAR|2|Druh rozdìlení pro daò ze mzdy
+./input\15RSEG|PACKNO|NUMC|10|Æíslo paketu výkonu
+./input\15RSEG|INTROW|NUMC|10|Èíslo øádky výkonu
+./input\15RSEG|SGTXT|CHAR|50|Text poloky
+./input\15RSEG|XSKRL|CHAR|1|Znak: Úèetní øádka není relevant.pro pos
+./input\15RSEG|KZMEK|CHAR|1|Znak korektury
+./input\15RSEG|MRMOK|CHAR|1|Znak: Poloka faktury se zpracovává
+./input\15RSEG|STUNR|NUMC|3|Èíslo úrovnì
+./input\15RSEG|ZAEHK|NUMC|2|Èítaè podmínek
+./input\15RSEG|STOCK_POSTING|CURR|13|Úètování zásob øádky dolé faktury
+./input\15RSEG|STOCK_POSTING_PP|CURR|13|Úètování zásob øádky dolé faktury, minu
+./input\15RSEG|STOCK_POSTING_PY|CURR|13|Úètování zásob øádky dolé faktury, minu
+./input\15RSEG|WEREC|CHAR|1|Znak vyrovnání pro úètování PM/PF u slu
+./input\15RSEG|LIFNR|CHAR|10|Èíslo úètu dodavatele
+./input\15RSEG|FRBNR|CHAR|16|Èíslo nákladního listu u pøíjmu materiál
