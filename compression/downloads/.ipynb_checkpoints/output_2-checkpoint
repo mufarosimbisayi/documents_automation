@@ -1,0 +1,26 @@
+./input\01BKPF|          Krátký popis:Hlavièka pro úèetnictví
+./input\01BKPF|          Poèet polí: 94
+./input\02BSAK|          Krátký popis:Úèetnictví: Sekundární index pro dodavatele (vyrovn.poloky)
+./input\02BSAK|          Poèet polí: 177
+./input\03BSEG|          Krátký popis:Segment dokladu: Úèetnictví
+./input\03BSEG|          Poèet polí: 306
+./input\04EINA|          Krátký popis:Nák.inf.záznam - veobecná data
+./input\04EINA|          Poèet polí: 39
+./input\06EKBE|          Krátký popis:Historie k nák. dokladu
+./input\06EKBE|          Poèet polí: 59
+./input\07EKKO|          Krátký popis:Hlavièka nákup.dokladu
+./input\07EKKO|          Poèet polí: 76
+./input\08EKPO|          Krátký popis:Poloka nákup.dokladu
+./input\08EKPO|          Poèet polí: 209
+./input\09LFA1|          Krátký popis:Kmenový soubor dodavatelù (veob.èást)
+./input\09LFA1|          Poèet polí: 113
+./input\10MKPF|          Krátký popis:Hlavièka mater.dokladu
+./input\10MKPF|          Poèet polí: 25
+./input\12RBKP|          Krátký popis:Hlaviè.dokl.- dolá faktura
+./input\12RBKP|          Poèet polí: 127
+./input\13REGUH|          Krátký popis:Data o platbì z platebního programu
+./input\13REGUH|          Poèet polí: 164
+./input\14REGUP|          Krátký popis:Zpracované poloky z platebního programu
+./input\14REGUP|          Poèet polí: 176
+./input\15RSEG|          Krátký popis:Poloka dokl. - dolá faktura
+./input\15RSEG|          Poèet polí: 71

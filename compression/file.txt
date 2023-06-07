@@ -1,0 +1,12 @@
+email id of A is abcd.fg@yahoo.co.in
+email id of B is xyz_ab12@yahoo.com
+email id of C is pqr-143@gmail.com
+email id of D is jack_14@zoho.com
+email id of E is bacd_fg@outlook.com
+email id of F is bad_boy@gmx.com
+email id of G is white_149@yahoo.co.in
+email id of H is black_28@gmx.com
+email id of I is abcd.47@zoho.com
+email id of J is bad_boy2@gmx.com
+email id of K is white.19@yahoo.co.in
+email id of L is black_78@gmx.com

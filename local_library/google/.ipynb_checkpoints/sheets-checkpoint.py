@@ -22,7 +22,7 @@ def import_worksheet(google_spreadsheet, google_worksheet):
     data_worksheet = gc.open(google_spreadsheet).worksheet(google_worksheet)
     
     #import worksheet data to dataframe
-    target_df = gd.get_as_dataframe(data_worksheet)
+    target_df = gd.get_as_dataframe(data_worksheet, evaluate_formulas=True)
     
     #remove null rows
     target_df = target_df.dropna(how='all')
